@@ -32,6 +32,10 @@ git commands:
     1. !git add . 
     2. !git commit -m " message"
     3. !git push
+
+I made a change    
+    
+"""
     
 
 for index, content in enumerate(main_content):   
