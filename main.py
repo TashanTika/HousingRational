@@ -41,5 +41,21 @@ driver.find_element_by_xpath("/html/body/div[1]/div[9]/div/div/div[1]/div[5]/div
 record = pd.DataFrame(data = [[price, prop_title, location, description, feature_details]], columns = ["Price", "Title", "Location", "Description", "Feature Deatails"])
 
 
+features = info.find_elements_by_class_name("p24_icons")
+feature = features.find_elements_by_class_name("p24_size")
+feature = features[0]
+
+
+features = listing.find_all('span', class_ = "p24_icons")
+features = features[0].find_all('span') #go through each span and check for title
+for feature in features:
+    try:
+        record[feature["title"]] = feature.text.strip()
+    except:
+        pass
+if index == 0:
+    records = record.copy()
+else:
+    records = pd.concat([records, record], axis = 0, ignore_index = True)
 
 
