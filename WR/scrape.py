@@ -2,6 +2,7 @@
 """
 Created on Tue Oct 27 16:26:44 2020
 @author: Working Rational
+#http://kbroman.org/github_tutorial/pages/fork.html
 """
 import logging    
 logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)s - %(message)s', level=logging.INFO)
@@ -147,12 +148,24 @@ def clean_scrape(inp_df):
     inp_df["price per m2 Floor"] = inp_df["Price"] / inp_df["Floor Size"] 
     return inp_df
 
+
+"""
+#def get_address():
 #raw.to_csv("test.csv")
-# geo loc, requires google api key    
-import requests
+from geopy.geocoders import Nominatim
+import pandas as pd
+#source: https://towardsdatascience.com/geocode-with-python-161ec1e62b89
 
-response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA')
+#unit test
+locator = Nominatim(user_agent="myGeocoder")
+location = locator.geocode("Champ de Mars, Paris, France")
+location.latitude
 
-resp_json_payload = response.json()
+#read data
+from pathlib import Path
+import os
 
-print(resp_json_payload['results'][0]['geometry']['location'])
+root_dir = Path(__file__).resolve().parent
+raw_file = os.path.join(root_dir, 'test.csv')
+raw = pd.read_csv(raw_file)  
+"""
