@@ -316,3 +316,1501 @@
 2020-11-08 20:11:56,815 - start scraping property24
 2020-11-08 20:12:38,370 - start scraping property24
 2020-11-08 20:17:22,084 - NumExpr defaulting to 4 threads.
+2020-11-08 20:21:34,626 - start scraping property24
+2020-11-08 20:21:35,668 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB87424430>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:21:36,670 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB874243A0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:27:30,118 - start scraping property24
+2020-11-08 20:27:44,276 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=7+Alpaca+Place%2C+Clare+Hills+%2CDurban&format=json&limit=1
+2020-11-08 20:28:43,885 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=1+Mount+Carmel%2C+631+Peter+Mokaba+Ridge+Road%2C+Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:29:12,708 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=15+Stella+Grove%2C+Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:29:17,787 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Durban+Central+%2CDurban&format=json&limit=1
+2020-11-08 20:29:19,091 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Durban+Central+%2CDurban&format=json&limit=1
+2020-11-08 20:29:20,803 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('Durban Central ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 361, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1091: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Durban+Central+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Durban+Central+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Durban+Central+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:29:37,018 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=23+Coedmore+Avenue%2C+Yellowwood+Park+%2CDurban&format=json&limit=1
+2020-11-08 20:29:38,402 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=23+Coedmore+Avenue%2C+Yellowwood+Park+%2CDurban&format=json&limit=1
+2020-11-08 20:30:12,349 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=27+O.r.+Tambo+Parade%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:30:13,655 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=27+O.r.+Tambo+Parade%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:30:14,658 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('27 O.r. Tambo Parade, South Beach ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 164, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001BB8718BBB0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=27+O.r.+Tambo+Parade%2C+South+Beach+%2CDurban&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BBB0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=27+O.r.+Tambo+Parade%2C+South+Beach+%2CDurban&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BBB0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=27+O.r.+Tambo+Parade%2C+South+Beach+%2CDurban&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BBB0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+2020-11-08 20:30:43,368 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:30:44,371 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BD30>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:31:18,602 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=1394+Bluff+Road%2C+Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:31:44,363 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=20+Hopecraig+Ave%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:31:54,862 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=211+Prince+Street%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:32:19,830 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Parlock+%2CDurban&format=json&limit=1
+2020-11-08 20:32:21,155 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Parlock+%2CDurban&format=json&limit=1
+2020-11-08 20:32:23,525 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Durban+Central+%2CDurban&format=json&limit=1
+2020-11-08 20:32:41,207 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=68+Sir+Arthur+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:32:47,133 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=151+Wakesleigh+Road+%28ss+1+Of+476%2F1997+-+Erf+8+Bellair%29%2C+Bellair+%2CDurban&format=json&limit=1
+2020-11-08 20:32:52,597 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:32:57,094 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:33:30,618 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Castlehill+%2CDurban&format=json&limit=1
+2020-11-08 20:33:41,679 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=15+Rothesy+Place%2C+Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:33:51,122 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:33:52,125 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BF10>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:33:53,127 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('Essenwood ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 164, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001BB8718BD90>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Essenwood+%2CDurban&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BD90>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Essenwood+%2CDurban&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BD90>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Essenwood+%2CDurban&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BD90>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+2020-11-08 20:34:00,140 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:34:01,510 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:34:04,027 - RateLimiter caught an error, retrying (1/2 tries). Called with (*('Essenwood ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\neera\Anaconda3\lib\http\client.py", line 1332, in getresponse
+    response.begin()
+  File "C:\Users\neera\Anaconda3\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\neera\Anaconda3\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\neera\Anaconda3\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Essenwood+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Essenwood+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Essenwood+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:34:30,468 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=54+Sambalpur+Road%2C+Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:34:38,271 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:35:03,070 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:35:04,624 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:35:16,398 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:35:18,328 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:35:19,806 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('Musgrave ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 361, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1091: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Musgrave+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Musgrave+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Musgrave+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:36:00,365 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=23+Lakhimpur+Road%2C+Merewent+%2CDurban&format=json&limit=1
+2020-11-08 20:36:09,974 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:36:14,700 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=40+Bushlands+Road%2C+Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:36:20,409 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Hillary+%2CDurban&format=json&limit=1
+2020-11-08 20:36:42,895 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=500+Marine+Drive%2C+Brighton+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:36:44,207 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=500+Marine+Drive%2C+Brighton+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:36:46,903 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:36:54,359 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Esplanade+%2CDurban&format=json&limit=1
+2020-11-08 20:36:55,751 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Esplanade+%2CDurban&format=json&limit=1
+2020-11-08 20:36:57,048 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('Esplanade ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 361, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1091: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Esplanade+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Esplanade+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Esplanade+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:37:19,724 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=2+Ss+Torbeth+Lodge%2C+174+Riley+Road%2C+Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:37:24,443 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=117+Snell+Parade%2C+North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:37:26,740 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=9+Hazeldene+Road%2C+Sea+View+%2CDurban&format=json&limit=1
+2020-11-08 20:37:28,006 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=9+Hazeldene+Road%2C+Sea+View+%2CDurban&format=json&limit=1
+2020-11-08 20:37:37,555 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:37:52,007 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Bellair+%2CDurban&format=json&limit=1
+2020-11-08 20:38:46,109 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:38:47,951 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:38:50,494 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Westridge+%2CDurban&format=json&limit=1
+2020-11-08 20:38:55,180 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=71+Gladys+Mazibuko+Road%2C+Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:39:02,873 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Montclair+%2CDurban&format=json&limit=1
+2020-11-08 20:39:06,225 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Sydenham+%2CDurban&format=json&limit=1
+2020-11-08 20:39:49,707 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=22+Oxford+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:39:51,509 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=22+Oxford+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:40:01,193 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=123+Thompson+Road%2C+Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:41:03,563 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:41:04,879 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:42:50,120 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Sherwood+%2CDurban&format=json&limit=1
+2020-11-08 20:42:54,604 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=276+Helen+Joseph+Road%2C+Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:43:50,138 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Reservoir+Hills+%2CDurban&format=json&limit=1
+2020-11-08 20:44:11,396 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=260+Clark+Road%2C+Bulwer+%2CDurban&format=json&limit=1
+2020-11-08 20:44:12,638 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=260+Clark+Road%2C+Bulwer+%2CDurban&format=json&limit=1
+2020-11-08 20:44:33,964 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=14+Kearsney+Road%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:44:34,968 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB87461DF0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=14+Kearsney+Road%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:44:36,851 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('14 Kearsney Road, South Beach ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\neera\Anaconda3\lib\http\client.py", line 1332, in getresponse
+    response.begin()
+  File "C:\Users\neera\Anaconda3\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\neera\Anaconda3\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\neera\Anaconda3\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=14+Kearsney+Road%2C+South+Beach+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=14+Kearsney+Road%2C+South+Beach+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=14+Kearsney+Road%2C+South+Beach+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:44:43,197 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=14+Kearsney+Road%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:45:39,969 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Newtown+%2CDurban&format=json&limit=1
+2020-11-08 20:45:41,298 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Newtown+%2CDurban&format=json&limit=1
+2020-11-08 20:45:42,593 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('Newtown ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 361, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1091: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Newtown+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Newtown+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Newtown+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:46:01,217 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:46:07,134 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Woodhaven+%2CDurban&format=json&limit=1
+2020-11-08 20:46:09,171 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Woodhaven+%2CDurban&format=json&limit=1
+2020-11-08 20:46:10,489 - RateLimiter caught an error, retrying (0/2 tries). Called with (*('Woodhaven ,Durban',), **{}).
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connection.py", line 361, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\ssl_.py", line 377, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\neera\Anaconda3\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1091: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "C:\Users\neera\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Woodhaven+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 383, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Woodhaven+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 136, in _retries_gen
+    yield i  # Run the function.
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\extra\rate_limiter.py", line 274, in __call__
+    res = self.func(*args, **kwargs)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\nominatim.py", line 294, in geocode
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\geocoders\base.py", line 360, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 373, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\neera\Anaconda3\lib\site-packages\geopy\adapters.py", line 395, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Woodhaven+%2CDurban&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+2020-11-08 20:46:37,999 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Ntuzuma+%2CDurban&format=json&limit=1
+2020-11-08 20:51:53,091 - start scraping property24
+2020-11-08 20:51:56,179 - getting coordinates
+2020-11-08 20:51:57,969 - failed getting coordinates for 11 Sycamore Street Glenwood, Glenwood ,Durban row 2
+2020-11-08 20:51:58,587 - failed getting coordinates for 450 Queen Elizabeth Avenue, Westridge ,Durban row 3
+2020-11-08 20:51:59,808 - failed getting coordinates for 40 10th Ave, Morningside ,Durban row 5
+2020-11-08 20:52:01,439 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:52:02,789 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:52:05,039 - failed getting coordinates for 93 Chiltern Drive, Reservoir Hills ,Durban row 8
+2020-11-08 20:52:05,559 - failed getting coordinates for 60 Dunville Road, Bluff ,Durban row 9
+2020-11-08 20:52:09,237 - failed getting coordinates for 450 Queen Elizabeth Avenue, Westridge ,Durban row 15
+2020-11-08 20:52:10,376 - failed getting coordinates for 7 Woodburn Place, Glenwood ,Durban row 17
+2020-11-08 20:52:11,285 - failed getting coordinates for 29 Ss Chelsea Court, 67 Victoria Embankment Avenue, Durban Central ,Durban row 18
+2020-11-08 20:52:14,195 - failed getting coordinates for 205 Sutton Crescent, Morningside ,Durban row 23
+2020-11-08 20:52:14,724 - failed getting coordinates for 32 Haden Road, Morningside ,Durban row 24
+2020-11-08 20:52:16,815 - failed getting coordinates for 123 Thompson Road, Bluff ,Durban row 27
+2020-11-08 20:52:17,429 - failed getting coordinates for 83 Clarence Road, Morningside ,Durban row 28
+2020-11-08 20:52:19,171 - failed getting coordinates for 168-172 Voortrekker Road, Jacobs ,Durban row 31
+2020-11-08 20:52:20,177 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=139+Stephan+Dlamini+Road%2C+Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:52:21,843 - failed getting coordinates for 139 Stephan Dlamini Road, Musgrave ,Durban row 32
+2020-11-08 20:52:23,062 - failed getting coordinates for 201 Marine Drive, Bluff ,Durban row 34
+2020-11-08 20:52:26,134 - failed getting coordinates for 121 Brand Road, Glenwood ,Durban row 39
+2020-11-08 20:52:29,680 - failed getting coordinates for 9 Newton Place, Glenwood ,Durban row 45
+2020-11-08 20:52:31,253 - failed getting coordinates for 6 Ethelvale Road, Bluff ,Durban row 48
+2020-11-08 20:52:32,892 - failed getting coordinates for 732 Essenwood Road, Morningside ,Durban row 51
+2020-11-08 20:52:33,403 - failed getting coordinates for 118 Bowen Avenue, Glenmore ,Durban row 52
+2020-11-08 20:52:34,391 - failed getting coordinates for 241 Clark Road, Glenwood ,Durban row 54
+2020-11-08 20:52:34,965 - failed getting coordinates for 39 Thorn Road, Austerville ,Durban row 55
+2020-11-08 20:52:38,933 - failed getting coordinates for 99 Sunderland Road, Cato Manor ,Durban row 61
+2020-11-08 20:52:40,163 - failed getting coordinates for 15 Philamere Avenue, Glenmore ,Durban row 63
+2020-11-08 20:52:44,155 - failed getting coordinates for 1 Mount Carmel, 631 Peter Mokaba Ridge Road, Essenwood ,Durban row 69
+2020-11-08 20:52:46,282 - failed getting coordinates for 89 J.b. Marks Rd, Glenwood ,Durban row 73
+2020-11-08 20:52:48,000 - failed getting coordinates for 1 Oldfield Place, Hillary ,Durban row 76
+2020-11-08 20:52:50,239 - failed getting coordinates for 29 Richmond Gardens, Reservoir Hills ,Durban row 80
+2020-11-08 20:52:52,561 - failed getting coordinates for 21 Riverhorse Close, Riverhorse Valley ,Durban row 84
+2020-11-08 20:52:55,166 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=8+Ss+Corra+Lynn%2C+4+Kilburn+Avenue%2C+Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:52:57,059 - failed getting coordinates for 8 Ss Corra Lynn, 4 Kilburn Avenue, Musgrave ,Durban row 87
+2020-11-08 20:52:57,674 - failed getting coordinates for 5 Ss Two Four Nuttall Gardens, 24 Nuttall Gardens, Morningside ,Durban row 88
+2020-11-08 20:52:58,286 - failed getting coordinates for 32 Assembly Road, Bluff ,Durban row 89
+2020-11-08 20:52:58,759 - failed getting coordinates for 144 Wattle Grove, Sherwood ,Durban row 90
+2020-11-08 20:53:00,479 - failed getting coordinates for 84 Amoora Road, Wentworth ,Durban row 93
+2020-11-08 20:53:01,085 - failed getting coordinates for 101a Innes Road, Windermere ,Durban row 94
+2020-11-08 20:53:03,206 - failed getting coordinates for 205 Moss Road, Bluff ,Durban row 98
+2020-11-08 20:53:04,228 - failed getting coordinates for 2 Princess Alice Avenue, Bulwer ,Durban row 100
+2020-11-08 20:53:04,842 - failed getting coordinates for 265 Lighthouse Road, Bluff ,Durban row 101
+2020-11-08 20:53:06,461 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=368+Esther+Roberts+Road%2C+Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:53:08,090 - failed getting coordinates for 368 Esther Roberts Road, Glenwood ,Durban row 103
+2020-11-08 20:53:08,631 - failed getting coordinates for 8 Neptune Crescent, Bonela ,Durban row 104
+2020-11-08 20:53:09,722 - failed getting coordinates for 44 Netford Road, Bluff ,Durban row 106
+2020-11-08 20:53:13,411 - failed getting coordinates for 1 Riverhorse Close, Riverhorse Valley ,Durban row 112
+2020-11-08 20:53:14,569 - failed getting coordinates for 291 Kies Avenue, Reservoir Hills ,Durban row 114
+2020-11-08 20:53:15,796 - failed getting coordinates for 67 Moss Road, Bluff ,Durban row 116
+2020-11-08 20:53:16,820 - failed getting coordinates for 11 Ss Sunset View, 449 Queen Elizabeth Avenue, Glenwood ,Durban row 118
+2020-11-08 20:53:17,333 - failed getting coordinates for 35 Ss Cowendale, 300 Problem Mkhize Road, Essenwood ,Durban row 119
+2020-11-08 20:53:17,843 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /search?q=30+Warangal+Road%2C+Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:53:18,846 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB86DE8250>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=30+Warangal+Road%2C+Bluff+%2CDurban&format=json&limit=1
+2020-11-08 20:53:20,526 - failed getting coordinates for 30 Warangal Road, Bluff ,Durban row 120
+2020-11-08 20:53:21,044 - failed getting coordinates for 23 Fowey, Bluff ,Durban row 121
+2020-11-08 20:53:21,592 - failed getting coordinates for 71 Gladys Mazibuko Road, Musgrave ,Durban row 122
+2020-11-08 20:53:22,643 - failed getting coordinates for 63 Polkinghorne Road, Bluff ,Durban row 124
+2020-11-08 20:53:23,251 - failed getting coordinates for 2 Ninapur Road, Merebank East ,Durban row 125
+2020-11-08 20:53:23,886 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road, Glenwood ,Durban row 126
+2020-11-08 20:53:24,892 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:53:27,574 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road, Glenwood ,Durban row 129
+2020-11-08 20:53:29,211 - failed getting coordinates for 557 Che Guevara, Bulwer ,Durban row 132
+2020-11-08 20:53:32,591 - failed getting coordinates for 1161 Radebe Street, Lamontville ,Durban row 138
+2020-11-08 20:53:33,196 - failed getting coordinates for 41 Bayview Road, Bluff ,Durban row 139
+2020-11-08 20:53:38,632 - failed getting coordinates for 89 Esther Roberts Road, Glenwood ,Durban row 149
+2020-11-08 20:53:40,187 - failed getting coordinates for 21 Windham Avenue, Memorial Park ,Durban row 152
+2020-11-08 20:53:41,192 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=244+Annet+Drive%2C+Reservoir+Hills+%2CDurban&format=json&limit=1
+2020-11-08 20:53:42,740 - failed getting coordinates for 244 Annet Drive, Reservoir Hills ,Durban row 153
+2020-11-08 20:53:43,342 - failed getting coordinates for 4 Ss Athenae, 185 Currie Road, Musgrave ,Durban row 154
+2020-11-08 20:53:46,963 - failed getting coordinates for 49 Maxwell Avenue, Bluff ,Durban row 161
+2020-11-08 20:53:48,471 - failed getting coordinates for 20 Erskine Terrace, Point Waterfront ,Durban row 164
+2020-11-08 20:53:52,546 - failed getting coordinates for 300 Varsity Drive, Reservoir Hills ,Durban row 171
+2020-11-08 20:53:53,646 - failed getting coordinates for Strawberry Fields , 144 Wattle Grove, Sherwood ,Durban row 173
+2020-11-08 20:53:54,186 - failed getting coordinates for 14 Lennox Road, Morningside ,Durban row 174
+2020-11-08 20:53:54,717 - failed getting coordinates for 61 Moffat Avenue, Bluff ,Durban row 175
+2020-11-08 20:53:57,860 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=523+Esther+Roberts+%28+Frere+%29+Road%2C+Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:53:59,281 - failed getting coordinates for 523 Esther Roberts ( Frere ) Road, Glenwood ,Durban row 180
+2020-11-08 20:54:00,445 - failed getting coordinates for 5 Hamilton Close North, 119 Bulwer Rd, Glenwood, Glenwood ,Durban row 182
+2020-11-08 20:54:01,512 - failed getting coordinates for 17 Boscombe Road, South Beach ,Durban row 184
+2020-11-08 20:54:02,073 - failed getting coordinates for 17 Boscombe Street, South Beach ,Durban row 185
+2020-11-08 20:54:05,197 - failed getting coordinates for 42 Henwood Road, Morningside ,Durban row 191
+2020-11-08 20:54:07,407 - failed getting coordinates for 1394 Bluff Road, Bluff ,Durban row 195
+2020-11-08 20:54:10,221 - failed getting coordinates for 246 Z K Matthews ( Nicolson) Road, Glenwood ,Durban row 200
+2020-11-08 20:54:13,751 - failed getting coordinates for 408 Che Guevara Road, Glenwood ,Durban row 206
+2020-11-08 20:54:14,297 - failed getting coordinates for 2 Albury Court, 32 Rapson Road, Morningside ,Durban row 207
+2020-11-08 20:54:14,829 - failed getting coordinates for Musgrave Boulevard 27 Musgrave Avenue, Musgrave ,Durban row 208
+2020-11-08 20:54:17,376 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=45+Malton+Mews%2C+Sea+View+%2CDurban&format=json&limit=1
+2020-11-08 20:54:18,982 - failed getting coordinates for 45 Malton Mews, Sea View ,Durban row 212
+2020-11-08 20:54:19,571 - failed getting coordinates for 6 Cedarfield Cl, Springfield ,Durban row 213
+2020-11-08 20:54:20,154 - failed getting coordinates for 1 Mona, Durban Central ,Durban row 214
+2020-11-08 20:54:25,320 - failed getting coordinates for 43 Prince Umhlangane Road, Avoca ,Durban row 223
+2020-11-08 20:54:25,812 - failed getting coordinates for 28 Fernside, 43 Montclair Road, Montclair ,Durban row 224
+2020-11-08 20:54:29,269 - failed getting coordinates for 21 Ashfield Ave, Springfield ,Durban row 230
+2020-11-08 20:54:29,794 - failed getting coordinates for 8 Grove Hurst, 30 Hurst Grove, Musgrave ,Durban row 231
+2020-11-08 20:54:31,395 - failed getting coordinates for 70 Bushland Road, Bluff ,Durban row 234
+2020-11-08 20:54:33,080 - failed getting coordinates for 235 Marine Drive, Bluff ,Durban row 237
+2020-11-08 20:54:34,338 - failed getting coordinates for 250 Brighton Road, Bluff ,Durban row 239
+2020-11-08 20:54:36,692 - failed getting coordinates for 9 Ss Lynika Mews, 5 Stableford Road, Grosvenor ,Durban row 243
+2020-11-08 20:54:39,560 - failed getting coordinates for 123 Hignett Road, Bluff ,Durban row 248
+2020-11-08 20:54:40,710 - failed getting coordinates for 123 Hignett Road, Bluff ,Durban row 250
+2020-11-08 20:54:42,721 - failed getting coordinates for 241 Mahatma Ghandi, Point Waterfront ,Durban row 253
+2020-11-08 20:54:44,476 - failed getting coordinates for 98 Lancelot Avenue, Bluff ,Durban row 256
+2020-11-08 20:54:46,216 - failed getting coordinates for 57 Kennard Rise Street, Carrington Heights ,Durban row 259
+2020-11-08 20:54:47,332 - failed getting coordinates for 33 Crieff Place, Point Waterfront ,Durban row 261
+2020-11-08 20:54:48,984 - failed getting coordinates for 14 Cato Road, Bulwer ,Durban row 264
+2020-11-08 20:54:52,298 - failed getting coordinates for 530 Annet Drive, Reservoir Hills ,Durban row 270
+2020-11-08 20:54:52,894 - failed getting coordinates for 151 Wakesleigh Road (ss 1 Of 476/1997 - Erf 8 Bellair), Bellair ,Durban row 271
+2020-11-08 20:54:56,885 - failed getting coordinates for 62 First Avenue, Greyville ,Durban row 277
+2020-11-08 20:55:07,867 - failed getting coordinates for 92 Goble Road, Morningside ,Durban row 296
+2020-11-08 20:55:09,582 - failed getting coordinates for 143 Manning Road, Glenwood ,Durban row 299
+2020-11-08 20:55:11,919 - failed getting coordinates for 465 Marine Drive, Bluff ,Durban row 303
+2020-11-08 20:55:15,503 - failed getting coordinates for Castlehill ,Durban row 310
+2020-11-08 20:55:17,733 - failed getting coordinates for 43 Archbell Road, Glenmore ,Durban row 312
+2020-11-08 20:55:20,633 - failed getting coordinates for 46 Emslie Place, Bellair ,Durban row 317
+2020-11-08 20:55:21,170 - failed getting coordinates for 63 Colwyn Road, Bluff ,Durban row 318
+2020-11-08 20:55:21,632 - failed getting coordinates for 15 Rothesy Place, Musgrave ,Durban row 319
+2020-11-08 20:55:22,644 - failed getting coordinates for 25 Magdelan Ave, Reservoir Hills ,Durban row 321
+2020-11-08 20:55:23,134 - failed getting coordinates for 15 Rothesy Place, Musgrave ,Durban row 322
+2020-11-08 20:55:23,702 - failed getting coordinates for 71 Ellis Brown Road, Bulwer ,Durban row 323
+2020-11-08 20:55:28,741 - failed getting coordinates for 21 Riverhorse Close, Riverhorse Valley ,Durban row 331
+2020-11-08 20:55:35,377 - failed getting coordinates for 92 Bartle Road, Umbilo ,Durban row 342
+2020-11-08 20:55:35,993 - failed getting coordinates for 71 Croton Road, Wentworth ,Durban row 343
+2020-11-08 20:55:36,613 - failed getting coordinates for 260 Problem Mkhize Road, Morningside ,Durban row 344
+2020-11-08 20:55:37,826 - failed getting coordinates for 320 Yusuf Dadoo Street, Morningside ,Durban row 346
+2020-11-08 20:55:38,345 - failed getting coordinates for 54 Sambalpur Road, Bluff ,Durban row 347
+2020-11-08 20:55:39,335 - failed getting coordinates for 11 Healer Place, Newlands East ,Durban row 349
+2020-11-08 20:55:40,906 - failed getting coordinates for 250 Inanda Road, Springfield ,Durban row 352
+2020-11-08 20:55:44,152 - failed getting coordinates for 25 Riverhorse Close, Riverhorse Valley ,Durban row 358
+2020-11-08 20:55:45,902 - failed getting coordinates for 6 Cleveland Place, Glenwood ,Durban row 361
+2020-11-08 20:55:47,451 - failed getting coordinates for 6 Cleveland Place, Glenwood ,Durban row 364
+2020-11-08 20:55:48,066 - failed getting coordinates for 22 Hignett Road, Brighton Beach ,Durban row 365
+2020-11-08 20:55:48,995 - failed getting coordinates for 37 Hime Lane, Jacobs ,Durban row 367
+2020-11-08 20:55:51,057 - failed getting coordinates for 43 Narbada Road, Merewent ,Durban row 371
+2020-11-08 20:55:52,776 - failed getting coordinates for 528/530 Esther Roberts Road, Glenwood ,Durban row 374
+2020-11-08 20:55:55,137 - failed getting coordinates for 98 Hedge Row, Brighton Beach ,Durban row 378
+2020-11-08 20:56:00,561 - failed getting coordinates for 32 Myrtle Road, Glenwood ,Durban row 387
+2020-11-08 20:56:02,769 - failed getting coordinates for 192 J.b. Marks Road, Glenwood ,Durban row 391
+2020-11-08 20:56:04,860 - failed getting coordinates for 67 Umgudulu Road, Reservoir Hills ,Durban row 394
+2020-11-08 20:56:06,397 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=47+Pigeon+Drive%2C+Yellowwood+Park+%2CDurban&format=json&limit=1
+2020-11-08 20:56:08,100 - failed getting coordinates for 47 Pigeon Drive, Yellowwood Park ,Durban row 396
+2020-11-08 20:56:08,752 - failed getting coordinates for 8 Alison Road, Bluff ,Durban row 397
+2020-11-08 20:56:09,303 - failed getting coordinates for 6 Cedarfield Cl, Springfield ,Durban row 398
+2020-11-08 20:56:14,399 - failed getting coordinates for 5 Brighton Road, Bluff ,Durban row 407
+2020-11-08 20:56:19,688 - failed getting coordinates for 9 Haig Avenue, Glenwood ,Durban row 417
+2020-11-08 20:56:20,231 - failed getting coordinates for 30 Enfield Road, Glenwood ,Durban row 418
+2020-11-08 20:56:21,391 - failed getting coordinates for 23 Lakhimpur Road, Merewent ,Durban row 420
+2020-11-08 20:56:24,725 - failed getting coordinates for 193 Dr Hoosen Haffajee Road, Bluff ,Durban row 426
+2020-11-08 20:56:27,253 - failed getting coordinates for 40 Bushlands Road, Bluff ,Durban row 431
+2020-11-08 20:56:27,745 - failed getting coordinates for 347 Che Geuvara Road, Glenwood ,Durban row 432
+2020-11-08 20:56:28,411 - failed getting coordinates for 23 Brand Road, Glenwood ,Durban row 433
+2020-11-08 20:56:29,027 - failed getting coordinates for 23 Brand Road, Glenwood ,Durban row 434
+2020-11-08 20:56:31,263 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=925+Sarnia+Road%2C+Bellair+%2CDurban&format=json&limit=1
+2020-11-08 20:56:33,536 - failed getting coordinates for 358 Marine Drive, Ocean View ,Durban row 438
+2020-11-08 20:56:33,992 - failed getting coordinates for 206 Percy Osborne, Morningside ,Durban row 439
+2020-11-08 20:56:36,604 - failed getting coordinates for 14 Calgary Grove, Bonela ,Durban row 444
+2020-11-08 20:56:38,122 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Hillgrove+%2CDurban&format=json&limit=1
+2020-11-08 20:56:40,089 - failed getting coordinates for Castlehill ,Durban row 447
+2020-11-08 20:56:42,723 - failed getting coordinates for 175 Brighton Road, Bluff ,Durban row 452
+2020-11-08 20:56:51,223 - failed getting coordinates for 2 Ss Torbeth Lodge, 174 Riley Road, Essenwood ,Durban row 468
+2020-11-08 20:56:52,646 - failed getting coordinates for 260 Problem Mkhize Road, Morningside ,Durban row 470
+2020-11-08 20:56:57,287 - failed getting coordinates for 2 Ss Torbeth Lodge, 174 Riley Road, Essenwood ,Durban row 479
+2020-11-08 20:56:58,308 - failed getting coordinates for 3 Ss Torbeth Lodge, 174 Riley Road, Essenwood ,Durban row 481
+2020-11-08 20:57:00,385 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 484
+2020-11-08 20:57:00,934 - failed getting coordinates for 14 Constantia Road, Austerville ,Durban row 485
+2020-11-08 20:57:02,975 - failed getting coordinates for 14 Constantia Road, Austerville ,Durban row 489
+2020-11-08 20:57:05,454 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 493
+2020-11-08 20:57:07,334 - failed getting coordinates for 54 Moffat Road, Bluff ,Durban row 496
+2020-11-08 20:57:13,459 - failed getting coordinates for 25 Riverhorse Close, Riverhorse Valley ,Durban row 507
+2020-11-08 20:57:14,427 - failed getting coordinates for 41 Satara Road, Merewent ,Durban row 509
+2020-11-08 20:57:16,974 - failed getting coordinates for 7 Halldene, 24 Riverview Road, Morningside ,Durban row 514
+2020-11-08 20:57:19,530 - failed getting coordinates for 101 School Road, Bluff ,Durban row 519
+2020-11-08 20:57:23,205 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Bellair+%2CDurban&format=json&limit=1
+2020-11-08 20:57:26,267 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Hillary+%2CDurban&format=json&limit=1
+2020-11-08 20:57:30,476 - failed getting coordinates for 181 Buckingham Rd, Bonela ,Durban row 531
+2020-11-08 20:57:38,892 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Sherwood+%2CDurban&format=json&limit=1
+2020-11-08 20:57:40,175 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Sherwood+%2CDurban&format=json&limit=1
+2020-11-08 20:57:42,787 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=69+Peter+Mokaba+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:57:44,017 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=69+Peter+Mokaba+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 20:57:46,558 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=4+Sutton+Crescent%2C+Windermere+%2CDurban&format=json&limit=1
+2020-11-08 20:57:49,025 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=4+Sutton+Crescent%2C+Windermere+%2CDurban&format=json&limit=1
+2020-11-08 20:57:51,714 - failed getting coordinates for 183 Island View Road, Bluff ,Durban row 551
+2020-11-08 20:57:56,993 - failed getting coordinates for 23 Cocomo Palms, 20 Foreshore Drive, Bluff ,Durban row 561
+2020-11-08 20:58:02,107 - failed getting coordinates for 832 Bluff Road, Bluff ,Durban row 571
+2020-11-08 20:58:03,181 - failed getting coordinates for 14 Ocean Way, 30 Prince Street, Point Waterfront ,Durban row 573
+2020-11-08 20:58:07,393 - failed getting coordinates for 1 Caribel Road, Windermere ,Durban row 581
+2020-11-08 20:58:11,397 - failed getting coordinates for 57 Burlington Road, Reservoir Hills ,Durban row 588
+2020-11-08 20:58:13,090 - failed getting coordinates for 77 Thomas Avenue, Musgrave ,Durban row 591
+2020-11-08 20:58:14,324 - failed getting coordinates for 27 OR Tambo Parade, South Beach ,Durban row 593
+2020-11-08 20:58:19,514 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=23+Sol+Harris+Crescent%2C+North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:58:25,487 - failed getting coordinates for 22 Oxford Road, Morningside ,Durban row 610
+2020-11-08 20:58:28,408 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Briardene+%2CDurban&format=json&limit=1
+2020-11-08 20:58:30,472 - failed getting coordinates for 87 Marshall Ave, Bluff ,Durban row 615
+2020-11-08 20:58:32,142 - failed getting coordinates for 123 Thompson Road, Bluff ,Durban row 618
+2020-11-08 20:58:38,663 - failed getting coordinates for Corovoca ,Durban row 630
+2020-11-08 20:58:39,237 - failed getting coordinates for 36 Ebonyfield Avenue, Springfield ,Durban row 631
+2020-11-08 20:58:40,358 - failed getting coordinates for Beach Hurst, 243 O R Tambo, North Beach ,Durban row 633
+2020-11-08 20:58:40,907 - failed getting coordinates for 138 Percy Osborne, Windermere ,Durban row 634
+2020-11-08 20:58:41,909 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+Avonmore%2C+277+Avondale+Road%2C+Essenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:58:43,543 - failed getting coordinates for 5 Avonmore, 277 Avondale Road, Essenwood ,Durban row 635
+2020-11-08 20:58:45,621 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:58:46,623 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718B430>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 20:58:49,493 - failed getting coordinates for 40 Villa Road, Sparks Estate ,Durban row 641
+2020-11-08 20:58:55,025 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=40+Villa+Road%2C+Sparks+Estate+%2CDurban&format=json&limit=1
+2020-11-08 20:58:56,676 - failed getting coordinates for 40 Villa Road, Sparks Estate ,Durban row 650
+2020-11-08 20:58:58,701 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:59:03,956 - failed getting coordinates for 7 Ss Lennoxmere, 28 Lilian Ngoyi Road, Windermere ,Durban row 660
+2020-11-08 20:59:04,492 - failed getting coordinates for 61 Tyger Road, Greenwood Park ,Durban row 661
+2020-11-08 20:59:06,121 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 664
+2020-11-08 20:59:08,408 - failed getting coordinates for 2 Ashby Lodge, 11 Ashby Road, Morningside ,Durban row 668
+2020-11-08 20:59:08,962 - failed getting coordinates for High Wycombe, 187 O R Tambo, North Beach ,Durban row 669
+2020-11-08 20:59:12,104 - failed getting coordinates for High Wycombe, 187 O R Tambo, North Beach ,Durban row 675
+2020-11-08 20:59:13,792 - failed getting coordinates for 5 Hedge Row, Bluff ,Durban row 678
+2020-11-08 20:59:18,652 - failed getting coordinates for 20 Donald Road, Bluff ,Durban row 687
+2020-11-08 20:59:21,975 - failed getting coordinates for 22 Rickben Crescent, Bonela ,Durban row 693
+2020-11-08 20:59:38,797 - failed getting coordinates for 120 Edenroc Retirement Hotel 119 Snell Parade, North Beach ,Durban row 724
+2020-11-08 20:59:42,499 - failed getting coordinates for 43 Firozepore Road, Merebank East ,Durban row 731
+2020-11-08 20:59:46,775 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Brighton+Beach+%2CDurban&format=json&limit=1
+2020-11-08 20:59:49,806 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 20:59:51,074 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 21:00:00,898 - failed getting coordinates for Lanzerac, 203 Avondale Road, Essenwood, Essenwood ,Durban row 756
+2020-11-08 21:00:07,547 - failed getting coordinates for 69 Gillespe Street, South Beach, Durban, Durban Central ,Durban row 768
+2020-11-08 21:00:09,167 - failed getting coordinates for 12 Dock Point 31 Timeball Boulevard, Point Waterfront ,Durban row 771
+2020-11-08 21:00:10,809 - failed getting coordinates for 60 Amilcar Cabral Road, Musgrave ,Durban row 774
+2020-11-08 21:00:17,850 - failed getting coordinates for 93 Chiltern Drive, Reservoir Hills ,Durban row 787
+2020-11-08 21:00:24,579 - failed getting coordinates for 570 Inanda Road, Springfield ,Durban row 799
+2020-11-08 21:00:37,798 - failed getting coordinates for 3 Blairview 124 10th Avenue, Musgrave ,Durban row 822
+2020-11-08 21:00:39,817 - failed getting coordinates for 107 Oriel Road, Bluff ,Durban row 826
+2020-11-08 21:00:52,132 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:00:58,748 - failed getting coordinates for 10 Gousblom Street, Brighton Beach ,Durban row 854
+2020-11-08 21:01:00,404 - failed getting coordinates for 6 Roselea Court 26 Gordon Road, Morningside ,Durban row 857
+2020-11-08 21:01:05,659 - failed getting coordinates for 19 Prince Street, Point Waterfront ,Durban row 867
+2020-11-08 21:01:11,430 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Esplanade+%2CDurban&format=json&limit=1
+2020-11-08 21:01:16,001 - failed getting coordinates for 35 Marathon Road, Bluff ,Durban row 883
+2020-11-08 21:01:26,362 - failed getting coordinates for 24 Selma Court, 358 King Dinuzulu Road, Musgrave ,Durban row 903
+2020-11-08 21:01:27,915 - failed getting coordinates for 59 Hospital Road, Point Waterfront ,Durban row 906
+2020-11-08 21:01:32,188 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 913
+2020-11-08 21:01:35,688 - failed getting coordinates for 281 101 Victoria Embankment 101 Margaret Mncadi Avenue, Esplanade ,Durban row 919
+2020-11-08 21:01:39,317 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:01:43,535 - failed getting coordinates for 84 Silvertree Road, Austerville ,Durban row 930
+2020-11-08 21:01:52,572 - failed getting coordinates for Edward Court, 11 Harrietwood Crescent, Umbilo ,Durban row 947
+2020-11-08 21:02:01,524 - failed getting coordinates for 196 Sphiwe Zuma Avenue, Umbilo ,Durban row 964
+2020-11-08 21:02:04,284 - failed getting coordinates for 11 Palm Grove 51 Pinewood Gardens,, Umbilo ,Durban row 969
+2020-11-08 21:02:05,243 - failed getting coordinates for Ntuzuma ,Durban row 970
+2020-11-08 21:02:17,839 - failed getting coordinates for 87 Marshall Avenue, Bluff ,Durban row 994
+2020-11-08 21:02:24,528 - failed getting coordinates for 24 Brixham Avenue, Bluff ,Durban row 1006
+2020-11-08 21:02:25,088 - failed getting coordinates for 136 Gladys Mazibuko Road, Morningside ,Durban row 1007
+2020-11-08 21:02:31,859 - failed getting coordinates for 190 Bontanical Gardens Road, Musgrave ,Durban row 1020
+2020-11-08 21:02:33,974 - failed getting coordinates for 73 Hendon Road, Kenville ,Durban row 1024
+2020-11-08 21:02:36,447 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:02:54,629 - failed getting coordinates for 100 Bushlands Road, Bluff ,Durban row 1056
+2020-11-08 21:02:57,356 - failed getting coordinates for 186 Rochdale Rd, Umgeni Business Park ,Durban row 1061
+2020-11-08 21:02:59,491 - failed getting coordinates for 195 Percy Osborne, Morningside ,Durban row 1065
+2020-11-08 21:03:04,164 - failed getting coordinates for Unit 120, Island Office Park, Riverhorse Valley, Riverhorse Valley ,Durban row 1074
+2020-11-08 21:03:07,260 - failed getting coordinates for 39 Riverhorse Road, Riverhorse Valley ,Durban row 1079
+2020-11-08 21:03:15,719 - failed getting coordinates for 36 Benghazi Crescent, Reservoir Hills ,Durban row 1095
+2020-11-08 21:03:18,324 - failed getting coordinates for 44 Beachfield Crescent, Umgeni Business Park ,Durban row 1100
+2020-11-08 21:03:19,361 - failed getting coordinates for 6 Lancelot Avenue, Bluff ,Durban row 1102
+2020-11-08 21:03:19,889 - failed getting coordinates for 6 Lancelot Avenue, Bluff ,Durban row 1103
+2020-11-08 21:03:21,451 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Manor+Gardens+%2CDurban&format=json&limit=1
+2020-11-08 21:03:24,531 - failed getting coordinates for Shinglewood, 340 Florida Road, Morningside, Morningside ,Durban row 1107
+2020-11-08 21:03:29,701 - failed getting coordinates for 92 Dennis Hurley Street, Durban Cbd, Durban Central ,Durban row 1117
+2020-11-08 21:03:30,873 - failed getting coordinates for 265 Kenilworth Avenue, Sparks Estate ,Durban row 1119
+2020-11-08 21:03:38,911 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Bonela+%2CDurban&format=json&limit=1
+2020-11-08 21:03:43,858 - failed getting coordinates for 93 Claribel Road, Morningside ,Durban row 1139
+2020-11-08 21:03:47,539 - failed getting coordinates for 112 Mountain Rise Street, Carrington Heights ,Durban row 1146
+2020-11-08 21:03:48,012 - failed getting coordinates for 123 Teignmouth Road, Umbilo ,Durban row 1147
+2020-11-08 21:03:56,323 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1163
+2020-11-08 21:03:56,874 - failed getting coordinates for 21 Riverhorse Close, Riverhorse Valley ,Durban row 1164
+2020-11-08 21:03:57,423 - failed getting coordinates for 160 Amilcar Cabral Road, Musgrave ,Durban row 1165
+2020-11-08 21:04:07,275 - failed getting coordinates for 87 Windham Avenue, Memorial Park ,Durban row 1184
+2020-11-08 21:04:08,510 - failed getting coordinates for 87 Windham Avenue, Memorial Park ,Durban row 1186
+2020-11-08 21:04:10,013 - failed getting coordinates for 11 Marathon Road, Bluff ,Durban row 1188
+2020-11-08 21:04:11,481 - failed getting coordinates for Strawberry Fields , 144 Wattle Grove, Sherwood ,Durban row 1191
+2020-11-08 21:04:12,025 - failed getting coordinates for 17 10 Bristow Crescent, Waterval Park ,Durban row 1192
+2020-11-08 21:04:21,063 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1209
+2020-11-08 21:04:23,955 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1214
+2020-11-08 21:04:27,857 - failed getting coordinates for 192 Mclarty Road, Reservoir Hills ,Durban row 1221
+2020-11-08 21:04:29,459 - failed getting coordinates for 34 Steel Road, Morningside ,Durban row 1224
+2020-11-08 21:04:33,804 - failed getting coordinates for 105 Gladys Mazibuko (marriott) Road,, Essenwood ,Durban row 1232
+2020-11-08 21:04:34,807 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB86F09610>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=Montclair+%2CDurban&format=json&limit=1
+2020-11-08 21:04:37,291 - failed getting coordinates for 14 Timeball Boulevard, Point Waterfront ,Durban row 1235
+2020-11-08 21:04:38,861 - failed getting coordinates for Lanzerac, 203 Avondale Road, Essenwood, Essenwood ,Durban row 1238
+2020-11-08 21:04:40,484 - failed getting coordinates for Lanzerac, 203 Avondale Road, Essenwood, Essenwood ,Durban row 1241
+2020-11-08 21:04:42,123 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1244
+2020-11-08 21:04:47,890 - failed getting coordinates for 6 Cedarfield Crescent, Springfield ,Durban row 1255
+2020-11-08 21:04:53,572 - failed getting coordinates for 31 Sim Place, Kenville ,Durban row 1265
+2020-11-08 21:04:54,690 - failed getting coordinates for 533 Che Guvara Road, Glenwood ,Durban row 1267
+2020-11-08 21:04:56,727 - failed getting coordinates for 110 Springfield Road Morningside, Morningside ,Durban row 1271
+2020-11-08 21:04:57,237 - failed getting coordinates for 242 J.b. Marks Road, Glenwood ,Durban row 1272
+2020-11-08 21:05:02,498 - failed getting coordinates for 15 Woodburn Place, Glenwood ,Durban row 1282
+2020-11-08 21:05:05,889 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1288
+2020-11-08 21:05:06,970 - failed getting coordinates for 66 Cato Road, Bulwer ,Durban row 1290
+2020-11-08 21:05:12,727 - failed getting coordinates for 6 Toby Place, Newlands East ,Durban row 1300
+2020-11-08 21:05:19,662 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=47+Hollander+Crescent%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:05:24,569 - failed getting coordinates for 42 Spanier Marson Road, Grosvenor ,Durban row 1319
+2020-11-08 21:05:33,122 - failed getting coordinates for Malton Mews, 29 Malton Road, Sea View ,Durban row 1335
+2020-11-08 21:05:37,349 - failed getting coordinates for 4 Essendene, 15 Rothesay Place, Musgrave ,Durban row 1343
+2020-11-08 21:05:38,419 - failed getting coordinates for 20 Foreshore Drive, Bluff ,Durban row 1345
+2020-11-08 21:05:40,580 - failed getting coordinates for 11 Peter Mokaba Road, Musgrave ,Durban row 1349
+2020-11-08 21:05:41,602 - failed getting coordinates for 174 Sydenham ( John Zikhali) Road, Musgrave ,Durban row 1351
+2020-11-08 21:05:44,015 - failed getting coordinates for 20 Foreshore Drive, Bluff ,Durban row 1355
+2020-11-08 21:05:45,068 - failed getting coordinates for 125 Oriel Road, Bluff ,Durban row 1357
+2020-11-08 21:05:47,143 - failed getting coordinates for 4 Prains Avenue, Glenwood ,Durban row 1361
+2020-11-08 21:05:53,874 - failed getting coordinates for 211 Prince Street, Point Waterfront ,Durban row 1374
+2020-11-08 21:05:55,440 - failed getting coordinates for 3 Sharon Court, 250 Montpelier Road, Essenwood ,Durban row 1377
+2020-11-08 21:06:03,790 - failed getting coordinates for 5 Philip Avenue, Glenwood ,Durban row 1392
+2020-11-08 21:06:12,770 - failed getting coordinates for South Beach ,Durban row 1409
+2020-11-08 21:06:14,897 - failed getting coordinates for Beachhurst, 243 OR Tambo, North Beach ,Durban row 1411
+2020-11-08 21:06:15,451 - failed getting coordinates for Clare Hills ,Durban row 1412
+2020-11-08 21:06:15,708 - failed getting coordinates for Morningside ,Durban row 1413
+2020-11-08 21:06:16,476 - failed getting coordinates for South Beach ,Durban row 1414
+2020-11-08 21:06:16,708 - failed getting coordinates for Sea View ,Durban row 1415
+2020-11-08 21:06:16,935 - failed getting coordinates for 23 Myro Drive, Glenmore ,Durban row 1416
+2020-11-08 21:06:25,214 - failed getting coordinates for Bluff ,Durban row 1430
+2020-11-08 21:06:25,461 - failed getting coordinates for Musgrave ,Durban row 1431
+2020-11-08 21:06:25,750 - failed getting coordinates for Essenwood ,Durban row 1432
+2020-11-08 21:06:26,735 - failed getting coordinates for Durban Central ,Durban row 1433
+2020-11-08 21:06:27,791 - failed getting coordinates for Musgrave ,Durban row 1434
+2020-11-08 21:06:30,754 - failed getting coordinates for Musgrave ,Durban row 1438
+2020-11-08 21:06:31,038 - failed getting coordinates for Newlands West ,Durban row 1439
+2020-11-08 21:06:31,291 - failed getting coordinates for 6 J.n. Singh Street, Durban Central ,Durban row 1440
+2020-11-08 21:06:31,596 - failed getting coordinates for Musgrave ,Durban row 1441
+2020-11-08 21:06:31,923 - failed getting coordinates for Durban Central ,Durban row 1442
+2020-11-08 21:06:32,994 - failed getting coordinates for Morningside ,Durban row 1443
+2020-11-08 21:06:33,288 - failed getting coordinates for 258 Flower Road, Clairwood ,Durban row 1444
+2020-11-08 21:06:34,233 - failed getting coordinates for Ocean View ,Durban row 1445
+2020-11-08 21:06:36,205 - failed getting coordinates for Durban Central ,Durban row 1447
+2020-11-08 21:06:37,442 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=33+Bidar+Road%2C+Merebank+East+%2CDurban&format=json&limit=1
+2020-11-08 21:06:38,854 - failed getting coordinates for 33 Bidar Road, Merebank East ,Durban row 1448
+2020-11-08 21:06:41,384 - failed getting coordinates for Durban Central ,Durban row 1453
+2020-11-08 21:06:42,439 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1454
+2020-11-08 21:06:42,724 - failed getting coordinates for 16 Eastbourne Road, Morningside ,Durban row 1455
+2020-11-08 21:06:42,993 - failed getting coordinates for Kenville ,Durban row 1456
+2020-11-08 21:06:43,775 - failed getting coordinates for Durban Central ,Durban row 1457
+2020-11-08 21:06:46,809 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Cato+Manor+%2CDurban&format=json&limit=1
+2020-11-08 21:06:56,322 - failed getting coordinates for 98 Pemary Ridge Street, Reservoir Hills ,Durban row 1474
+2020-11-08 21:06:58,301 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Montclair+%2CDurban&format=json&limit=1
+2020-11-08 21:07:03,862 - failed getting coordinates for 54 Margaret Mncadi Avenue, Esplanade ,Durban row 1483
+2020-11-08 21:07:09,436 - failed getting coordinates for 112 Mountain Rise, Carrington Heights ,Durban row 1493
+2020-11-08 21:07:13,266 - failed getting coordinates for 39 Prince Street, Point Waterfront ,Durban row 1500
+2020-11-08 21:07:21,517 - failed getting coordinates for 617 Marine Drive, Bluff ,Durban row 1515
+2020-11-08 21:07:22,551 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1517
+2020-11-08 21:07:27,952 - failed getting coordinates for Sydenham ,Durban row 1526
+2020-11-08 21:07:28,200 - failed getting coordinates for 312 Cato Road, Glenwood ,Durban row 1527
+2020-11-08 21:07:28,462 - failed getting coordinates for Point Waterfront ,Durban row 1528
+2020-11-08 21:07:30,726 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1530
+2020-11-08 21:07:31,246 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1531
+2020-11-08 21:07:33,813 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:07:36,056 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:07:39,439 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1537
+2020-11-08 21:07:44,730 - failed getting coordinates for 243 OR Tambo Parade, North Beach ,Durban row 1547
+2020-11-08 21:07:51,797 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 21:07:53,080 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 21:07:54,372 - failed getting coordinates for Musgrave ,Durban row 1559
+2020-11-08 21:08:00,069 - failed getting coordinates for 93 Ss Chiltern Drive, Clare Hills ,Durban row 1568
+2020-11-08 21:08:01,181 - failed getting coordinates for 15 Sycamore Road, Glenwood ,Durban row 1570
+2020-11-08 21:08:03,242 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 21:08:04,548 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 21:08:09,295 - failed getting coordinates for Maldonado, 29 OR Tambo Parade, South Beach ,Durban row 1579
+2020-11-08 21:08:14,054 - failed getting coordinates for 23 San Remo, 127 Snell Parade, North Beach ,Durban row 1588
+2020-11-08 21:08:20,274 - failed getting coordinates for 5 Riverhorse Cl, Riverhorse Valley ,Durban row 1598
+2020-11-08 21:08:23,334 - failed getting coordinates for 245 Marine Drive, Bluff ,Durban row 1604
+2020-11-08 21:08:25,326 - failed getting coordinates for 23 Florida Keys, 336 Musgrave Road, Musgrave ,Durban row 1608
+2020-11-08 21:08:26,363 - failed getting coordinates for Las Vegas, 167 Snell Parade, North Beach ,Durban row 1610
+2020-11-08 21:08:27,912 - failed getting coordinates for 93 Chiltern Drive, Reservoir Hills ,Durban row 1613
+2020-11-08 21:08:29,775 - failed getting coordinates for 95 Rapsaon Road, Morningside ,Durban row 1616
+2020-11-08 21:08:33,170 - failed getting coordinates for 15 Dunkirk Place, Umbilo ,Durban row 1622
+2020-11-08 21:08:35,203 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Reservoir+Hills+%2CDurban&format=json&limit=1
+2020-11-08 21:08:36,494 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Reservoir+Hills+%2CDurban&format=json&limit=1
+2020-11-08 21:08:38,338 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1626
+2020-11-08 21:08:40,366 - failed getting coordinates for 2 Philip Avenue, Glenwood ,Durban row 1630
+2020-11-08 21:08:49,717 - failed getting coordinates for Unit 6, Ocean Way, 30 Prince Street, Point Waterfront ,Durban row 1648
+2020-11-08 21:08:51,366 - failed getting coordinates for 123 Hignett Road, Brighton Beach ,Durban row 1651
+2020-11-08 21:08:52,339 - failed getting coordinates for 7 Flame Thorn, Sherwood ,Durban row 1652
+2020-11-08 21:08:54,408 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Merewent+%2CDurban&format=json&limit=1
+2020-11-08 21:08:55,409 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718BAC0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=Merewent+%2CDurban&format=json&limit=1
+2020-11-08 21:08:56,702 - failed getting coordinates for Merewent ,Durban row 1655
+2020-11-08 21:08:59,177 - failed getting coordinates for 196 Dr Hoosen Haffajee Road, Bluff ,Durban row 1658
+2020-11-08 21:08:59,714 - failed getting coordinates for 12 Berglen, 4 Sutton Crescent, Windermere ,Durban row 1659
+2020-11-08 21:09:03,267 - failed getting coordinates for 5 Suva 70 6th Avenue, Essenwood ,Durban row 1665
+2020-11-08 21:09:04,782 - failed getting coordinates for 480 Esther Roberts Road, Glenwood ,Durban row 1668
+2020-11-08 21:09:07,785 - failed getting coordinates for 44 Ocean View Drive, Bluff ,Durban row 1673
+2020-11-08 21:09:08,770 - failed getting coordinates for 77 Palmcastle Road, Castlehill ,Durban row 1675
+2020-11-08 21:09:09,300 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1676
+2020-11-08 21:09:10,308 - failed getting coordinates for 34 Chancellor Road, Musgrave ,Durban row 1678
+2020-11-08 21:09:10,836 - failed getting coordinates for The Quays, 31 Signal Road, Point Waterfront ,Durban row 1679
+2020-11-08 21:09:11,420 - failed getting coordinates for The Quays, 31 Signal Road, Point Waterfront ,Durban row 1680
+2020-11-08 21:09:16,847 - failed getting coordinates for 1 Seventy Three Harriettwood, 73 Harriettwood Crescent, Umbilo ,Durban row 1690
+2020-11-08 21:09:20,377 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1697
+2020-11-08 21:09:32,677 - failed getting coordinates for 17 Boscombe, South Beach ,Durban row 1720
+2020-11-08 21:09:36,942 - failed getting coordinates for 11 Flame Thorn, Sherwood ,Durban row 1728
+2020-11-08 21:09:53,729 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=17+Boscombe+Place%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:09:54,732 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718B5E0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=17+Boscombe+Place%2C+South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:09:56,728 - failed getting coordinates for 17 Boscombe Place, South Beach ,Durban row 1756
+2020-11-08 21:09:59,255 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Sea+View+%2CDurban&format=json&limit=1
+2020-11-08 21:10:02,874 - failed getting coordinates for Maldonado, 29 A OR Tambo Parade, South Beach ,Durban row 1762
+2020-11-08 21:10:11,085 - failed getting coordinates for 26 Heather Road, Glenwood ,Durban row 1776
+2020-11-08 21:10:27,055 - failed getting coordinates for 26 Culbin Pl, Bluff ,Durban row 1806
+2020-11-08 21:10:28,022 - failed getting coordinates for 10 Bristow Crescent Modem, Bonela ,Durban row 1808
+2020-11-08 21:10:29,480 - failed getting coordinates for Maldonado, 29 OR Tambo, South Beach ,Durban row 1810
+2020-11-08 21:10:41,455 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1829
+2020-11-08 21:10:44,480 - failed getting coordinates for 11 Listlyn, 28 York Avenue, Bulwer ,Durban row 1834
+2020-11-08 21:10:48,643 - failed getting coordinates for 710 Penzance 31 Prince Street, South Beach ,Durban row 1841
+2020-11-08 21:10:49,163 - failed getting coordinates for 22 Garbutt Road, Sherwood ,Durban row 1842
+2020-11-08 21:10:50,673 - failed getting coordinates for 48 Felix Ndlovu Road, Overport, Sydenham ,Durban row 1845
+2020-11-08 21:10:58,468 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Durban+Central+%2CDurban&format=json&limit=1
+2020-11-08 21:11:03,276 - failed getting coordinates for 10 Guildford Avenue, Sparks Estate ,Durban row 1864
+2020-11-08 21:11:03,757 - failed getting coordinates for 42 Albacore Road, Newlands East ,Durban row 1865
+2020-11-08 21:11:07,414 - failed getting coordinates for Lamontville ,Durban row 1872
+2020-11-08 21:11:12,517 - failed getting coordinates for 43 Piedmont Road, Sherwood ,Durban row 1880
+2020-11-08 21:11:20,701 - failed getting coordinates for Snel Parade, North Beach ,Durban row 1896
+2020-11-08 21:11:23,028 - failed getting coordinates for 5 Serridge Square, North Beach,, North Beach ,Durban row 1900
+2020-11-08 21:11:26,206 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=9+John+Zikhali%2C+Musgrave+%2CDurban&format=json&limit=1
+2020-11-08 21:11:29,538 - failed getting coordinates for Reservoir Hills ,Durban row 1908
+2020-11-08 21:11:29,781 - failed getting coordinates for 91 Somtseu Road, North Beach ,Durban row 1909
+2020-11-08 21:11:30,788 - failed getting coordinates for Sherwood ,Durban row 1910
+2020-11-08 21:11:32,969 - failed getting coordinates for 3 Stella Green Mansions, 124 Esther Roberts Road, Bulwer ,Durban row 1912
+2020-11-08 21:11:33,975 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=384+Marine+Drive%2C+Ocean+View+%2CDurban&format=json&limit=1
+2020-11-08 21:11:35,791 - failed getting coordinates for 384 Marine Drive, Ocean View ,Durban row 1913
+2020-11-08 21:11:37,315 - failed getting coordinates for Waterfall Park, 145 Wattle Grove, Sherwood ,Durban row 1916
+2020-11-08 21:11:38,287 - failed getting coordinates for 527 Che Guevara Road, Glenwood ,Durban row 1918
+2020-11-08 21:11:40,793 - failed getting coordinates for 78 Sormany Road, Ocean View ,Durban row 1922
+2020-11-08 21:11:41,756 - failed getting coordinates for 33 Conger Place, Newlands East ,Durban row 1923
+2020-11-08 21:11:42,216 - failed getting coordinates for Windermere ,Durban row 1924
+2020-11-08 21:11:45,331 - failed getting coordinates for Ntuzuma ,Durban row 1928
+2020-11-08 21:11:54,553 - failed getting coordinates for 362 Bartle Road, Umbilo ,Durban row 1944
+2020-11-08 21:11:56,067 - failed getting coordinates for 1 Myryle Mansions, 246 Esther Roberts Road, Glenwood ,Durban row 1947
+2020-11-08 21:12:02,667 - failed getting coordinates for 66 Gilroc, 31 Gillespie Street, South Beach ,Durban row 1958
+2020-11-08 21:12:03,215 - failed getting coordinates for 134 Mahatma Gandhi Road, Point Waterfront ,Durban row 1959
+2020-11-08 21:12:07,787 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=103+Lambert+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:12:09,088 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=103+Lambert+Road%2C+Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:12:10,373 - failed getting coordinates for 103 Lambert Road, Morningside ,Durban row 1967
+2020-11-08 21:12:12,699 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:12:19,179 - failed getting coordinates for 313 Ss THE Sails, 14 Timeball, Point Waterfront ,Durban row 1978
+2020-11-08 21:12:21,280 - failed getting coordinates for 1 Old Mill Road, Yellowwood Park ,Durban row 1982
+2020-11-08 21:12:22,844 - failed getting coordinates for Mangrove Beach Centre, 91 B Somtseu Road, North Beach ,Durban row 1985
+2020-11-08 21:12:27,624 - failed getting coordinates for Mangrove Beach Centre, 91 B Somtseu Road, North Beach ,Durban row 1994
+2020-11-08 21:12:28,207 - failed getting coordinates for Mangrove Beach Centre, 91 B Somtseu Road, North Beach ,Durban row 1995
+2020-11-08 21:12:28,807 - failed getting coordinates for 283 J B Marks Road, Glenwood ,Durban row 1996
+2020-11-08 21:12:30,270 - failed getting coordinates for 31 Kara Road ( Sold By Nolene), Kenville ,Durban row 1999
+2020-11-08 21:12:41,402 - failed getting coordinates for 39 J.b. Marks Road, Glenwood ,Durban row 2019
+2020-11-08 21:12:41,884 - failed getting coordinates for 166 Margaret Mncadi Road, Durban Central ,Durban row 2020
+2020-11-08 21:12:52,916 - failed getting coordinates for 180 Mahatma Gandhi Road, Point Waterfront ,Durban row 2041
+2020-11-08 21:12:53,448 - failed getting coordinates for 25 J.b Marks Road, Glenwood ,Durban row 2042
+2020-11-08 21:12:58,785 - failed getting coordinates for 17 Helen Drive, Reservoir Hills ,Durban row 2051
+2020-11-08 21:13:01,821 - failed getting coordinates for Lamontville ,Durban row 2057
+2020-11-08 21:13:07,922 - failed getting coordinates for 7 Garfish Crescent, Newlands East ,Durban row 2068
+2020-11-08 21:13:18,020 - failed getting coordinates for Westmilne, 5 John Milne Road, South Beach, South Beach ,Durban row 2083
+2020-11-08 21:13:18,544 - failed getting coordinates for 260 Problem Mkhize Road, Morningside ,Durban row 2084
+2020-11-08 21:13:19,557 - failed getting coordinates for 1 Ss Oliver Mews, 90 Cromwell, Glenwood ,Durban row 2086
+2020-11-08 21:13:22,088 - failed getting coordinates for 92 Goble Road, Morningside ,Durban row 2091
+2020-11-08 21:13:30,934 - failed getting coordinates for Glenhaven Retirement Village 480 Esther Roberts Road, Glenwood ,Durban row 2107
+2020-11-08 21:13:32,986 - failed getting coordinates for 21 OR Tambo Parade, South Beach ,Durban row 2110
+2020-11-08 21:13:33,959 - failed getting coordinates for 21 OR Tambo Parade, South Beach ,Durban row 2112
+2020-11-08 21:13:35,549 - failed getting coordinates for 42 Marine Drive, Bluff ,Durban row 2115
+2020-11-08 21:13:40,129 - failed getting coordinates for 255 Problem Mkhize Rd, Morningside ,Durban row 2123
+2020-11-08 21:13:44,074 - failed getting coordinates for 6 Kintyre, 152 Clark Road, Glenwood ,Durban row 2130
+2020-11-08 21:13:46,605 - failed getting coordinates for 6 Tifflin Road, Austerville ,Durban row 2135
+2020-11-08 21:13:48,738 - failed getting coordinates for 2 Carn Brea, 238 Saint Thomas Road, Musgrave ,Durban row 2139
+2020-11-08 21:13:52,743 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Westridge+%2CDurban&format=json&limit=1
+2020-11-08 21:13:54,413 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Westridge+%2CDurban&format=json&limit=1
+2020-11-08 21:13:59,098 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Umbilo+%2CDurban&format=json&limit=1
+2020-11-08 21:14:00,940 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Umbilo+%2CDurban&format=json&limit=1
+2020-11-08 21:14:03,525 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:14:20,178 - failed getting coordinates for Kensington Heights, 311 North Ridge Road, Morningside ,Durban row 2178
+2020-11-08 21:14:22,215 - failed getting coordinates for 87 Peter Mokaba Road, Musgrave ,Durban row 2182
+2020-11-08 21:14:24,034 - failed getting coordinates for 26 Alan Paton, Sections 5, 6 & 7 Ss 302/310 Umbilo Road, Umbilo ,Durban row 2185
+2020-11-08 21:14:24,639 - failed getting coordinates for 15 Levenhall Road, Glenmore ,Durban row 2186
+2020-11-08 21:14:27,107 - failed getting coordinates for 131 Chiltern Drive, Reservoir Hills ,Durban row 2191
+2020-11-08 21:14:34,963 - failed getting coordinates for 8 Esther Roberts, Glenwood ,Durban row 2206
+2020-11-08 21:14:36,025 - failed getting coordinates for 35 Boston Road, Bluff ,Durban row 2208
+2020-11-08 21:14:40,173 - failed getting coordinates for Ntuzuma ,Durban row 2216
+2020-11-08 21:14:41,233 - failed getting coordinates for 60 Clair Avenue, Westridge ,Durban row 2218
+2020-11-08 21:14:52,278 - failed getting coordinates for 25 Down Avenue, Seaview, Montclair ,Durban row 2238
+2020-11-08 21:14:54,307 - failed getting coordinates for 125 Ronald Road, Sea View ,Durban row 2242
+2020-11-08 21:14:54,835 - failed getting coordinates for 25 Down Avenue, Seaview, Montclair ,Durban row 2243
+2020-11-08 21:14:55,420 - failed getting coordinates for 25 Down Avenue, Seaview, Montclair ,Durban row 2244
+2020-11-08 21:14:56,023 - failed getting coordinates for 25 Down Avenue, Seaview, Montclair ,Durban row 2245
+2020-11-08 21:14:56,587 - failed getting coordinates for 25 Down Avenue, Seaview, Montclair ,Durban row 2246
+2020-11-08 21:14:57,069 - failed getting coordinates for 25 Down Avenue, Seaview, Montclair ,Durban row 2247
+2020-11-08 21:15:00,412 - failed getting coordinates for 190 Mazisi Kunene Road, Bulwer ,Durban row 2252
+2020-11-08 21:15:00,918 - failed getting coordinates for 9 Tassel Crescent, Newlands East ,Durban row 2253
+2020-11-08 21:15:03,212 - failed getting coordinates for 175 Magaret Mcandi Avenue, Durban Central ,Durban row 2257
+2020-11-08 21:15:12,677 - failed getting coordinates for 29 Jesmond Grove, The Grove Office Park, Musgrave ,Durban row 2274
+2020-11-08 21:15:16,655 - failed getting coordinates for 60 Cromwell Road, Bulwer, Bulwer ,Durban row 2281
+2020-11-08 21:15:17,628 - failed getting coordinates for Quayside, 31 Signal Road, Point Waterfront ,Durban row 2283
+2020-11-08 21:15:20,172 - failed getting coordinates for 332 Moore Road, Glenwood ,Durban row 2288
+2020-11-08 21:15:24,374 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Springfield+%2CDurban&format=json&limit=1
+2020-11-08 21:15:46,595 - failed getting coordinates for 465 Bartle Road, Umbilo ,Durban row 2334
+2020-11-08 21:15:47,628 - failed getting coordinates for 43 Carmont 116 Mountain Rise, Glenmore ,Durban row 2336
+2020-11-08 21:15:49,566 - failed getting coordinates for 7 Ss Davendale, 15 Somerset Avenue, Bulwer ,Durban row 2339
+2020-11-08 21:15:51,094 - failed getting coordinates for 25 Mundy Avenue, Glenwood ,Durban row 2342
+2020-11-08 21:15:52,208 - failed getting coordinates for 694 Peter Mokaba Ridge, Morningside ,Durban row 2344
+2020-11-08 21:15:52,775 - failed getting coordinates for 369 King Dinuzulu Road, Glenwood ,Durban row 2345
+2020-11-08 21:16:03,081 - failed getting coordinates for 41 6th Street, Hillary ,Durban row 2364
+2020-11-08 21:16:05,087 - failed getting coordinates for 83 Massbanker Avenue, Newlands East ,Durban row 2368
+2020-11-08 21:16:05,578 - failed getting coordinates for 13 Carisford, 434 Lilian Ngoyi Road, Windermere ,Durban row 2369
+2020-11-08 21:16:06,147 - failed getting coordinates for 245 Marine Drive, Bluff ,Durban row 2370
+2020-11-08 21:16:08,655 - failed getting coordinates for 32 Eland Road, Manor Gardens ,Durban row 2375
+2020-11-08 21:16:12,857 - failed getting coordinates for 32 Eland Road, Manor Gardens ,Durban row 2383
+2020-11-08 21:16:13,439 - failed getting coordinates for 25 J.b. Marks Road, Bulwer ,Durban row 2384
+2020-11-08 21:16:13,991 - failed getting coordinates for Exeter Hall, 29 Sol Harris Crescent, North Beach ,Durban row 2385
+2020-11-08 21:16:21,076 - failed getting coordinates for 112 Maxwell Avenue, Bluff ,Durban row 2396
+2020-11-08 21:16:25,701 - failed getting coordinates for 100 Tyger Avenue, Greenwood Park ,Durban row 2405
+2020-11-08 21:16:28,821 - failed getting coordinates for 100 Tyger Avenue, Greenwood Park ,Durban row 2411
+2020-11-08 21:16:29,335 - failed getting coordinates for 100 Tyger Avenue, Greenwood Park ,Durban row 2412
+2020-11-08 21:16:50,857 - failed getting coordinates for 54 Cromwell, Bulwer ,Durban row 2451
+2020-11-08 21:16:56,776 - failed getting coordinates for 123 Winchelsea Avenue, Bluff ,Durban row 2461
+2020-11-08 21:16:58,237 - failed getting coordinates for 4 San Kellind 15 Charles Henwood Road, Glenwood ,Durban row 2464
+2020-11-08 21:17:03,397 - failed getting coordinates for 223 Lighthouse Road, Bluff ,Durban row 2474
+2020-11-08 21:17:12,851 - failed getting coordinates for 15 Netford Road, Bluff ,Durban row 2491
+2020-11-08 21:17:17,029 - failed getting coordinates for 190 Marine Drive, Bluff ,Durban row 2496
+2020-11-08 21:17:20,596 - failed getting coordinates for Sawfish Road, Newlands East ,Durban row 2503
+2020-11-08 21:17:23,979 - failed getting coordinates for Ntuzuma ,Durban row 2509
+2020-11-08 21:17:24,960 - failed getting coordinates for Sawfish Road, Newlands East ,Durban row 2511
+2020-11-08 21:17:27,068 - failed getting coordinates for 45 Sloane Road, Bluff ,Durban row 2515
+2020-11-08 21:17:30,280 - failed getting coordinates for 147 OR Tambo Parade, North Beach ,Durban row 2521
+2020-11-08 21:17:31,799 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:17:34,732 - failed getting coordinates for 40 Brighton Road, Bluff ,Durban row 2526
+2020-11-08 21:17:42,559 - failed getting coordinates for 91 Lambert Road, Morningside ,Durban row 2540
+2020-11-08 21:17:44,101 - failed getting coordinates for 91 Lambert Road, Morningside ,Durban row 2543
+2020-11-08 21:17:54,017 - failed getting coordinates for 226 9th Avenue, Morningside ,Durban row 2562
+2020-11-08 21:17:59,048 - failed getting coordinates for 26 Oxford Road, Morningside ,Durban row 2572
+2020-11-08 21:17:59,633 - failed getting coordinates for 184 Marine Parade, North Beach ,Durban row 2573
+2020-11-08 21:18:08,598 - failed getting coordinates for 152 Stella Road, Memorial Park ,Durban row 2590
+2020-11-08 21:18:14,067 - failed getting coordinates for 550 Marine Drive, Bluff ,Durban row 2600
+2020-11-08 21:18:18,454 - failed getting coordinates for 83 Benjamin Road, Bluff ,Durban row 2608
+2020-11-08 21:18:24,896 - failed getting coordinates for 21 Francis Place, Montclair ,Durban row 2620
+2020-11-08 21:18:30,225 - failed getting coordinates for 23 Timeball Boulevard, Point, Point Waterfront ,Durban row 2628
+2020-11-08 21:18:38,222 - failed getting coordinates for 1 Carmont 107 Mountain Rise, Glenmore ,Durban row 2643
+2020-11-08 21:18:46,394 - failed getting coordinates for 26 Alan Paton Road, Bulwer ,Durban row 2659
+2020-11-08 21:18:46,921 - failed getting coordinates for 111 Maxwell Avenue, Bluff ,Durban row 2660
+2020-11-08 21:19:06,252 - failed getting coordinates for 117 Dunkeld Road, Reservoir Hills ,Durban row 2697
+2020-11-08 21:19:09,383 - failed getting coordinates for Lambert Estate, 91 Lambert Road Road, Morningside ,Durban row 2703
+2020-11-08 21:19:13,859 - failed getting coordinates for 5 Clarkson Road, Bluff ,Durban row 2712
+2020-11-08 21:19:22,359 - failed getting coordinates for Lamontville ,Durban row 2726
+2020-11-08 21:19:23,810 - failed getting coordinates for 97 Marine Parade, South Beach ,Durban row 2728
+2020-11-08 21:19:27,473 - failed getting coordinates for 12 Peter Road, Springfield ,Durban row 2735
+2020-11-08 21:19:27,953 - failed getting coordinates for Unit 1702 Capri Heights 31 Ke Masinga Road, North Beach ,Durban row 2736
+2020-11-08 21:19:29,954 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Point+Waterfront+%2CDurban&format=json&limit=1
+2020-11-08 21:19:47,549 - failed getting coordinates for 161 Dr Hoosen Haffajee Road, Bluff ,Durban row 2767
+2020-11-08 21:19:51,617 - failed getting coordinates for 51 Inyoni Heights, 98 Vause Road, Essenwood ,Durban row 2775
+2020-11-08 21:19:58,491 - failed getting coordinates for 2 Palm Springs 155 Peter Mokaba Road, Musgrave ,Durban row 2788
+2020-11-08 21:19:59,574 - failed getting coordinates for 10 Palm Springs 155 Peter Mokaba, Musgrave ,Durban row 2790
+2020-11-08 21:20:05,225 - failed getting coordinates for Morningside Gardens 30 Valley View Road, Morningside ,Durban row 2801
+2020-11-08 21:20:06,881 - failed getting coordinates for 43 Piedmont Road, Waterval Park ,Durban row 2804
+2020-11-08 21:20:09,435 - failed getting coordinates for 144 Wattle Grove, Sherwood ,Durban row 2809
+2020-11-08 21:20:14,202 - failed getting coordinates for 22 Island Circle, Riverhorse Valley, Durban, Riverhorse Valley ,Durban row 2818
+2020-11-08 21:20:15,684 - failed getting coordinates for 128 Amilcar Cabrai Road, Musgrave ,Durban row 2821
+2020-11-08 21:20:18,231 - failed getting coordinates for 188 Sandile Thusi Road, Morningside ,Durban row 2826
+2020-11-08 21:20:21,907 - failed getting coordinates for 459 Park Station Road, Avoca Hills ,Durban row 2832
+2020-11-08 21:20:40,582 - failed getting coordinates for 72 Madeline Road, Morningside ,Durban row 2865
+2020-11-08 21:20:46,307 - failed getting coordinates for 182 Brand Road, Glenwood ,Durban row 2876
+2020-11-08 21:20:51,903 - failed getting coordinates for Bryanston Heights, 169 King Dinuzulu Road, Bulwer ,Durban row 2885
+2020-11-08 21:20:53,830 - failed getting coordinates for 98 Bhungezi Road, KwaMashu M ,Durban row 2889
+2020-11-08 21:21:01,988 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=39+Prince+Street%2C+Point+Waterfront+%2CDurban&format=json&limit=1
+2020-11-08 21:21:04,249 - failed getting coordinates for 39 Prince Street, Point Waterfront ,Durban row 2904
+2020-11-08 21:21:06,418 - failed getting coordinates for 28 Clark, Glenwood ,Durban row 2908
+2020-11-08 21:21:06,917 - failed getting coordinates for 70 Bushland Road, Bluff ,Durban row 2909
+2020-11-08 21:21:16,853 - failed getting coordinates for 95 OR Tambo, South Beach ,Durban row 2928
+2020-11-08 21:21:24,430 - failed getting coordinates for 22 Island Circle, Riverhorse Valley ,Durban row 2942
+2020-11-08 21:21:34,051 - failed getting coordinates for Windermere Centre, 163 A Lilian Ngoyi Road, Windermere ,Durban row 2960
+2020-11-08 21:21:34,508 - failed getting coordinates for Windermere Centre, 163 A Lilian Ngoyi Road, Windermere ,Durban row 2961
+2020-11-08 21:21:40,511 - failed getting coordinates for 1 Mahatma Gandhi, 251 Mahatma Gandhi, South Beach ,Durban row 2971
+2020-11-08 21:21:45,222 - failed getting coordinates for 66 Cato Road, Bulwer ,Durban row 2980
+2020-11-08 21:21:45,726 - failed getting coordinates for Ntuzuma ,Durban row 2981
+2020-11-08 21:21:51,914 - failed getting coordinates for 39 Margaret Mncadi Avenue, Esplanade ,Durban row 2992
+2020-11-08 21:22:03,693 - failed getting coordinates for 25 Pommern Lane, 30 Riverhorse Gardens, Avoca ,Durban row 3013
+2020-11-08 21:22:06,296 - failed getting coordinates for 19 Olympic Avenue, Bluff ,Durban row 3018
+2020-11-08 21:22:06,859 - failed getting coordinates for 92 Munro Drive, Reservoir Hills ,Durban row 3019
+2020-11-08 21:22:18,857 - failed getting coordinates for 31 Timeball Boulevard, Point Waterfront ,Durban row 3041
+2020-11-08 21:22:21,985 - failed getting coordinates for 739 Peter Mokaba Ridge Road, Morningside ,Durban row 3047
+2020-11-08 21:22:24,199 - failed getting coordinates for 78 Goble, Morningside ,Durban row 3051
+2020-11-08 21:22:24,749 - failed getting coordinates for 22 Keyridge, 365 Peter Mokaba Road, Morningside ,Durban row 3052
+2020-11-08 21:22:31,969 - failed getting coordinates for 84 Somtseu Raod, North Beach ,Durban row 3066
+2020-11-08 21:22:32,468 - failed getting coordinates for 36 Steel Road, Morningside ,Durban row 3067
+2020-11-08 21:22:36,223 - failed getting coordinates for 68 Bowen Avenue, Glenmore ,Durban row 3074
+2020-11-08 21:22:36,750 - failed getting coordinates for 68 Bowen Avenue, Glenmore ,Durban row 3075
+2020-11-08 21:22:41,693 - failed getting coordinates for 28 Gwala-gwala Way, Newlands East ,Durban row 3084
+2020-11-08 21:22:48,381 - failed getting coordinates for 518 Annet Drive, Reservoir Hills ,Durban row 3097
+2020-11-08 21:22:48,975 - failed getting coordinates for 138 Horseshoe Road, Bluff ,Durban row 3098
+2020-11-08 21:22:55,645 - failed getting coordinates for 861 King Cetshwayo Highway, Sherwood ,Durban row 3109
+2020-11-08 21:22:59,838 - failed getting coordinates for 284 Watsonia Road, Grosvenor ,Durban row 3117
+2020-11-08 21:23:02,990 - failed getting coordinates for 861 King Cetshwayo Highway, Sherwood ,Durban row 3123
+2020-11-08 21:23:08,561 - failed getting coordinates for 145 Grosvener Road, Glenmore ,Durban row 3134
+2020-11-08 21:23:11,747 - failed getting coordinates for 5 Finch Terrace, Reservoir Hills ,Durban row 3140
+2020-11-08 21:23:12,337 - failed getting coordinates for 8 Winchester Drive, Reservoir Hills ,Durban row 3141
+2020-11-08 21:23:13,862 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=28+Livingstone+Road%2C+Windermere+%2CDurban&format=json&limit=1
+2020-11-08 21:23:15,837 - failed getting coordinates for Mountbatten, 314 Musgrave, Essenwood ,Durban row 3144
+2020-11-08 21:23:21,416 - failed getting coordinates for 384 Marine Drive, Bluff ,Durban row 3155
+2020-11-08 21:23:24,588 - failed getting coordinates for 31 Prince Street, Point Waterfront ,Durban row 3161
+2020-11-08 21:23:25,105 - failed getting coordinates for 50 Gordon Road, Morningside ,Durban row 3162
+2020-11-08 21:23:25,623 - failed getting coordinates for 15 Gillispie St, South Beach ,Durban row 3163
+2020-11-08 21:23:27,164 - failed getting coordinates for 112 Cartmel Road, Reservoir Hills ,Durban row 3166
+2020-11-08 21:23:27,711 - failed getting coordinates for 16 Lillian Nygoyi Road, Windermere ,Durban row 3167
+2020-11-08 21:23:29,216 - failed getting coordinates for 31 Prince Street, Point Waterfront ,Durban row 3170
+2020-11-08 21:23:40,990 - failed getting coordinates for 6 Newton Place, Glenwood ,Durban row 3192
+2020-11-08 21:23:43,580 - failed getting coordinates for 13 Crompton Gardens, Sydenham ,Durban row 3197
+2020-11-08 21:23:45,159 - failed getting coordinates for 1 Peace Avenue, Morningside ,Durban row 3200
+2020-11-08 21:23:46,073 - failed getting coordinates for 58 Steelcastle Avenue, Castlehill ,Durban row 3201
+2020-11-08 21:23:51,981 - failed getting coordinates for 10 Hippopark Avenue, Riverhorse Valley ,Durban row 3212
+2020-11-08 21:23:52,472 - failed getting coordinates for 10 Hippopark Avenue, Riverhorse Valley ,Durban row 3213
+2020-11-08 21:23:53,531 - failed getting coordinates for 101 School Road, Bluff ,Durban row 3215
+2020-11-08 21:23:55,945 - failed getting coordinates for 22 Island Circle, Riverhorse Valley ,Durban row 3219
+2020-11-08 21:23:59,601 - failed getting coordinates for 101 School Road, Bluff ,Durban row 3226
+2020-11-08 21:24:03,690 - failed getting coordinates for Ntuzuma ,Durban row 3234
+2020-11-08 21:24:12,091 - failed getting coordinates for 125 Brindle Place, Newlands East ,Durban row 3247
+2020-11-08 21:24:14,177 - failed getting coordinates for 125 Brindle Place, Newlands East ,Durban row 3251
+2020-11-08 21:24:14,682 - failed getting coordinates for 16 Lillian Nygoyi Road, Windermere ,Durban row 3252
+2020-11-08 21:24:16,330 - failed getting coordinates for 409 - 423 Dr Pixley Kaseme (west) Street, Durban Central ,Durban row 3255
+2020-11-08 21:24:19,609 - failed getting coordinates for 139 Wattle Grove, Sherwood ,Durban row 3261
+2020-11-08 21:24:21,672 - failed getting coordinates for 123 Thompson Road, Bluff ,Durban row 3265
+2020-11-08 21:24:23,469 - failed getting coordinates for 23 Channel View Road, Bluff ,Durban row 3268
+2020-11-08 21:24:23,985 - failed getting coordinates for 57 Rawalpindi Road, Merewent ,Durban row 3269
+2020-11-08 21:24:25,530 - failed getting coordinates for 44 Netford Road, Bluff ,Durban row 3272
+2020-11-08 21:24:27,018 - failed getting coordinates for 23 Channel View Road, Bluff ,Durban row 3275
+2020-11-08 21:24:30,265 - failed getting coordinates for 12 Ibsen Road, Mount Vernon ,Durban row 3281
+2020-11-08 21:24:30,806 - failed getting coordinates for Ntuzuma ,Durban row 3282
+2020-11-08 21:24:31,389 - failed getting coordinates for 32 Silvertree Road, Bluff ,Durban row 3283
+2020-11-08 21:24:31,941 - failed getting coordinates for 480 Esther Roberts Road, Glenwood ,Durban row 3284
+2020-11-08 21:24:35,459 - failed getting coordinates for 3 Drury Road, Kenville ,Durban row 3291
+2020-11-08 21:24:35,986 - failed getting coordinates for 27 Timeball Boulevard, Point Waterfront ,Durban row 3292
+2020-11-08 21:24:39,655 - failed getting coordinates for 9 Les Belles, 128 Bellevue Road, Musgrave ,Durban row 3299
+2020-11-08 21:24:41,126 - failed getting coordinates for 6 Garbutt Road, Sherwood ,Durban row 3302
+2020-11-08 21:24:41,667 - failed getting coordinates for 851 Bluff Road, Bluff ,Durban row 3303
+2020-11-08 21:24:43,206 - failed getting coordinates for Strawberry Fileds, 144 Wattle Grove, Sherwood ,Durban row 3306
+2020-11-08 21:24:45,771 - failed getting coordinates for 9 Les Belles, 128 Bellevue Road, Musgrave ,Durban row 3311
+2020-11-08 21:24:55,204 - failed getting coordinates for 101 Victoria Embankment Avenue, Esplanade ,Durban row 3329
+2020-11-08 21:24:55,704 - failed getting coordinates for 20 Victoria Embankment Avenue, Esplanade ,Durban row 3330
+2020-11-08 21:24:57,804 - failed getting coordinates for Windermere Centre, 163 Lilian Ngoyi Road, Windermere ,Durban row 3334
+2020-11-08 21:25:03,293 - failed getting coordinates for 501 Marine Drive, Bluff ,Durban row 3343
+2020-11-08 21:25:09,426 - failed getting coordinates for 732 Peter Mokaba Ridge, Morningside ,Durban row 3354
+2020-11-08 21:25:10,613 - failed getting coordinates for 501 Marine Drive, Bluff ,Durban row 3356
+2020-11-08 21:25:14,237 - failed getting coordinates for Lamontville ,Durban row 3363
+2020-11-08 21:25:16,782 - failed getting coordinates for 95 Madeline Road, Morningside ,Durban row 3368
+2020-11-08 21:25:28,722 - failed getting coordinates for 8 Matlock Grove, Sydenham, Sydenham ,Durban row 3390
+2020-11-08 21:25:32,859 - failed getting coordinates for 5 Hampden Court, 5 Hampden Road, Morningside ,Durban row 3397
+2020-11-08 21:25:33,863 - failed getting coordinates for 1 Erskine Terrace, Point Waterfront ,Durban row 3399
+2020-11-08 21:25:42,596 - failed getting coordinates for Bayview Road, Bluff ,Durban row 3415
+2020-11-08 21:25:48,646 - failed getting coordinates for 7 Mary Thipe Street, Westridge ,Durban row 3426
+2020-11-08 21:25:51,725 - failed getting coordinates for 60 Old Fort Road, North Beach ,Durban row 3432
+2020-11-08 21:25:54,884 - failed getting coordinates for 42 Idlewild 92 Smiso Nkwanyana Road, Morningside ,Durban row 3438
+2020-11-08 21:25:59,971 - failed getting coordinates for 44 Netford Road, Bluff ,Durban row 3445
+2020-11-08 21:26:00,440 - failed getting coordinates for 73 Regent Avenue, Bluff ,Durban row 3446
+2020-11-08 21:26:07,488 - failed getting coordinates for 5a Lilac Lodge 158 Arundel Road, Hillary ,Durban row 3459
+2020-11-08 21:26:08,013 - failed getting coordinates for Grosvenor Court , 41 Snell Parade Road, North Beach ,Durban row 3460
+2020-11-08 21:26:15,198 - failed getting coordinates for 30 Crieff Place, Durban, Point Waterfront ,Durban row 3473
+2020-11-08 21:26:23,766 - failed getting coordinates for 332 Che Guevara, Glenwood ,Durban row 3489
+2020-11-08 21:26:24,215 - failed getting coordinates for 41 Berea Park, Musgrave ,Durban row 3490
+2020-11-08 21:26:28,308 - failed getting coordinates for 391 Anton Lembede (smith) Street, 4 x Units Ss Metlife Building, Durban Central ,Durban row 3498
+2020-11-08 21:26:31,957 - failed getting coordinates for 61 Strelitzia 81 Lena Ahrens Road, Glenwood ,Durban row 3505
+2020-11-08 21:26:34,747 - failed getting coordinates for Harbour View Heights, 5 Timeball Boulevard, Point Waterfront ,Durban row 3510
+2020-11-08 21:26:49,554 - failed getting coordinates for Merion Court, 19 Prince Street, South Beach ,Durban row 3538
+2020-11-08 21:26:53,211 - failed getting coordinates for 45/46 Cressington, 37 Joseph Nduli Street, Durban Central ,Durban row 3544
+2020-11-08 21:27:01,649 - failed getting coordinates for 54 Brandwell, 60 Cromwell Road, Glenwood ,Durban row 3560
+2020-11-08 21:27:07,141 - failed getting coordinates for 10 Hippopark Avenue, Riverhorse Valley ,Durban row 3570
+2020-11-08 21:27:08,156 - failed getting coordinates for Ntuzuma ,Durban row 3572
+2020-11-08 21:27:12,560 - failed getting coordinates for 20 Foreshore Drive, Bluff ,Durban row 3580
+2020-11-08 21:27:15,546 - failed getting coordinates for 533 Che Guavara Road, Glenwood ,Durban row 3585
+2020-11-08 21:27:16,589 - failed getting coordinates for 22 San Angelo 86 Valley View Avenue, Morningside ,Durban row 3587
+2020-11-08 21:27:19,591 - failed getting coordinates for Grosvenor Court , 41 Snell Parade, North Beach ,Durban row 3593
+2020-11-08 21:27:27,275 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Brighton+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:27:30,690 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=60+Diakonia+Avenue%2C+Durban+Central+%2CDurban&format=json&limit=1
+2020-11-08 21:27:32,500 - failed getting coordinates for 17 Kosi Place, Umgeni Business Park ,Durban row 3610
+2020-11-08 21:27:33,023 - failed getting coordinates for 186 Margaret Mngadi Road, Durban Central ,Durban row 3611
+2020-11-08 21:27:33,491 - failed getting coordinates for 17 Kosi Place, Umgeni Business Park ,Durban row 3612
+2020-11-08 21:27:34,020 - failed getting coordinates for 186 Margaret Mngadi Road, Durban Central ,Durban row 3613
+2020-11-08 21:27:36,783 - failed getting coordinates for 186 Margaret Mngadi Road, Durban Central ,Durban row 3618
+2020-11-08 21:27:40,486 - failed getting coordinates for 827 King Cetshwayo Highway, Sherwood ,Durban row 3625
+2020-11-08 21:27:46,040 - failed getting coordinates for 44 Netford Road, Bluff ,Durban row 3634
+2020-11-08 21:27:49,247 - failed getting coordinates for 42 Arum Road, Bluff ,Durban row 3640
+2020-11-08 21:27:58,720 - failed getting coordinates for John Ross House, 20 Margaret Mncadi Avenue, Durban Central ,Durban row 3658
+2020-11-08 21:27:59,748 - failed getting coordinates for Castlehill ,Durban row 3660
+2020-11-08 21:28:03,685 - failed getting coordinates for 130 Cluver Crescent, Bluff ,Durban row 3667
+2020-11-08 21:28:05,795 - failed getting coordinates for Castlehill ,Durban row 3671
+2020-11-08 21:28:12,916 - failed getting coordinates for 54 John Geekie Road, Glenmore ,Durban row 3684
+2020-11-08 21:28:14,421 - failed getting coordinates for Emachobeni ,Durban row 3687
+2020-11-08 21:28:15,937 - failed getting coordinates for Emachobeni ,Durban row 3690
+2020-11-08 21:28:26,693 - failed getting coordinates for 20 Victoria Embankment Avenue, Esplanade ,Durban row 3709
+2020-11-08 21:28:28,167 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:28:29,406 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=North+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:28:31,902 - failed getting coordinates for 38 Steel Road, Morningside ,Durban row 3713
+2020-11-08 21:28:33,397 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 21:28:39,190 - failed getting coordinates for 33 Warrangal Road, Bluff ,Durban row 3723
+2020-11-08 21:28:52,651 - failed getting coordinates for 3 Culbin Place, Bluff ,Durban row 3748
+2020-11-08 21:29:02,708 - failed getting coordinates for 263 O.r. Tambo, North Beach ,Durban row 3766
+2020-11-08 21:29:10,961 - failed getting coordinates for 104 Victoria Embankment Avenue, Esplanade ,Durban row 3781
+2020-11-08 21:29:22,248 - failed getting coordinates for 2 Sutton Crescent, Morningside ,Durban row 3803
+2020-11-08 21:29:25,968 - failed getting coordinates for 40 Malcolm Road, Westridge ,Durban row 3810
+2020-11-08 21:29:36,596 - failed getting coordinates for 156 Marine Drive, Bluff ,Durban row 3828
+2020-11-08 21:30:07,847 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Hillary+%2CDurban&format=json&limit=1
+2020-11-08 21:30:31,843 - failed getting coordinates for Corovoca ,Durban row 3927
+2020-11-08 21:30:40,454 - failed getting coordinates for 495 Peter Mokaba Riage, Essenwood ,Durban row 3944
+2020-11-08 21:30:41,459 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Morningside+%2CDurban&format=json&limit=1
+2020-11-08 21:30:51,491 - failed getting coordinates for 4 The Gates 335 Currie Road, Musgrave ,Durban row 3960
+2020-11-08 21:31:07,062 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 21:31:14,495 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenwood+%2CDurban&format=json&limit=1
+2020-11-08 21:31:39,468 - failed getting coordinates for 551 Mahatma Gandi Road, South Beach ,Durban row 4040
+2020-11-08 21:31:41,476 - failed getting coordinates for 84-86 Essenwood Road, Musgrave ,Durban row 4044
+2020-11-08 21:31:49,221 - failed getting coordinates for 18 Musgrave Road, Musgrave, Berea,4001, Musgrave ,Durban row 4059
+2020-11-08 21:32:12,466 - failed getting coordinates for 22 Manor Drive, Westridge ,Durban row 4100
+2020-11-08 21:32:14,473 - failed getting coordinates for 652 Marine Drive, Bluff ,Durban row 4104
+2020-11-08 21:32:29,042 - failed getting coordinates for 2 Grafton Street, Bluff ,Durban row 4132
+2020-11-08 21:32:47,486 - failed getting coordinates for Merion Court, 19 Prince Street, Point Waterfront ,Durban row 4167
+2020-11-08 21:32:48,982 - failed getting coordinates for 724 Bluff Road, Bluff ,Durban row 4170
+2020-11-08 21:33:12,804 - failed getting coordinates for 28 Dechmont Avenue, Bluff ,Durban row 4212
+2020-11-08 21:33:13,389 - failed getting coordinates for 28 Dechmont Avenue, Bluff ,Durban row 4213
+2020-11-08 21:33:47,224 - failed getting coordinates for 240 Che Guevara Road, Umbilo ,Durban row 4278
+2020-11-08 21:34:01,495 - failed getting coordinates for 87 Garmouth Avenue, Bluff ,Durban row 4303
+2020-11-08 21:34:26,106 - failed getting coordinates for 951 Marine Drive, Bluff ,Durban row 4349
+2020-11-08 21:34:26,535 - failed getting coordinates for Ntuzuma ,Durban row 4350
+2020-11-08 21:34:39,814 - failed getting coordinates for 115 Mountain Rise, Carrington Heights ,Durban row 4375
+2020-11-08 21:34:52,363 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Stamford+Hill+%2CDurban&format=json&limit=1
+2020-11-08 21:34:59,677 - failed getting coordinates for 1 Orland Court 6 Denham Place, Glenwood ,Durban row 4407
+2020-11-08 21:35:07,195 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Esplanade+%2CDurban&format=json&limit=1
+2020-11-08 21:35:09,720 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Bellair+%2CDurban&format=json&limit=1
+2020-11-08 21:35:10,721 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001BB8718B4F0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=Bellair+%2CDurban&format=json&limit=1
+2020-11-08 21:35:13,448 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=South+Beach+%2CDurban&format=json&limit=1
+2020-11-08 21:35:16,345 - failed getting coordinates for Glebe ,Durban row 4425
+2020-11-08 21:35:16,797 - failed getting coordinates for 213 Problem Mhkize Road, Morningside ,Durban row 4426
+2020-11-08 21:35:39,247 - failed getting coordinates for Castlehill ,Durban row 4469
+2020-11-08 21:35:50,665 - failed getting coordinates for 17 Lena Ahrens, Essenwood ,Durban row 4491
+2020-11-08 21:36:19,513 - failed getting coordinates for Davenport Square, 89 Helen Joseph Road, Glenwood ,Durban row 4543
+2020-11-08 21:36:21,065 - failed getting coordinates for Davenport Square, 89 Helen Joseph Road, Glenwood ,Durban row 4546
+2020-11-08 21:36:24,687 - failed getting coordinates for 25 Galway Road, Waterval Park ,Durban row 4553
+2020-11-08 21:36:27,251 - failed getting coordinates for Glebe ,Durban row 4558
+2020-11-08 21:36:37,488 - failed getting coordinates for 115 Mountain Rise, Carrington Heights ,Durban row 4577
+2020-11-08 21:36:55,296 - failed getting coordinates for Villa Heights, 78 Villa, Overport ,Durban row 4610
+2020-11-08 21:37:00,922 - failed getting coordinates for Inanda Congo ,Durban row 4621
+2020-11-08 21:37:02,579 - failed getting coordinates for 186 Margaret Mncadi Avenue, Esplanade ,Durban row 4622
+2020-11-08 21:37:51,851 - failed getting coordinates for Melody Mansions, 59 Clark, Glenwood ,Durban row 4715
+2020-11-08 21:38:03,633 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Glenmore+%2CDurban&format=json&limit=1
+2020-11-08 21:38:13,468 - failed getting coordinates for 54 Kirstengrove 12 Sandown Road, North Beach ,Durban row 4751
+2020-11-08 21:38:23,475 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Point+Waterfront+%2CDurban&format=json&limit=1
+2020-11-08 21:38:31,333 - failed getting coordinates for 19 Olympic Avenue, Bluff ,Durban row 4779
+2020-11-08 21:38:51,893 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Windermere+%2CDurban&format=json&limit=1
+2020-11-08 21:38:53,132 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Windermere+%2CDurban&format=json&limit=1
+2020-11-08 21:39:16,436 - failed getting coordinates for Ntuzuma ,Durban row 4857
+2020-11-08 21:39:18,979 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=20+Margaret+Mncadi+Avenue%2C+Esplanade+%2CDurban&format=json&limit=1
+2020-11-08 21:39:20,253 - failed getting coordinates for 20 Margaret Mncadi Avenue, Esplanade ,Durban row 4861
+2020-11-08 21:39:59,539 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=86+Buldana+Road%2C+Merewent+%2CDurban&format=json&limit=1
+2020-11-08 21:40:01,264 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=86+Buldana+Road%2C+Merewent+%2CDurban&format=json&limit=1
+2020-11-08 21:40:02,547 - failed getting coordinates for 86 Buldana Road, Merewent ,Durban row 4931
+2020-11-08 21:41:02,348 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Umgeni+Business+Park+%2CDurban&format=json&limit=1
+2020-11-08 21:41:04,914 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Inanda+%2CDurban&format=json&limit=1
+2020-11-08 21:41:06,640 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Inanda+%2CDurban&format=json&limit=1

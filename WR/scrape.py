@@ -173,6 +173,20 @@ raw_df = pd.read_csv(raw_file)
 
 raw_df["address2"] = raw_df["Address"] + ", " + raw_df["Location"]   + " ,Durban"
 raw_df["address2"] = raw_df["address2"].str.replace("unknown, ", "")
+#to do: when address is not unknown take address and durban
+# when address is unknown take location and durban
 
-location = locator.geocode(raw_df["address2"].iloc[0])
-location.latitude
+raw_df["lat"] = ""
+raw_df["lon"] = ""
+logging.info("getting coordinates")
+for index, row in raw_df.iterrows():
+    try:
+        location = locator.geocode(raw_df["address2"].iloc[index])
+        raw_df["lat"][index] = location.latitude
+        raw_df["lon"][index] = location.longitude
+    except:
+        logging.info("failed getting coordinates for " + str(raw_df["address2"].iloc[index]) + " row " + str(index))
+        
+    
+    
+    
