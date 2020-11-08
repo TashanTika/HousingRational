@@ -135,13 +135,15 @@ def clean_scrape(inp_df):
     import pandas as pd
     from datetime import datetime
     now = datetime.now()
-    inp_df = scrape_all()
     
     float_columns = ["Price","Bedrooms","Bathrooms","Parking Spaces","Erf Size","Floor Size","Gross Lettable Area"]    
     for column in float_columns:
-        inp_df[column] = inp_df[column].str.replace(" ","")
-        inp_df[column] = inp_df[column].str.replace("m²","")           
-        inp_df[column] = pd.to_numeric(inp_df[column], errors='coerce')
+        try:
+            inp_df[column] = inp_df[column].str.replace(" ","")
+            inp_df[column] = inp_df[column].str.replace("m²","")           
+            inp_df[column] = pd.to_numeric(inp_df[column], errors='coerce')
+        except:
+            logging.info("clean str to float failed for column " + column)
             
     inp_df["insert_date"] = now
     inp_df["price per m2 Erf"] = inp_df["Price"] / inp_df["Erf Size"] 
@@ -149,7 +151,7 @@ def clean_scrape(inp_df):
     return inp_df
 
 
-"""
+
 #def get_address():
 #raw.to_csv("test.csv")
 from geopy.geocoders import Nominatim
@@ -166,6 +168,7 @@ from pathlib import Path
 import os
 
 root_dir = Path(__file__).resolve().parent
-raw_file = os.path.join(root_dir, 'test.csv')
-raw = pd.read_csv(raw_file)  
-"""
+raw_file = os.path.join(root_dir, 'cleaned_scrape.csv')
+raw_df = pd.read_csv(raw_file)  
+
+
