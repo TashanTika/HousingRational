@@ -160,8 +160,8 @@ import pandas as pd
 
 #unit test
 locator = Nominatim(user_agent="myGeocoder")
-location = locator.geocode("Champ de Mars, Paris, France")
-location.latitude
+#location = locator.geocode("Champ de Mars, Paris, France")
+#location.latitude
 
 #read data
 from pathlib import Path
@@ -171,4 +171,8 @@ root_dir = Path(__file__).resolve().parent
 raw_file = os.path.join(root_dir, 'cleaned_scrape.csv')
 raw_df = pd.read_csv(raw_file)  
 
+raw_df["address2"] = raw_df["Address"] + ", " + raw_df["Location"]   + " ,Durban"
+raw_df["address2"] = raw_df["address2"].str.replace("unknown, ", "")
 
+location = locator.geocode(raw_df["address2"].iloc[0])
+location.latitude
