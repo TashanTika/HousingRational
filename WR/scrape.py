@@ -160,8 +160,6 @@ import pandas as pd
 
 #unit test
 locator = Nominatim(user_agent="myGeocoder")
-#location = locator.geocode("Champ de Mars, Paris, France")
-#location.latitude
 
 #read data
 from pathlib import Path
@@ -170,12 +168,10 @@ import os
 root_dir = Path(__file__).resolve().parent
 raw_file = os.path.join(root_dir, 'cleaned_scrape.csv')
 raw_df = pd.read_csv(raw_file)  
+raw_df["address2"] = raw_df["Address"] + " Durban"
+raw_df["address2"].loc[(raw_df["Address"] == "unknown")] = raw_df["Location"] + " Durban"
 
-raw_df["address2"] = raw_df["Address"] + ", " + raw_df["Location"]   + " ,Durban"
-raw_df["address2"] = raw_df["address2"].str.replace("unknown, ", "")
-#to do: when address is not unknown take address and durban
-# when address is unknown take location and durban
-
+# get lon lat via openstreet map - takes about 40mins for 5k records
 raw_df["lat"] = ""
 raw_df["lon"] = ""
 logging.info("getting coordinates")
@@ -185,8 +181,6 @@ for index, row in raw_df.iterrows():
         raw_df["lat"][index] = location.latitude
         raw_df["lon"][index] = location.longitude
     except:
-        logging.info("failed getting coordinates for " + str(raw_df["address2"].iloc[index]) + " row " + str(index))
-        
+        logging.info("failed getting coordinates for " + str(raw_df["address2"].iloc[index]) + " row " + str(index))            
     
-    
-    
+# create a catch for missing lon lat via google maps?    
