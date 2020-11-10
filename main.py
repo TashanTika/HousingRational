@@ -22,8 +22,20 @@ main_content = driver.find_elements_by_class_name('p24_content')
 #merging the record to the master table
 #        basket_record = pd.concat([basket_record, fruit_record], axis = 0, ignore_index=True)
  
+
+info = main_content
+print(info)
+
+price = info.find_elements_by_class_name('p24_price')[0].text
+prop_title = info.find_elements_by_class_name('p24_title')[0].text
+location = info.find_elements_by_class_name("p24_location")[0].text
+description = info.find_elements_by_class_name("p24_excerpt")[0].text
+feature_details = info.find_elements_by_class_name("p24_featureDetails")[0].text
+main_rec = pd.DataFrame(data =[[price, prop_title, location, description, feature_details]], columns = ["Price", "Title", "Location", "Description", "Feature Deatails"]) 
+
+
     
- 
+"""  
 for info in main_content:    
     info = main_content[0].text
     price = info.find_elements_by_class_name('p24_price')[0].text
@@ -59,3 +71,4 @@ else:
     records = pd.concat([records, record], axis = 0, ignore_index = True)
 
 
+""" 
