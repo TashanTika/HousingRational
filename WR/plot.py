@@ -31,6 +31,8 @@ from plotly.offline import plot
 import plotly.graph_objects as go
 
 # TO DO refine marker color based on price and add more info in text box (Title, address, size etc.) like here https://docs.mapbox.com/mapbox-gl-js/example/popup-on-hover/
+
+# this data trace shows the listings
 scatt = go.Scattermapbox(
                         lat = list(sta_df["lat"]),
                         lon = list(sta_df["lon"]),                        
@@ -41,6 +43,8 @@ scatt = go.Scattermapbox(
                         textfont=dict(size=16, color='black'),
                         text= list(sta_df["Address"])
                         )
+
+# TO DO add trace with crime stats per region chlorochart
 
 layout = go.Layout(hovermode = "closest",
                     mapbox = dict(           
