@@ -281,3 +281,25 @@
 2020-11-14 14:18:52,717 - scrape.py - [INFO] - 184 - failed getting coordinates for 28 Riverview Road Durban row 230
 2020-11-14 14:18:57,624 - scrape.py - [INFO] - 184 - failed getting coordinates for 20 Erskine Terrace Durban row 239
 2020-11-14 14:19:01,515 - scrape.py - [INFO] - 184 - failed getting coordinates for Point Waterfront Durban row 247
+2020-11-14 14:29:06,199 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:36:28,696 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:39:50,783 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:39:50,815 - plot.py - [INFO] - 25 - there were 257 records without coordinates
+2020-11-14 14:40:28,060 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:40:28,100 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:00:12,364 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:00:12,395 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:00:55,702 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:00:55,733 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:11:14,623 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:11:14,670 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:21:47,385 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:21:47,425 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:24:07,305 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:24:07,338 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:24:19,095 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:24:19,135 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:25:05,078 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:25:05,113 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:31:11,235 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:31:11,267 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
