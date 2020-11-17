@@ -27,8 +27,10 @@ for index, info in enumerate(main_class):
         prop_title = info.find_elements_by_class_name('p24_title')[0].text
         location = info.find_elements_by_class_name("p24_location")[0].text
         description = info.find_elements_by_class_name("p24_excerpt")[0].text
-        #feature_details = info.find_elements_by_class_name("p24_featureDetails")[0].text
-        #info = main_class[index]
+        icons = info.find_element_by_class("p24_featureDetails")[0].text
+        for fd in icons:
+                icons.getAttribute("title=Bedrooms")
+       
         if len(info.find_elements_by_class_name("p24_featureDetails")) > 0:
             #loop through p24 features
             feature_details = info.find_elements_by_class_name("p24_featureDetails")[0].text
