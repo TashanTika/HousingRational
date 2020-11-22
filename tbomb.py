@@ -12,6 +12,10 @@ driver.get(inp_url)
 
 # this should be a function - scrape page
 def scrape(inp_driver):
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.webdriver.common.by import By
+    wait_element = WebDriverWait(inp_driver, 3).until(EC.presence_of_element_located((By.CLASS_NAME, "p24_content")))   
     main_class = inp_driver.find_elements_by_class_name('p24_content')
     counter = 0
     for index, info in enumerate(main_class):  
@@ -48,22 +52,27 @@ def scrape(inp_driver):
                     print(title + ":" + value) 
                     
             else:
-                icons = 0
+                pass
             # adjust loop_rec to add feature details 
     
             if counter == 1:  
                 master_rec = loop_rec.copy()
             else: 
                 master_rec = pd.concat([master_rec, loop_rec], axis = 0, ignore_index=True)
-    return master_rec
+        return master_rec
 
 
+page_counter = 1
 
-page_counter = 0
-finish_scraping = False
-while finish_scraping == False: 
-    
-    #go to a page - make a page loop
+#find last page
+pager = driver.find_elements_by_class_name("pagination")
+pager = pager[0].find_elements_by_tag_name("li")
+last_page = int(pager[-1].text)
+
+#loop through all the pages
+for page_counter in range(last_page):    
+    ref = "https://www.property24.com/for-sale/durban/kwazulu-natal/169/p{0}".format(page_counter+1)    
+    driver.get(ref)
     page_counter += 1
     print("--------------scraping page:" + str(page_counter) + "--------------")
     
@@ -77,61 +86,41 @@ while finish_scraping == False:
         all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
     
     print("--------------finished scrape page:" + str(page_counter) + "--------------")
-    #go to next page
-    try:
-        driver.find_element_by_xpath("/html/body/div[1]/div[9]/div/div/div[1]/div[6]/div/ul/li[2]/a").click()
-    except:
-        finish_scraping = True
+   
+                    
+                    
+                    
+                    
+
+
+# while finish_scraping == False: 
+    
+#     #go to a page - make a page loop
+#     page_counter += 1
+#     print("--------------scraping page:" + str(page_counter) + "--------------")
+    
+#     #scrape page
+#     page_records = scrape(inp_driver = driver)
+    
+#     #add to all_records
+#     if page_counter == 1:  
+#         all_records = page_records.copy()
+#     else: 
+#         all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
+    
+#     print("--------------finished scrape page:" + str(page_counter) + "--------------")
+   
+#     #go to next page
+#     try:
+#         x_path = driver.find_element_by_xpath("/html/body/div[1]/div[9]/div/div/div[1]/div[7]/div/ul/li[1]/a")
+#         for i in x_path:
+#             x_path = driver.find_element_by_xpath("/html/body/div[1]/div[9]/div/div/div[1]/div[7]/div/ul/li[{0}]/a").format(i)
+#             driver.find_element_by_xpath(x_path)
+#     except:
+#         finish_scraping = True
         
-    
 
 
-"""    
-    for index, info in enumerate(main_class):
-        print(index)
-        if index == 0:  
-            print("copy loop record")
-        else:
-            print("paste loop record under latest master record")
-"""
-    
-    
-    
-""" 
-
-for index, info in enumerate(main_class):    
-    info = main_class[2].text
-    price = info.find_elements_by_class_name('p24_price')[0].text
-    prop_title = info.find_elements_by_class_name('p24_title')[0].text
-    location = info.find_elements_by_class_name("p24_location")[0].text
-    description = info.find_elements_by_class_name("p24_excerpt")[0].text
-    feature_details = info.find_elements_by_class_name("p24_featureDetails")[0].text
-    
-    if index == 0:
-        pass
-        master_rec = ([price, prop_title, location, description, feature_details]).copy(info_list)
-    else: master_rec = pd.concat([info, master_rec], axis = 0, ignore_index=True)
-main_rec = pd.DataFrame(data =[[price, prop_title, location, description, feature_details]], columns = ["Price", "Title", "Location", "Description", "Feature Deatails"]) 
-print(info.text)
-""" 
-
-# =============================================================================
-# info_list = [] 
-# info_dict = {
-#         "price" : price,
-#         "title": title,
-#         "location": location,
-#         "address" : address,
-#         "description" : description
-#         
-#         }
-# 
-# info_list.append(info_dict)
-#    
-# df = pd.DataFrame(info_list)
-# print(df)
-# 
-# =============================================================================
 
 
-#Websites for info https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locating_elements/
+
