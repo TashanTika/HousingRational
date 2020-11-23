@@ -59,34 +59,34 @@ def scrape(inp_driver):
                 master_rec = loop_rec.copy()
             else: 
                 master_rec = pd.concat([master_rec, loop_rec], axis = 0, ignore_index=True)
-        return master_rec
+                return master_rec
 
 
-page_counter = 1
-
-#find last page
-pager = driver.find_elements_by_class_name("pagination")
-pager = pager[0].find_elements_by_tag_name("li")
-last_page = int(pager[-1].text)
-
-#loop through all the pages
-for page_counter in range(last_page):    
-    ref = "https://www.property24.com/for-sale/durban/kwazulu-natal/169/p{0}".format(page_counter+1)    
-    driver.get(ref)
-    page_counter += 1
-    print("--------------scraping page:" + str(page_counter) + "--------------")
+    page_counter = 1
     
+    #find last page
+    pager = driver.find_elements_by_class_name("pagination")
+    pager = pager[0].find_elements_by_tag_name("li")
+    last_page = int(pager[-1].text)
+    
+    #loop through all the pages
+    for page_counter in range(last_page):    
+       ref = "https://www.property24.com/for-sale/durban/kwazulu-natal/169/p{0}".format(page_counter+1)    
+       driver.get(ref)
+       page_counter += 1
+       print("--------------scraping page:" + str(page_counter) + "--------------")
+        
     #scrape page
     page_records = scrape(inp_driver = driver)
-    
-    #add to all_records
+        
+        #add to all_records
     if page_counter == 1:  
         all_records = page_records.copy()
     else: 
         all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
-    
+        
     print("--------------finished scrape page:" + str(page_counter) + "--------------")
-   
+               
                     
                     
                     
