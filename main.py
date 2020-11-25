@@ -31,8 +31,14 @@ def scrape(inp_driver):
             prop_title = info.find_elements_by_class_name('p24_title')[0].text
             location = info.find_elements_by_class_name("p24_location")[0].text
             description = info.find_elements_by_class_name("p24_excerpt")[0].text 
-            if len(info.find_elements_by_class_name("p24_content")) > 0:
-                    address = info.find_elements_by_class_name("p24_address")
+            #Trying to add address 
+            if len(info.find_elements_by_class_name("p24_address")) > 0:
+                address = info.find_elements_by_class_name("p24_address")
+            else:
+                address = "No Address"
+                
+                
+                    #dont change from here 
             loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address]], 
                             columns = ["Price", "Title", "Location", "Description", "Address"]) 
 
