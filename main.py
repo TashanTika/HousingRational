@@ -80,6 +80,19 @@ while finish_scraping == False:
     
     #go to next page
     try:
-        driver.find_element_by_xpath("/html/body/div[1]/div[9]/div/div/div[1]/div[6]/div/ul/li[2]/a").click()
+        for i in page_counter:
+             xpath = "/html/body/div[1]/div[9]/div/div/div[1]/div[6]/div/ul/li[{0}]/a".format(i)
+             driver.find_elements_by_xpath(xpath).click()
     except:
         finish_scraping = True
+        
+        
+        
+        
+     
+        
+        
+        
+        
+        
+        
