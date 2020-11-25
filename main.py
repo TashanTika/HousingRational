@@ -30,15 +30,16 @@ def scrape(inp_driver):
             price = info.find_elements_by_class_name('p24_price')[0].text
             prop_title = info.find_elements_by_class_name('p24_title')[0].text
             location = info.find_elements_by_class_name("p24_location")[0].text
-            address = info.find_elements_by_class_name("p24_address")[0].text
-            description = info.find_elements_by_class_name("p24_excerpt")[0].text        
-            loop_rec = pd.DataFrame(data = [[price, prop_title, location, address, description]], 
-                            columns = ["Price", "Title", "Location", "Address", "Description"]) 
+            description = info.find_elements_by_class_name("p24_excerpt")[0].text 
+            if len(info.find_elements_by_class_name("p24_content")) > 0:
+                    address = info.find_elements_by_class_name("p24_address")
+            loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address]], 
+                            columns = ["Price", "Title", "Location", "Description", "Address"]) 
 
             if len(info.find_elements_by_class_name("p24_icons")) > 0:                
                 if len(info.find_elements_by_class_name("p24_size")) > 0:
                     size = info.find_elements_by_class_name("p24_size")
-                    loop_rec["size"] = size[0].text
+                    loop_rec["Size"] = size[0].text
 
                 #loop details                
                 details = info.find_elements_by_class_name("p24_featureDetails")
