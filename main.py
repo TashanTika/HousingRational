@@ -30,9 +30,10 @@ def scrape(inp_driver):
             price = info.find_elements_by_class_name('p24_price')[0].text
             prop_title = info.find_elements_by_class_name('p24_title')[0].text
             location = info.find_elements_by_class_name("p24_location")[0].text
+            address = info.find_elements_by_class_name("p24_address")[0].text
             description = info.find_elements_by_class_name("p24_excerpt")[0].text        
-            loop_rec = pd.DataFrame(data = [[price, prop_title, location, description]], 
-                            columns = ["Price", "Title", "Location", "Description"]) 
+            loop_rec = pd.DataFrame(data = [[price, prop_title, location, address, description]], 
+                            columns = ["Price", "Title", "Location", "Address", "Description"]) 
 
             if len(info.find_elements_by_class_name("p24_icons")) > 0:                
                 if len(info.find_elements_by_class_name("p24_size")) > 0:
@@ -59,37 +60,29 @@ def scrape(inp_driver):
 
 
 
-page_counter = 0
-finish_scraping = False
-while finish_scraping == False: 
 
-    #go to a page - make a page loop
-    page_counter += 1
-    print("--------------scraping page:" + str(page_counter) + "--------------")
 
-    #scrape page
+
+for page_counter in range(250):  
+    print("--------------scraping page:" + str(page_counter +1) + "--------------")
+    
+    href = "https://www.property24.com/for-sale/durban/kwazulu-natal/169/p{0}".format(page_counter+1)    
+    driver.get(href)
     page_records = scrape(inp_driver = driver)
-
+    
     #add to all_records
-    if page_counter == 1:  
+    if page_counter == 0:  
         all_records = page_records.copy()
     else: 
         all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
-    print("--------------finished scrape page:" + str(page_counter) + "--------------")
+    print("--------------finished scrape page:" + str(page_counter + 1) + "--------------")
+            
     
-    
-    #go to next page
-    try:
-        for i in page_counter:
-             xpath = "/html/body/div[1]/div[9]/div/div/div[1]/div[6]/div/ul/li[{0}]/a".format(i)
-             driver.find_elements_by_xpath(xpath).click()
-    except:
-        finish_scraping = True
         
         
+               
         
         
-     
         
         
         
