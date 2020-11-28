@@ -33,7 +33,7 @@ def scrape(inp_driver):
             description = info.find_elements_by_class_name("p24_excerpt")[0].text 
             #Trying to add address 
             if len(info.find_elements_by_class_name("p24_address")) > 0:
-                address = info.find_elements_by_class_name("p24_address")
+                address = info.find_elements_by_class_name("p24_address")[0].text
             else:
                 address = "No Address"
                 
@@ -84,8 +84,11 @@ for page_counter in range(250):
         all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
     print("--------------finished scrape page:" + str(page_counter + 1) + "--------------")
             
-    
-pd.to_csv (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.csv')
+
+
+            #To import to CSV file in desktop     
+all_records.to_csv (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.csv')
+
         
                
         
