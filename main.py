@@ -38,7 +38,7 @@ def scrape(inp_driver):
                 address = "No Address"
                 
                 
-                    #dont change from here 
+                    #do not change from here 
             loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address]], 
                             columns = ["Price", "Title", "Location", "Description", "Address"]) 
 
@@ -85,7 +85,7 @@ for page_counter in range(250):
     print("--------------finished scrape page:" + str(page_counter + 1) + "--------------")
             
     
-        
+pd.to_csv (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.csv')
         
                
         
