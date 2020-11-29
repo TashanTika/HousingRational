@@ -89,7 +89,6 @@ for page_counter in range(250):
             #To import to CSV file in desktop     
 all_records.to_csv (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.csv')
 
-        
                
         
         
