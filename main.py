@@ -31,6 +31,12 @@ def scrape(inp_driver):
             prop_title = info.find_elements_by_class_name('p24_title')[0].text
             location = info.find_elements_by_class_name("p24_location")[0].text
             description = info.find_elements_by_class_name("p24_excerpt")[0].text 
+            #getting the link for each listing 
+            links = info.find_elements_by_class_name("p24_regularTile js_rollover_container")
+            for link in links:
+                link.get_attribute("href")
+                href_link = link.text
+                print(href_link)
             #Trying to add address 
             if len(info.find_elements_by_class_name("p24_address")) > 0:
                 address = info.find_elements_by_class_name("p24_address")[0].text
@@ -39,9 +45,9 @@ def scrape(inp_driver):
                 
                 
                     #do not change from here 
-            loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address]], 
-                            columns = ["Price", "Title", "Location", "Description", "Address"]) 
-
+            loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address, href_link,]], 
+                            columns = ["Price", "Title", "Location", "Description", "Address", "Link"]) 
+            
             if len(info.find_elements_by_class_name("p24_icons")) > 0:                
                 if len(info.find_elements_by_class_name("p24_size")) > 0:
                     size = info.find_elements_by_class_name("p24_size")
@@ -87,7 +93,8 @@ for page_counter in range(250):
 
 
             #To import to CSV file in desktop     
-all_records.to_csv (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.csv')
+all_records.to_excel (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.xlsx')
+
 
                
         
