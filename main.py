@@ -31,12 +31,7 @@ def scrape(inp_driver):
             prop_title = info.find_elements_by_class_name('p24_title')[0].text
             location = info.find_elements_by_class_name("p24_location")[0].text
             description = info.find_elements_by_class_name("p24_excerpt")[0].text 
-            #getting the link for each listing 
-            links = info.find_elements_by_class_name("p24_regularTile js_rollover_container")
-            for link in links:
-                link.get_attribute("href")
-                href_link = link.text
-                print(href_link)
+            #getting the link for each listing this is where the code was!
             #Trying to add address 
             if len(info.find_elements_by_class_name("p24_address")) > 0:
                 address = info.find_elements_by_class_name("p24_address")[0].text
@@ -45,8 +40,8 @@ def scrape(inp_driver):
                 
                 
                     #do not change from here 
-            loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address, href_link,]], 
-                            columns = ["Price", "Title", "Location", "Description", "Address", "Link"]) 
+            loop_rec = pd.DataFrame(data = [[price, prop_title, location, description, address,]], 
+                            columns = ["Price", "Title", "Location", "Description", "Address",]) 
             
             if len(info.find_elements_by_class_name("p24_icons")) > 0:                
                 if len(info.find_elements_by_class_name("p24_size")) > 0:
@@ -60,6 +55,15 @@ def scrape(inp_driver):
                     value = detail.text
                     loop_rec[title] = value
                     print(title + ":" + value) 
+                #Getting Links For Each Individual Lisiting   
+                links = info.find_elements_by_partial_link_text("forsale")
+                for link in links:
+                    link_address = link.get_attribute("href")
+                    href_link = link.text
+                    loop_rec["Link"] = href_link
+                    print(link_address + ":" + href_link)
+                        
+                
 
             else:
                 icons = 0
