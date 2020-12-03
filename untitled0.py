@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 25 20:07:19 2020
-
-@author: Tashan Tika
-"""
-
 def get_address(inp_df):
     #raw.to_csv("test.csv")
     from geopy.geocoders import Nominatim
@@ -13,7 +6,6 @@ def get_address(inp_df):
     
     #unit test
     locator = Nominatim(user_agent="myGeocoder")
-    
     #read data
     #from pathlib import Path
     #import os

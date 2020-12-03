@@ -38,7 +38,7 @@ def scrape(inp_driver):
                 address = "No Address"
                 
                 
-                    #do not change from here 
+                #do not change from here 
             loop_rec = pd.DataFrame(data = [[price.format(int()), prop_title, location, description, address,]], 
                             columns = ["Price", "Title", "Location", "Description", "Address",]) 
             
@@ -55,16 +55,14 @@ def scrape(inp_driver):
                     loop_rec[title] = value
                     print(title + ":" + value) 
                 
-                # Getting Links For Each Individual Lisiting   
-                links = driver.find_elements_by_class_name("p24_regularTile js_rollover_container")
-                for link in links:
-                    web_elem = link.get_attribute("href").text
-                    loop_rec["Link"] = web_elem
-                    print(web_elem)
-                # lnks = driver.find_elements_by_tag_name("a")
-                # for lnk in lnks:
-                #    href_link = lnk.get_attribute(href)
-                #    loop_rec["Link"] = href_link
+                # Getting Links For Each Individual Lisiting 
+                all_links = inp_driver.find_elements_by_xpath("//*[contains(@class, 'p24_regularTile js_rollover_container')]")
+                index_link_main = all_links[index]
+                index_link_a = index_link_main.find_elements_by_tag_name("a")
+                web_elem = index_link_a[0].get_attribute("href")
+                loop_rec["Link"] = web_elem
+                print(web_elem)   
+               
 
             else:
                 icons = 0
