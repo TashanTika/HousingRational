@@ -1,0 +1,401 @@
+[1108/192628.201:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1108/194651.540:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+2020-11-14 13:53:34,945 - scrape.py - [INFO] - 108 - entered results page
+2020-11-14 13:53:37,662 - scrape.py - [INFO] - 116 - scraped page 1
+2020-11-14 13:53:42,208 - scrape.py - [INFO] - 116 - scraped page 2
+2020-11-14 13:53:46,788 - scrape.py - [INFO] - 116 - scraped page 3
+2020-11-14 13:53:53,044 - scrape.py - [INFO] - 116 - scraped page 4
+2020-11-14 13:53:57,027 - scrape.py - [INFO] - 116 - scraped page 5
+2020-11-14 13:54:01,285 - scrape.py - [INFO] - 116 - scraped page 6
+2020-11-14 13:54:07,044 - scrape.py - [INFO] - 116 - scraped page 7
+2020-11-14 13:54:13,118 - scrape.py - [INFO] - 116 - scraped page 8
+2020-11-14 13:54:19,209 - scrape.py - [INFO] - 116 - scraped page 9
+2020-11-14 13:54:24,603 - scrape.py - [INFO] - 116 - scraped page 10
+2020-11-14 13:54:29,940 - scrape.py - [INFO] - 116 - scraped page 11
+2020-11-14 13:54:35,574 - scrape.py - [INFO] - 116 - scraped page 12
+2020-11-14 13:54:41,217 - scrape.py - [INFO] - 116 - scraped page 13
+2020-11-14 13:54:46,474 - scrape.py - [INFO] - 116 - scraped page 14
+2020-11-14 13:54:52,403 - scrape.py - [INFO] - 116 - scraped page 15
+2020-11-14 13:54:57,474 - scrape.py - [INFO] - 116 - scraped page 16
+2020-11-14 13:55:01,970 - scrape.py - [INFO] - 116 - scraped page 17
+2020-11-14 13:55:07,393 - scrape.py - [INFO] - 116 - scraped page 18
+2020-11-14 13:55:11,960 - scrape.py - [INFO] - 116 - scraped page 19
+2020-11-14 13:55:16,168 - scrape.py - [INFO] - 116 - scraped page 20
+2020-11-14 13:55:21,823 - scrape.py - [INFO] - 116 - scraped page 21
+2020-11-14 13:55:27,176 - scrape.py - [INFO] - 116 - scraped page 22
+2020-11-14 13:55:31,552 - scrape.py - [INFO] - 116 - scraped page 23
+2020-11-14 13:55:37,094 - scrape.py - [INFO] - 116 - scraped page 24
+2020-11-14 13:55:40,992 - scrape.py - [INFO] - 116 - scraped page 25
+2020-11-14 13:55:45,689 - scrape.py - [INFO] - 116 - scraped page 26
+2020-11-14 13:55:51,442 - scrape.py - [INFO] - 116 - scraped page 27
+2020-11-14 13:55:56,024 - scrape.py - [INFO] - 116 - scraped page 28
+2020-11-14 13:56:00,309 - scrape.py - [INFO] - 116 - scraped page 29
+2020-11-14 13:56:05,109 - scrape.py - [INFO] - 116 - scraped page 30
+2020-11-14 13:56:10,027 - scrape.py - [INFO] - 116 - scraped page 31
+2020-11-14 13:56:13,686 - scrape.py - [INFO] - 116 - scraped page 32
+2020-11-14 13:56:18,357 - scrape.py - [INFO] - 116 - scraped page 33
+2020-11-14 13:56:22,867 - scrape.py - [INFO] - 116 - scraped page 34
+2020-11-14 13:56:26,858 - scrape.py - [INFO] - 116 - scraped page 35
+2020-11-14 13:56:31,074 - scrape.py - [INFO] - 116 - scraped page 36
+2020-11-14 13:56:35,034 - scrape.py - [INFO] - 116 - scraped page 37
+2020-11-14 13:56:39,360 - scrape.py - [INFO] - 116 - scraped page 38
+2020-11-14 13:56:44,736 - scrape.py - [INFO] - 116 - scraped page 39
+2020-11-14 13:56:50,504 - scrape.py - [INFO] - 116 - scraped page 40
+2020-11-14 13:56:56,060 - scrape.py - [INFO] - 116 - scraped page 41
+2020-11-14 13:57:00,401 - scrape.py - [INFO] - 116 - scraped page 42
+2020-11-14 13:57:06,109 - scrape.py - [INFO] - 116 - scraped page 43
+2020-11-14 13:57:10,524 - scrape.py - [INFO] - 116 - scraped page 44
+2020-11-14 13:57:16,476 - scrape.py - [INFO] - 116 - scraped page 45
+2020-11-14 13:57:21,657 - scrape.py - [INFO] - 116 - scraped page 46
+2020-11-14 13:57:26,726 - scrape.py - [INFO] - 116 - scraped page 47
+2020-11-14 13:57:30,826 - scrape.py - [INFO] - 116 - scraped page 48
+2020-11-14 13:57:35,825 - scrape.py - [INFO] - 116 - scraped page 49
+2020-11-14 13:57:41,257 - scrape.py - [INFO] - 116 - scraped page 50
+2020-11-14 13:57:45,633 - scrape.py - [INFO] - 116 - scraped page 51
+2020-11-14 13:57:50,924 - scrape.py - [INFO] - 116 - scraped page 52
+2020-11-14 13:57:55,718 - scrape.py - [INFO] - 116 - scraped page 53
+2020-11-14 13:58:00,203 - scrape.py - [INFO] - 116 - scraped page 54
+2020-11-14 13:58:04,810 - scrape.py - [INFO] - 116 - scraped page 55
+2020-11-14 13:58:09,259 - scrape.py - [INFO] - 116 - scraped page 56
+2020-11-14 13:58:14,126 - scrape.py - [INFO] - 116 - scraped page 57
+2020-11-14 13:58:19,742 - scrape.py - [INFO] - 116 - scraped page 58
+2020-11-14 13:58:25,454 - scrape.py - [INFO] - 116 - scraped page 59
+2020-11-14 13:58:31,234 - scrape.py - [INFO] - 116 - scraped page 60
+2020-11-14 13:58:35,784 - scrape.py - [INFO] - 116 - scraped page 61
+2020-11-14 13:58:41,274 - scrape.py - [INFO] - 116 - scraped page 62
+2020-11-14 13:58:45,391 - scrape.py - [INFO] - 116 - scraped page 63
+2020-11-14 13:58:50,724 - scrape.py - [INFO] - 116 - scraped page 64
+2020-11-14 13:58:56,992 - scrape.py - [INFO] - 116 - scraped page 65
+2020-11-14 13:59:02,018 - scrape.py - [INFO] - 116 - scraped page 66
+2020-11-14 13:59:06,725 - scrape.py - [INFO] - 116 - scraped page 67
+2020-11-14 13:59:13,235 - scrape.py - [INFO] - 116 - scraped page 68
+2020-11-14 13:59:18,714 - scrape.py - [INFO] - 116 - scraped page 69
+2020-11-14 13:59:23,508 - scrape.py - [INFO] - 116 - scraped page 70
+2020-11-14 13:59:27,715 - scrape.py - [INFO] - 116 - scraped page 71
+2020-11-14 13:59:31,801 - scrape.py - [INFO] - 116 - scraped page 72
+2020-11-14 13:59:36,342 - scrape.py - [INFO] - 116 - scraped page 73
+2020-11-14 13:59:41,986 - scrape.py - [INFO] - 116 - scraped page 74
+2020-11-14 13:59:47,125 - scrape.py - [INFO] - 116 - scraped page 75
+2020-11-14 13:59:52,304 - scrape.py - [INFO] - 116 - scraped page 76
+2020-11-14 13:59:56,668 - scrape.py - [INFO] - 116 - scraped page 77
+2020-11-14 14:00:02,604 - scrape.py - [INFO] - 116 - scraped page 78
+2020-11-14 14:00:07,166 - scrape.py - [INFO] - 116 - scraped page 79
+2020-11-14 14:00:11,306 - scrape.py - [INFO] - 116 - scraped page 80
+2020-11-14 14:00:16,587 - scrape.py - [INFO] - 116 - scraped page 81
+2020-11-14 14:00:20,723 - scrape.py - [INFO] - 116 - scraped page 82
+2020-11-14 14:00:24,472 - scrape.py - [INFO] - 116 - scraped page 83
+2020-11-14 14:00:30,107 - scrape.py - [INFO] - 116 - scraped page 84
+2020-11-14 14:00:34,690 - scrape.py - [INFO] - 116 - scraped page 85
+2020-11-14 14:00:40,524 - scrape.py - [INFO] - 116 - scraped page 86
+2020-11-14 14:00:46,241 - scrape.py - [INFO] - 116 - scraped page 87
+2020-11-14 14:00:52,655 - scrape.py - [INFO] - 116 - scraped page 88
+2020-11-14 14:00:57,407 - scrape.py - [INFO] - 116 - scraped page 89
+2020-11-14 14:01:02,606 - scrape.py - [INFO] - 116 - scraped page 90
+2020-11-14 14:01:06,786 - scrape.py - [INFO] - 116 - scraped page 91
+2020-11-14 14:01:12,557 - scrape.py - [INFO] - 116 - scraped page 92
+2020-11-14 14:01:18,107 - scrape.py - [INFO] - 116 - scraped page 93
+2020-11-14 14:01:22,439 - scrape.py - [INFO] - 116 - scraped page 94
+2020-11-14 14:01:26,621 - scrape.py - [INFO] - 116 - scraped page 95
+2020-11-14 14:01:32,167 - scrape.py - [INFO] - 116 - scraped page 96
+2020-11-14 14:01:36,537 - scrape.py - [INFO] - 116 - scraped page 97
+2020-11-14 14:01:42,490 - scrape.py - [INFO] - 116 - scraped page 98
+2020-11-14 14:01:51,406 - scrape.py - [INFO] - 116 - scraped page 99
+2020-11-14 14:01:57,072 - scrape.py - [INFO] - 116 - scraped page 100
+2020-11-14 14:02:02,484 - scrape.py - [INFO] - 116 - scraped page 101
+2020-11-14 14:02:08,235 - scrape.py - [INFO] - 116 - scraped page 102
+2020-11-14 14:02:13,751 - scrape.py - [INFO] - 116 - scraped page 103
+2020-11-14 14:02:18,193 - scrape.py - [INFO] - 116 - scraped page 104
+2020-11-14 14:02:22,274 - scrape.py - [INFO] - 116 - scraped page 105
+2020-11-14 14:02:27,226 - scrape.py - [INFO] - 116 - scraped page 106
+2020-11-14 14:02:31,768 - scrape.py - [INFO] - 116 - scraped page 107
+2020-11-14 14:02:36,042 - scrape.py - [INFO] - 116 - scraped page 108
+2020-11-14 14:02:41,304 - scrape.py - [INFO] - 116 - scraped page 109
+2020-11-14 14:02:45,486 - scrape.py - [INFO] - 116 - scraped page 110
+2020-11-14 14:02:49,627 - scrape.py - [INFO] - 116 - scraped page 111
+2020-11-14 14:02:54,953 - scrape.py - [INFO] - 116 - scraped page 112
+2020-11-14 14:03:00,753 - scrape.py - [INFO] - 116 - scraped page 113
+2020-11-14 14:03:06,441 - scrape.py - [INFO] - 116 - scraped page 114
+2020-11-14 14:03:11,192 - scrape.py - [INFO] - 116 - scraped page 115
+2020-11-14 14:03:15,637 - scrape.py - [INFO] - 116 - scraped page 116
+2020-11-14 14:03:21,019 - scrape.py - [INFO] - 116 - scraped page 117
+[1114/140323.713:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+2020-11-14 14:03:25,410 - scrape.py - [INFO] - 116 - scraped page 118
+2020-11-14 14:03:30,806 - scrape.py - [INFO] - 116 - scraped page 119
+2020-11-14 14:03:36,516 - scrape.py - [INFO] - 116 - scraped page 120
+2020-11-14 14:03:41,656 - scrape.py - [INFO] - 116 - scraped page 121
+2020-11-14 14:03:45,726 - scrape.py - [INFO] - 116 - scraped page 122
+2020-11-14 14:03:51,754 - scrape.py - [INFO] - 116 - scraped page 123
+2020-11-14 14:03:56,587 - scrape.py - [INFO] - 116 - scraped page 124
+2020-11-14 14:04:01,328 - scrape.py - [INFO] - 116 - scraped page 125
+2020-11-14 14:04:11,263 - scrape.py - [INFO] - 116 - scraped page 126
+2020-11-14 14:04:16,572 - scrape.py - [INFO] - 116 - scraped page 127
+2020-11-14 14:04:20,508 - scrape.py - [INFO] - 116 - scraped page 128
+2020-11-14 14:04:25,858 - scrape.py - [INFO] - 116 - scraped page 129
+2020-11-14 14:04:31,565 - scrape.py - [INFO] - 116 - scraped page 130
+2020-11-14 14:04:36,614 - scrape.py - [INFO] - 116 - scraped page 131
+2020-11-14 14:04:42,438 - scrape.py - [INFO] - 116 - scraped page 132
+2020-11-14 14:04:47,753 - scrape.py - [INFO] - 116 - scraped page 133
+2020-11-14 14:04:53,443 - scrape.py - [INFO] - 116 - scraped page 134
+2020-11-14 14:04:58,278 - scrape.py - [INFO] - 116 - scraped page 135
+2020-11-14 14:05:03,934 - scrape.py - [INFO] - 116 - scraped page 136
+2020-11-14 14:05:09,880 - scrape.py - [INFO] - 116 - scraped page 137
+2020-11-14 14:05:14,021 - scrape.py - [INFO] - 116 - scraped page 138
+2020-11-14 14:05:19,517 - scrape.py - [INFO] - 116 - scraped page 139
+2020-11-14 14:05:23,772 - scrape.py - [INFO] - 116 - scraped page 140
+2020-11-14 14:05:28,190 - scrape.py - [INFO] - 116 - scraped page 141
+2020-11-14 14:05:36,012 - scrape.py - [INFO] - 116 - scraped page 142
+2020-11-14 14:05:42,622 - scrape.py - [INFO] - 116 - scraped page 143
+2020-11-14 14:05:46,941 - scrape.py - [INFO] - 116 - scraped page 144
+2020-11-14 14:05:51,203 - scrape.py - [INFO] - 116 - scraped page 145
+2020-11-14 14:05:56,029 - scrape.py - [INFO] - 116 - scraped page 146
+2020-11-14 14:06:01,825 - scrape.py - [INFO] - 116 - scraped page 147
+2020-11-14 14:06:07,655 - scrape.py - [INFO] - 116 - scraped page 148
+2020-11-14 14:06:13,486 - scrape.py - [INFO] - 116 - scraped page 149
+2020-11-14 14:06:19,573 - scrape.py - [INFO] - 116 - scraped page 150
+2020-11-14 14:06:23,758 - scrape.py - [INFO] - 116 - scraped page 151
+2020-11-14 14:06:29,897 - scrape.py - [INFO] - 116 - scraped page 152
+2020-11-14 14:06:36,174 - scrape.py - [INFO] - 116 - scraped page 153
+2020-11-14 14:06:41,874 - scrape.py - [INFO] - 116 - scraped page 154
+2020-11-14 14:06:46,888 - scrape.py - [INFO] - 116 - scraped page 155
+2020-11-14 14:06:51,474 - scrape.py - [INFO] - 116 - scraped page 156
+2020-11-14 14:06:55,623 - scrape.py - [INFO] - 116 - scraped page 157
+2020-11-14 14:06:59,425 - scrape.py - [INFO] - 116 - scraped page 158
+2020-11-14 14:07:05,275 - scrape.py - [INFO] - 116 - scraped page 159
+2020-11-14 14:07:10,042 - scrape.py - [INFO] - 116 - scraped page 160
+2020-11-14 14:07:15,123 - scrape.py - [INFO] - 116 - scraped page 161
+2020-11-14 14:07:19,575 - scrape.py - [INFO] - 116 - scraped page 162
+2020-11-14 14:07:23,920 - scrape.py - [INFO] - 116 - scraped page 163
+2020-11-14 14:07:30,267 - scrape.py - [INFO] - 116 - scraped page 164
+2020-11-14 14:07:34,159 - scrape.py - [INFO] - 116 - scraped page 165
+2020-11-14 14:07:39,752 - scrape.py - [INFO] - 116 - scraped page 166
+2020-11-14 14:07:44,121 - scrape.py - [INFO] - 116 - scraped page 167
+2020-11-14 14:07:49,826 - scrape.py - [INFO] - 116 - scraped page 168
+2020-11-14 14:07:54,743 - scrape.py - [INFO] - 116 - scraped page 169
+2020-11-14 14:08:00,122 - scrape.py - [INFO] - 116 - scraped page 170
+2020-11-14 14:08:04,502 - scrape.py - [INFO] - 116 - scraped page 171
+2020-11-14 14:08:11,489 - scrape.py - [INFO] - 116 - scraped page 172
+2020-11-14 14:08:17,227 - scrape.py - [INFO] - 116 - scraped page 173
+2020-11-14 14:08:23,334 - scrape.py - [INFO] - 116 - scraped page 174
+2020-11-14 14:08:29,642 - scrape.py - [INFO] - 116 - scraped page 175
+2020-11-14 14:08:34,399 - scrape.py - [INFO] - 116 - scraped page 176
+2020-11-14 14:08:39,509 - scrape.py - [INFO] - 116 - scraped page 177
+2020-11-14 14:08:42,666 - scrape.py - [INFO] - 116 - scraped page 178
+2020-11-14 14:08:48,942 - scrape.py - [INFO] - 116 - scraped page 179
+2020-11-14 14:08:54,342 - scrape.py - [INFO] - 116 - scraped page 180
+2020-11-14 14:08:58,683 - scrape.py - [INFO] - 116 - scraped page 181
+2020-11-14 14:09:03,492 - scrape.py - [INFO] - 116 - scraped page 182
+2020-11-14 14:09:09,316 - scrape.py - [INFO] - 116 - scraped page 183
+2020-11-14 14:09:14,784 - scrape.py - [INFO] - 116 - scraped page 184
+2020-11-14 14:09:20,418 - scrape.py - [INFO] - 116 - scraped page 185
+2020-11-14 14:09:26,376 - scrape.py - [INFO] - 116 - scraped page 186
+2020-11-14 14:09:33,192 - scrape.py - [INFO] - 116 - scraped page 187
+2020-11-14 14:09:38,417 - scrape.py - [INFO] - 116 - scraped page 188
+2020-11-14 14:09:42,534 - scrape.py - [INFO] - 116 - scraped page 189
+2020-11-14 14:09:48,434 - scrape.py - [INFO] - 116 - scraped page 190
+2020-11-14 14:09:54,567 - scrape.py - [INFO] - 116 - scraped page 191
+2020-11-14 14:10:00,590 - scrape.py - [INFO] - 116 - scraped page 192
+2020-11-14 14:10:06,840 - scrape.py - [INFO] - 116 - scraped page 193
+2020-11-14 14:10:11,187 - scrape.py - [INFO] - 116 - scraped page 194
+2020-11-14 14:10:15,917 - scrape.py - [INFO] - 116 - scraped page 195
+2020-11-14 14:10:22,176 - scrape.py - [INFO] - 116 - scraped page 196
+2020-11-14 14:10:26,913 - scrape.py - [INFO] - 116 - scraped page 197
+2020-11-14 14:10:33,104 - scrape.py - [INFO] - 116 - scraped page 198
+2020-11-14 14:10:38,449 - scrape.py - [INFO] - 116 - scraped page 199
+2020-11-14 14:10:45,388 - scrape.py - [INFO] - 116 - scraped page 200
+2020-11-14 14:10:51,391 - scrape.py - [INFO] - 116 - scraped page 201
+2020-11-14 14:10:55,948 - scrape.py - [INFO] - 116 - scraped page 202
+2020-11-14 14:11:00,829 - scrape.py - [INFO] - 116 - scraped page 203
+2020-11-14 14:11:06,882 - scrape.py - [INFO] - 116 - scraped page 204
+2020-11-14 14:11:13,671 - scrape.py - [INFO] - 116 - scraped page 205
+2020-11-14 14:11:18,609 - scrape.py - [INFO] - 116 - scraped page 206
+2020-11-14 14:11:24,154 - scrape.py - [INFO] - 116 - scraped page 207
+2020-11-14 14:11:29,202 - scrape.py - [INFO] - 116 - scraped page 208
+2020-11-14 14:11:34,928 - scrape.py - [INFO] - 116 - scraped page 209
+2020-11-14 14:11:41,087 - scrape.py - [INFO] - 116 - scraped page 210
+2020-11-14 14:11:46,141 - scrape.py - [INFO] - 116 - scraped page 211
+2020-11-14 14:11:49,533 - scrape.py - [INFO] - 116 - scraped page 212
+2020-11-14 14:11:53,888 - scrape.py - [INFO] - 116 - scraped page 213
+2020-11-14 14:11:59,354 - scrape.py - [INFO] - 116 - scraped page 214
+2020-11-14 14:12:04,034 - scrape.py - [INFO] - 116 - scraped page 215
+2020-11-14 14:12:11,142 - scrape.py - [INFO] - 116 - scraped page 216
+2020-11-14 14:12:17,473 - scrape.py - [INFO] - 116 - scraped page 217
+2020-11-14 14:12:23,642 - scrape.py - [INFO] - 116 - scraped page 218
+2020-11-14 14:12:29,790 - scrape.py - [INFO] - 116 - scraped page 219
+2020-11-14 14:12:35,067 - scrape.py - [INFO] - 116 - scraped page 220
+2020-11-14 14:12:39,985 - scrape.py - [INFO] - 116 - scraped page 221
+2020-11-14 14:12:46,225 - scrape.py - [INFO] - 116 - scraped page 222
+2020-11-14 14:12:50,693 - scrape.py - [INFO] - 116 - scraped page 223
+2020-11-14 14:12:55,690 - scrape.py - [INFO] - 116 - scraped page 224
+2020-11-14 14:13:00,393 - scrape.py - [INFO] - 116 - scraped page 225
+2020-11-14 14:13:06,034 - scrape.py - [INFO] - 116 - scraped page 226
+2020-11-14 14:13:10,311 - scrape.py - [INFO] - 116 - scraped page 227
+2020-11-14 14:13:15,265 - scrape.py - [INFO] - 116 - scraped page 228
+2020-11-14 14:13:19,314 - scrape.py - [INFO] - 116 - scraped page 229
+2020-11-14 14:13:23,751 - scrape.py - [INFO] - 116 - scraped page 230
+2020-11-14 14:13:28,257 - scrape.py - [INFO] - 116 - scraped page 231
+2020-11-14 14:13:32,514 - scrape.py - [INFO] - 116 - scraped page 232
+2020-11-14 14:13:37,719 - scrape.py - [INFO] - 116 - scraped page 233
+2020-11-14 14:13:43,757 - scrape.py - [INFO] - 116 - scraped page 234
+2020-11-14 14:13:48,203 - scrape.py - [INFO] - 116 - scraped page 235
+2020-11-14 14:13:52,653 - scrape.py - [INFO] - 116 - scraped page 236
+2020-11-14 14:13:57,048 - scrape.py - [INFO] - 116 - scraped page 237
+2020-11-14 14:14:01,916 - scrape.py - [INFO] - 116 - scraped page 238
+2020-11-14 14:14:06,303 - scrape.py - [INFO] - 116 - scraped page 239
+2020-11-14 14:14:10,616 - scrape.py - [INFO] - 116 - scraped page 240
+2020-11-14 14:14:14,201 - scrape.py - [INFO] - 116 - scraped page 241
+2020-11-14 14:14:20,121 - scrape.py - [INFO] - 116 - scraped page 242
+2020-11-14 14:14:23,370 - scrape.py - [INFO] - 128 - finished page
+2020-11-14 14:14:23,372 - scrape.py - [INFO] - 130 - clean scrape results
+2020-11-14 14:14:23,526 - utils.py - [INFO] - 141 - NumExpr defaulting to 4 threads.
+2020-11-14 14:16:55,411 - scrape.py - [INFO] - 177 - getting coordinates
+2020-11-14 14:17:10,719 - scrape.py - [INFO] - 184 - failed getting coordinates for 24 Nuttal Gardens Durban row 29
+2020-11-14 14:17:12,869 - scrape.py - [INFO] - 184 - failed getting coordinates for 3 Ss Highgate, 107 Highbury Road Durban row 33
+2020-11-14 14:17:18,816 - scrape.py - [INFO] - 184 - failed getting coordinates for Erf 4607 Harry Gwala Road Durban row 45
+2020-11-14 14:17:20,344 - scrape.py - [INFO] - 184 - failed getting coordinates for 395 Dr Pixley Kaseme (west) Street Durban row 48
+2020-11-14 14:17:22,703 - scrape.py - [INFO] - 184 - failed getting coordinates for 29 Ss Chelsea Court, 67 Victoria Embankment Avenue Durban row 53
+2020-11-14 14:17:28,124 - scrape.py - [INFO] - 184 - failed getting coordinates for 14 Ss Lutton, 6 Philip Avenue Durban row 64
+2020-11-14 14:17:34,783 - scrape.py - [INFO] - 184 - failed getting coordinates for 168-172 Voortrekker Road Durban row 77
+2020-11-14 14:17:35,116 - scrape.py - [INFO] - 184 - failed getting coordinates for 139 Stephan Dlamini Road Durban row 78
+2020-11-14 14:17:53,112 - scrape.py - [INFO] - 184 - failed getting coordinates for 89 J.b. Marks Rd Durban row 114
+2020-11-14 14:17:54,546 - scrape.py - [INFO] - 184 - failed getting coordinates for 1 Mount Carmel, 631 Peter Mokaba Ridge Road Durban row 116
+2020-11-14 14:17:58,334 - scrape.py - [INFO] - 184 - failed getting coordinates for 29 Richmond Gardens Durban row 124
+2020-11-14 14:18:01,918 - scrape.py - [INFO] - 184 - failed getting coordinates for 8 Ss Corra Lynn, 4 Kilburn Avenue Durban row 131
+2020-11-14 14:18:04,274 - scrape.py - [INFO] - 184 - failed getting coordinates for 502 Wharfside, 134 Mahatma Ghandi Road Durban row 136
+2020-11-14 14:18:06,219 - scrape.py - [INFO] - 184 - failed getting coordinates for 5 Serridge Place Durban row 140
+2020-11-14 14:18:09,811 - scrape.py - [INFO] - 184 - failed getting coordinates for 501 Wharfside, 134 Mahatma Gandhi Road Durban row 147
+2020-11-14 14:18:20,116 - scrape.py - [INFO] - 184 - failed getting coordinates for 11 Ss Sunset View, 449 Queen Elizabeth Avenue Durban row 168
+2020-11-14 14:18:21,682 - scrape.py - [INFO] - 184 - failed getting coordinates for 320 Dr Yusuf Dadoo Durban row 171
+2020-11-14 14:18:23,748 - scrape.py - [INFO] - 184 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road Durban row 175
+2020-11-14 14:18:24,759 - connectionpool.py - [WARNING] - 749 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=8+Neptune+Crescent+Durban&format=json&limit=1
+2020-11-14 14:18:28,133 - scrape.py - [INFO] - 184 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road Durban row 182
+2020-11-14 14:18:28,543 - scrape.py - [INFO] - 184 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road Durban row 183
+2020-11-14 14:18:30,488 - scrape.py - [INFO] - 184 - failed getting coordinates for 2 Ninapur Road Durban row 187
+2020-11-14 14:18:31,505 - connectionpool.py - [WARNING] - 749 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=27+O.r.+Tambo+Parade+Durban&format=json&limit=1
+2020-11-14 14:18:35,369 - scrape.py - [INFO] - 184 - failed getting coordinates for 557 Che Guevara Durban row 195
+2020-11-14 14:18:36,848 - scrape.py - [INFO] - 184 - failed getting coordinates for 175 9th Avenue Unit 9 Durban row 198
+2020-11-14 14:18:45,210 - scrape.py - [INFO] - 184 - failed getting coordinates for 507 Wharfside, 134 Mahatma Gandhi Road Durban row 215
+2020-11-14 14:18:47,252 - scrape.py - [INFO] - 184 - failed getting coordinates for 175 9th Avenue Unit 7 + Unit 8 Durban row 219
+2020-11-14 14:18:49,704 - scrape.py - [INFO] - 184 - failed getting coordinates for 244 Annet Drive Durban row 224
+2020-11-14 14:18:50,207 - scrape.py - [INFO] - 184 - failed getting coordinates for 1 The Oaks 4 Albion Place Durban row 225
+2020-11-14 14:18:52,306 - scrape.py - [INFO] - 184 - failed getting coordinates for 4 Ss Athenae, 185 Currie Road Durban row 229
+2020-11-14 14:18:52,717 - scrape.py - [INFO] - 184 - failed getting coordinates for 28 Riverview Road Durban row 230
+2020-11-14 14:18:57,624 - scrape.py - [INFO] - 184 - failed getting coordinates for 20 Erskine Terrace Durban row 239
+2020-11-14 14:19:01,515 - scrape.py - [INFO] - 184 - failed getting coordinates for Point Waterfront Durban row 247
+2020-11-14 14:29:06,199 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:36:28,696 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:39:50,783 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:39:50,815 - plot.py - [INFO] - 25 - there were 257 records without coordinates
+2020-11-14 14:40:28,060 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 14:40:28,100 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:00:12,364 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:00:12,395 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:00:55,702 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:00:55,733 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:11:14,623 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:11:14,670 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:21:47,385 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:21:47,425 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:24:07,305 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:24:07,338 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:24:19,095 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:24:19,135 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:25:05,078 - plot.py - [INFO] - 12 - read raw file
+2020-11-14 15:25:05,113 - plot.py - [INFO] - 25 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:31:11,235 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:31:11,267 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:40:03,076 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:40:03,106 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:40:03,106 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:49:39,308 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:49:39,348 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:49:39,348 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:50:44,175 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:50:44,247 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:50:44,247 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:51:19,389 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:51:19,421 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:51:19,421 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:51:36,934 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:51:36,974 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:51:36,974 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:52:01,987 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:52:02,027 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:52:02,027 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:52:36,556 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:52:36,588 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:52:36,596 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:53:52,008 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:53:52,042 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:53:52,044 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 15:57:51,887 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 15:57:51,927 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 15:57:51,927 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:01:58,264 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:01:58,303 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:01:58,303 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:04:26,305 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:04:26,345 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:04:26,345 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:06:17,031 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:06:17,066 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:06:17,066 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:07:17,825 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:07:17,865 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:07:17,865 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:20:52,668 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:20:52,703 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:20:52,711 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:21:34,869 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:21:34,929 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:21:34,929 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:21:58,272 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:21:58,304 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:21:58,312 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:23:35,302 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:23:35,334 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:23:35,334 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:23:43,818 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:23:43,858 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:23:43,858 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:28:53,433 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:28:53,473 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:28:53,473 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:29:09,902 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:29:09,942 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:29:09,942 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:29:48,611 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:29:48,646 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:29:48,646 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:30:22,919 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:30:22,962 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:30:22,964 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:38:28,366 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:38:28,406 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:38:28,406 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:39:16,929 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:39:16,972 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:39:16,972 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:40:49,413 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:40:49,446 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:40:49,446 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:45:27,503 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:45:27,535 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:45:27,543 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:45:43,240 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:45:43,272 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:45:43,272 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:46:20,841 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:46:20,872 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:46:20,872 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:48:27,952 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:48:27,983 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:48:27,983 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 16:49:33,378 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 16:49:33,418 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 16:49:33,418 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 17:32:30,143 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 17:32:30,191 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 17:32:30,191 - plot.py - [INFO] - 29 - plotting listings
+2020-11-14 17:33:19,805 - plot.py - [INFO] - 13 - read raw file
+2020-11-14 17:33:19,840 - plot.py - [INFO] - 26 - there were 257 records out of 5070 records without coordinates 
+2020-11-14 17:33:19,841 - plot.py - [INFO] - 29 - plotting listings

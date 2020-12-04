@@ -1,0 +1,267 @@
+2020-11-09 19:58:30,497 - start scraping property24
+2020-11-09 20:00:19,345 - NumExpr defaulting to 4 threads.
+2020-11-09 20:02:19,225 - start scraping property24
+2020-11-09 20:02:19,257 - getting coordinates
+2020-11-09 20:02:20,640 - failed getting coordinates for 11 Sycamore Street Glenwood Durban row 2
+2020-11-09 20:02:28,540 - failed getting coordinates for 29 Ss Chelsea Court, 67 Victoria Embankment Avenue Durban row 18
+2020-11-09 20:02:35,079 - failed getting coordinates for 168-172 Voortrekker Road Durban row 31
+2020-11-09 20:02:35,590 - failed getting coordinates for 139 Stephan Dlamini Road Durban row 32
+2020-11-09 20:02:54,125 - failed getting coordinates for 1 Mount Carmel, 631 Peter Mokaba Ridge Road Durban row 69
+2020-11-09 20:02:56,071 - failed getting coordinates for 89 J.b. Marks Rd Durban row 73
+2020-11-09 20:02:59,582 - failed getting coordinates for 29 Richmond Gardens Durban row 80
+2020-11-09 20:03:03,227 - failed getting coordinates for 8 Ss Corra Lynn, 4 Kilburn Avenue Durban row 87
+2020-11-09 20:03:03,581 - failed getting coordinates for 5 Ss Two Four Nuttall Gardens, 24 Nuttall Gardens Durban row 88
+2020-11-09 20:03:18,599 - failed getting coordinates for 11 Ss Sunset View, 449 Queen Elizabeth Avenue Durban row 118
+2020-11-09 20:03:19,032 - failed getting coordinates for 35 Ss Cowendale, 300 Problem Mkhize Road Durban row 119
+2020-11-09 20:03:22,080 - failed getting coordinates for 2 Ninapur Road Durban row 125
+2020-11-09 20:03:22,573 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road Durban row 126
+2020-11-09 20:03:24,117 - failed getting coordinates for 449 Lena Ahrens ( Manning ) Road Durban row 129
+2020-11-09 20:03:25,667 - failed getting coordinates for 557 Che Guevara Durban row 132
+2020-11-09 20:03:36,110 - failed getting coordinates for 244 Annet Drive Durban row 153
+2020-11-09 20:03:36,621 - failed getting coordinates for 4 Ss Athenae, 185 Currie Road Durban row 154
+2020-11-09 20:03:46,145 - failed getting coordinates for Strawberry Fields , 144 Wattle Grove Durban row 173
+2020-11-09 20:03:49,626 - failed getting coordinates for 523 Esther Roberts ( Frere ) Road Durban row 180
+2020-11-09 20:03:50,592 - failed getting coordinates for 5 Hamilton Close North, 119 Bulwer Rd, Glenwood Durban row 182
+2020-11-09 20:03:51,674 - failed getting coordinates for 17 Boscombe Road Durban row 184
+2020-11-09 20:03:52,084 - failed getting coordinates for 17 Boscombe Street Durban row 185
+2020-11-09 20:03:59,662 - failed getting coordinates for 246 Z K Matthews ( Nicolson) Road Durban row 200
+2020-11-09 20:04:03,082 - failed getting coordinates for 2 Albury Court, 32 Rapson Road Durban row 207
+2020-11-09 20:04:03,656 - failed getting coordinates for Musgrave Boulevard 27 Musgrave Avenue Durban row 208
+2020-11-09 20:04:05,601 - failed getting coordinates for 45 Malton Mews Durban row 212
+2020-11-09 20:04:11,438 - failed getting coordinates for 43 Prince Umhlangane Road Durban row 223
+2020-11-09 20:04:11,847 - failed getting coordinates for 28 Fernside, 43 Montclair Road Durban row 224
+2020-11-09 20:04:15,329 - failed getting coordinates for 8 Grove Hurst, 30 Hurst Grove Durban row 231
+2020-11-09 20:04:21,271 - failed getting coordinates for 9 Ss Lynika Mews, 5 Stableford Road Durban row 243
+2020-11-09 20:04:26,285 - failed getting coordinates for 241 Mahatma Ghandi Durban row 253
+2020-11-09 20:04:34,785 - failed getting coordinates for 530 Annet Drive Durban row 270
+2020-11-09 20:04:35,283 - failed getting coordinates for 151 Wakesleigh Road (ss 1 Of 476/1997 - Erf 8 Bellair) Durban row 271
+2020-11-09 20:04:47,790 - failed getting coordinates for 92 Goble Road Durban row 296
+2020-11-09 20:04:49,326 - failed getting coordinates for 143 Manning Road Durban row 299
+2020-11-09 20:04:54,753 - failed getting coordinates for Castlehill Durban row 310
+2020-11-09 20:04:59,261 - failed getting coordinates for 15 Rothesy Place Durban row 319
+2020-11-09 20:05:00,707 - failed getting coordinates for 15 Rothesy Place Durban row 322
+2020-11-09 20:05:12,730 - failed getting coordinates for 320 Yusuf Dadoo Street Durban row 346
+2020-11-09 20:05:14,237 - failed getting coordinates for 11 Healer Place Durban row 349
+2020-11-09 20:05:23,294 - failed getting coordinates for 37 Hime Lane Durban row 367
+2020-11-09 20:05:35,242 - failed getting coordinates for 192 J.b. Marks Road Durban row 391
+2020-11-09 20:05:36,740 - failed getting coordinates for 67 Umgudulu Road Durban row 394
+2020-11-09 20:05:55,272 - failed getting coordinates for 40 Bushlands Road Durban row 431
+2020-11-09 20:05:55,784 - failed getting coordinates for 347 Che Geuvara Road Durban row 432
+2020-11-09 20:05:59,265 - failed getting coordinates for 206 Percy Osborne Durban row 439
+2020-11-09 20:06:03,259 - failed getting coordinates for Castlehill Durban row 447
+2020-11-09 20:06:13,807 - failed getting coordinates for 2 Ss Torbeth Lodge, 174 Riley Road Durban row 468
+2020-11-09 20:06:19,234 - failed getting coordinates for 2 Ss Torbeth Lodge, 174 Riley Road Durban row 479
+2020-11-09 20:06:20,257 - failed getting coordinates for 3 Ss Torbeth Lodge, 174 Riley Road Durban row 481
+2020-11-09 20:06:27,837 - failed getting coordinates for 54 Moffat Road Durban row 496
+2020-11-09 20:06:36,760 - failed getting coordinates for 7 Halldene, 24 Riverview Road Durban row 514
+2020-11-09 20:07:00,297 - failed getting coordinates for 23 Cocomo Palms, 20 Foreshore Drive Durban row 561
+2020-11-09 20:07:06,339 - failed getting coordinates for 14 Ocean Way, 30 Prince Street Durban row 573
+2020-11-09 20:07:10,332 - failed getting coordinates for 1 Caribel Road Durban row 581
+2020-11-09 20:07:15,350 - failed getting coordinates for 77 Thomas Avenue Durban row 591
+2020-11-09 20:07:16,271 - failed getting coordinates for 27 OR Tambo Parade Durban row 593
+2020-11-09 20:07:34,699 - failed getting coordinates for Corovoca Durban row 630
+2020-11-09 20:07:36,235 - failed getting coordinates for Beach Hurst, 243 O R Tambo Durban row 633
+2020-11-09 20:07:36,988 - failed getting coordinates for 138 Percy Osborne Durban row 634
+2020-11-09 20:07:37,257 - failed getting coordinates for 5 Avonmore, 277 Avondale Road Durban row 635
+2020-11-09 20:07:49,757 - failed getting coordinates for 7 Ss Lennoxmere, 28 Lilian Ngoyi Road Durban row 660
+2020-11-09 20:07:53,852 - failed getting coordinates for 2 Ashby Lodge, 11 Ashby Road Durban row 668
+2020-11-09 20:07:54,262 - failed getting coordinates for High Wycombe, 187 O R Tambo Durban row 669
+2020-11-09 20:07:57,334 - failed getting coordinates for High Wycombe, 187 O R Tambo Durban row 675
+2020-11-09 20:08:21,808 - failed getting coordinates for 120 Edenroc Retirement Hotel 119 Snell Parade Durban row 724
+2020-11-09 20:08:37,753 - failed getting coordinates for Lanzerac, 203 Avondale Road, Essenwood Durban row 756
+2020-11-09 20:08:43,824 - failed getting coordinates for 69 Gillespe Street, South Beach, Durban Durban row 768
+2020-11-09 20:08:45,360 - failed getting coordinates for 12 Dock Point 31 Timeball Boulevard Durban row 771
+2020-11-09 20:09:10,817 - failed getting coordinates for 3 Blairview 124 10th Avenue Durban row 822
+2020-11-09 20:09:26,777 - failed getting coordinates for 10 Gousblom Street Durban row 854
+2020-11-09 20:09:28,243 - failed getting coordinates for 6 Roselea Court 26 Gordon Road Durban row 857
+2020-11-09 20:09:30,727 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=681+Peter+Mokaba+Ridge+Road+Durban&format=json&limit=1
+2020-11-09 20:09:52,124 - failed getting coordinates for 24 Selma Court, 358 King Dinuzulu Road Durban row 903
+2020-11-09 20:10:00,112 - failed getting coordinates for 281 101 Victoria Embankment 101 Margaret Mncadi Avenue Durban row 919
+2020-11-09 20:10:14,142 - failed getting coordinates for Edward Court, 11 Harrietwood Crescent Durban row 947
+2020-11-09 20:10:25,202 - failed getting coordinates for 11 Palm Grove 51 Pinewood Gardens, Durban row 969
+2020-11-09 20:10:25,712 - failed getting coordinates for Ntuzuma Durban row 970
+2020-11-09 20:10:50,708 - failed getting coordinates for 190 Bontanical Gardens Road Durban row 1020
+2020-11-09 20:11:08,721 - failed getting coordinates for 100 Bushlands Road Durban row 1056
+2020-11-09 20:11:13,227 - failed getting coordinates for 195 Percy Osborne Durban row 1065
+2020-11-09 20:11:17,732 - failed getting coordinates for Unit 120, Island Office Park, Riverhorse Valley Durban row 1074
+2020-11-09 20:11:28,175 - failed getting coordinates for 36 Benghazi Crescent Durban row 1095
+2020-11-09 20:11:30,679 - failed getting coordinates for 44 Beachfield Crescent Durban row 1100
+2020-11-09 20:11:34,219 - failed getting coordinates for Shinglewood, 340 Florida Road, Morningside Durban row 1107
+2020-11-09 20:11:39,236 - failed getting coordinates for 92 Dennis Hurley Street, Durban Cbd Durban row 1117
+2020-11-09 20:12:16,204 - failed getting coordinates for Strawberry Fields , 144 Wattle Grove Durban row 1191
+2020-11-09 20:12:36,785 - failed getting coordinates for 105 Gladys Mazibuko (marriott) Road, Durban row 1232
+2020-11-09 20:12:39,755 - failed getting coordinates for Lanzerac, 203 Avondale Road, Essenwood Durban row 1238
+2020-11-09 20:12:41,189 - failed getting coordinates for Lanzerac, 203 Avondale Road, Essenwood Durban row 1241
+2020-11-09 20:12:48,357 - failed getting coordinates for 6 Cedarfield Crescent Durban row 1255
+2020-11-09 20:12:56,242 - failed getting coordinates for 110 Springfield Road Morningside Durban row 1271
+2020-11-09 20:12:56,753 - failed getting coordinates for 242 J.b. Marks Road Durban row 1272
+2020-11-09 20:13:28,232 - failed getting coordinates for Malton Mews, 29 Malton Road Durban row 1335
+2020-11-09 20:13:32,285 - failed getting coordinates for 4 Essendene, 15 Rothesay Place Durban row 1343
+2020-11-09 20:13:36,280 - failed getting coordinates for 174 Sydenham ( John Zikhali) Road Durban row 1351
+2020-11-09 20:13:49,286 - failed getting coordinates for 3 Sharon Court, 250 Montpelier Road Durban row 1377
+2020-11-09 20:14:06,284 - failed getting coordinates for Beachhurst, 243 OR Tambo Durban row 1411
+2020-11-09 20:14:13,619 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+Durban&format=json&limit=1
+2020-11-09 20:15:15,813 - failed getting coordinates for 243 OR Tambo Parade Durban row 1547
+2020-11-09 20:15:26,464 - failed getting coordinates for 93 Ss Chiltern Drive Durban row 1568
+2020-11-09 20:15:31,891 - failed getting coordinates for Maldonado, 29 OR Tambo Parade Durban row 1579
+2020-11-09 20:15:36,295 - failed getting coordinates for 23 San Remo, 127 Snell Parade Durban row 1588
+2020-11-09 20:15:46,330 - failed getting coordinates for 23 Florida Keys, 336 Musgrave Road Durban row 1608
+2020-11-09 20:15:47,354 - failed getting coordinates for Las Vegas, 167 Snell Parade Durban row 1610
+2020-11-09 20:15:50,323 - failed getting coordinates for 95 Rapsaon Road Durban row 1616
+2020-11-09 20:15:55,834 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=134+Mahatma+Gandhi+Road+Durban&format=json&limit=1
+2020-11-09 20:15:56,915 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=134+Mahatma+Gandhi+Road+Durban&format=json&limit=1
+2020-11-09 20:15:57,925 - failed getting coordinates for 134 Mahatma Gandhi Road Durban row 1626
+2020-11-09 20:16:08,755 - failed getting coordinates for Unit 6, Ocean Way, 30 Prince Street Durban row 1648
+2020-11-09 20:16:10,749 - failed getting coordinates for 7 Flame Thorn Durban row 1652
+2020-11-09 20:16:14,285 - failed getting coordinates for 12 Berglen, 4 Sutton Crescent Durban row 1659
+2020-11-09 20:16:17,254 - failed getting coordinates for 5 Suva 70 6th Avenue Durban row 1665
+2020-11-09 20:16:23,701 - failed getting coordinates for 34 Chancellor Road Durban row 1678
+2020-11-09 20:16:24,218 - failed getting coordinates for The Quays, 31 Signal Road Durban row 1679
+2020-11-09 20:16:24,833 - failed getting coordinates for The Quays, 31 Signal Road Durban row 1680
+2020-11-09 20:16:29,748 - failed getting coordinates for 1 Seventy Three Harriettwood, 73 Harriettwood Crescent Durban row 1690
+2020-11-09 20:16:48,796 - failed getting coordinates for 11 Flame Thorn Durban row 1728
+2020-11-09 20:17:05,795 - failed getting coordinates for Maldonado, 29 A OR Tambo Parade Durban row 1762
+2020-11-09 20:17:28,833 - failed getting coordinates for 10 Bristow Crescent Modem Durban row 1808
+2020-11-09 20:17:29,800 - failed getting coordinates for Maldonado, 29 OR Tambo Durban row 1810
+2020-11-09 20:17:41,839 - failed getting coordinates for 11 Listlyn, 28 York Avenue Durban row 1834
+2020-11-09 20:17:45,319 - failed getting coordinates for 710 Penzance 31 Prince Street Durban row 1841
+2020-11-09 20:17:47,368 - failed getting coordinates for 48 Felix Ndlovu Road, Overport Durban row 1845
+2020-11-09 20:17:57,300 - failed getting coordinates for 42 Albacore Road Durban row 1865
+2020-11-09 20:18:00,770 - failed getting coordinates for Lamontville Durban row 1872
+2020-11-09 20:18:12,865 - failed getting coordinates for Snel Parade Durban row 1896
+2020-11-09 20:18:21,058 - failed getting coordinates for 3 Stella Green Mansions, 124 Esther Roberts Road Durban row 1912
+2020-11-09 20:18:23,106 - failed getting coordinates for Waterfall Park, 145 Wattle Grove Durban row 1916
+2020-11-09 20:18:29,059 - failed getting coordinates for Ntuzuma Durban row 1928
+2020-11-09 20:18:38,469 - failed getting coordinates for 1 Myryle Mansions, 246 Esther Roberts Road Durban row 1947
+2020-11-09 20:18:44,001 - failed getting coordinates for 66 Gilroc, 31 Gillespie Street Durban row 1958
+2020-11-09 20:18:54,037 - failed getting coordinates for 313 Ss THE Sails, 14 Timeball Durban row 1978
+2020-11-09 20:18:57,512 - failed getting coordinates for Mangrove Beach Centre, 91 B Somtseu Road Durban row 1985
+2020-11-09 20:19:02,018 - failed getting coordinates for Mangrove Beach Centre, 91 B Somtseu Road Durban row 1994
+2020-11-09 20:19:02,530 - failed getting coordinates for Mangrove Beach Centre, 91 B Somtseu Road Durban row 1995
+2020-11-09 20:19:03,042 - failed getting coordinates for 283 J B Marks Road Durban row 1996
+2020-11-09 20:19:04,580 - failed getting coordinates for 31 Kara Road ( Sold By Nolene) Durban row 1999
+2020-11-09 20:19:14,512 - failed getting coordinates for 39 J.b. Marks Road Durban row 2019
+2020-11-09 20:19:26,081 - failed getting coordinates for 25 J.b Marks Road Durban row 2042
+2020-11-09 20:19:30,588 - failed getting coordinates for 17 Helen Drive Durban row 2051
+2020-11-09 20:19:33,586 - failed getting coordinates for Lamontville Durban row 2057
+2020-11-09 20:19:43,110 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Essenwood+Durban&format=json&limit=1
+2020-11-09 20:19:47,650 - failed getting coordinates for Westmilne, 5 John Milne Road, South Beach Durban row 2083
+2020-11-09 20:19:49,358 - failed getting coordinates for 1 Ss Oliver Mews, 90 Cromwell Durban row 2086
+2020-11-09 20:19:51,693 - failed getting coordinates for 92 Goble Road Durban row 2091
+2020-11-09 20:19:59,942 - failed getting coordinates for Glenhaven Retirement Village 480 Esther Roberts Road Durban row 2107
+2020-11-09 20:20:01,308 - failed getting coordinates for 21 OR Tambo Parade Durban row 2110
+2020-11-09 20:20:02,334 - failed getting coordinates for 21 OR Tambo Parade Durban row 2112
+2020-11-09 20:20:11,397 - failed getting coordinates for 6 Kintyre, 152 Clark Road Durban row 2130
+2020-11-09 20:20:15,841 - failed getting coordinates for 2 Carn Brea, 238 Saint Thomas Road Durban row 2139
+2020-11-09 20:20:35,406 - failed getting coordinates for Kensington Heights, 311 North Ridge Road Durban row 2178
+2020-11-09 20:20:38,888 - failed getting coordinates for 26 Alan Paton, Sections 5, 6 & 7 Ss 302/310 Umbilo Road Durban row 2185
+2020-11-09 20:20:54,351 - failed getting coordinates for Ntuzuma Durban row 2216
+2020-11-09 20:21:05,410 - failed getting coordinates for 25 Down Avenue, Seaview Durban row 2238
+2020-11-09 20:21:07,869 - failed getting coordinates for 25 Down Avenue, Seaview Durban row 2243
+2020-11-09 20:21:08,380 - failed getting coordinates for 25 Down Avenue, Seaview Durban row 2244
+2020-11-09 20:21:08,892 - failed getting coordinates for 25 Down Avenue, Seaview Durban row 2245
+2020-11-09 20:21:09,404 - failed getting coordinates for 25 Down Avenue, Seaview Durban row 2246
+2020-11-09 20:21:09,922 - failed getting coordinates for 25 Down Avenue, Seaview Durban row 2247
+2020-11-09 20:21:14,934 - failed getting coordinates for 175 Magaret Mcandi Avenue Durban row 2257
+2020-11-09 20:21:23,433 - failed getting coordinates for 29 Jesmond Grove, The Grove Office Park Durban row 2274
+2020-11-09 20:21:26,930 - failed getting coordinates for 60 Cromwell Road, Bulwer Durban row 2281
+2020-11-09 20:21:27,938 - failed getting coordinates for Quayside, 31 Signal Road Durban row 2283
+2020-11-09 20:21:54,358 - failed getting coordinates for 43 Carmont 116 Mountain Rise Durban row 2336
+2020-11-09 20:21:55,894 - failed getting coordinates for 7 Ss Davendale, 15 Somerset Avenue Durban row 2339
+2020-11-09 20:22:10,537 - failed getting coordinates for 83 Massbanker Avenue Durban row 2368
+2020-11-09 20:22:10,948 - failed getting coordinates for 13 Carisford, 434 Lilian Ngoyi Road Durban row 2369
+2020-11-09 20:22:14,121 - failed getting coordinates for 32 Eland Road Durban row 2375
+2020-11-09 20:22:17,988 - failed getting coordinates for 32 Eland Road Durban row 2383
+2020-11-09 20:22:18,524 - failed getting coordinates for 25 J.b. Marks Road Durban row 2384
+2020-11-09 20:22:18,981 - failed getting coordinates for Exeter Hall, 29 Sol Harris Crescent Durban row 2385
+2020-11-09 20:22:58,464 - failed getting coordinates for 4 San Kellind 15 Charles Henwood Road Durban row 2464
+2020-11-09 20:23:20,989 - failed getting coordinates for Ntuzuma Durban row 2509
+2020-11-09 20:23:27,030 - failed getting coordinates for 147 OR Tambo Parade Durban row 2521
+2020-11-09 20:24:28,189 - failed getting coordinates for 1 Carmont 107 Mountain Rise Durban row 2643
+2020-11-09 20:24:55,095 - failed getting coordinates for 117 Dunkeld Road Durban row 2697
+2020-11-09 20:24:58,065 - failed getting coordinates for Lambert Estate, 91 Lambert Road Road Durban row 2703
+2020-11-09 20:25:09,535 - failed getting coordinates for Lamontville Durban row 2726
+2020-11-09 20:25:10,558 - failed getting coordinates for 97 Marine Parade Durban row 2728
+2020-11-09 20:25:14,485 - failed getting coordinates for Unit 1702 Capri Heights 31 Ke Masinga Road Durban row 2736
+2020-11-09 20:25:34,007 - failed getting coordinates for 51 Inyoni Heights, 98 Vause Road Durban row 2775
+2020-11-09 20:25:40,561 - failed getting coordinates for 2 Palm Springs 155 Peter Mokaba Road Durban row 2788
+2020-11-09 20:25:41,585 - failed getting coordinates for 10 Palm Springs 155 Peter Mokaba Durban row 2790
+2020-11-09 20:25:47,012 - failed getting coordinates for Morningside Gardens 30 Valley View Road Durban row 2801
+2020-11-09 20:25:55,512 - failed getting coordinates for 22 Island Circle, Riverhorse Valley, Durban Durban row 2818
+2020-11-09 20:25:57,048 - failed getting coordinates for 128 Amilcar Cabrai Road Durban row 2821
+2020-11-09 20:26:28,997 - failed getting coordinates for Bryanston Heights, 169 King Dinuzulu Road Durban row 2885
+2020-11-09 20:26:31,045 - failed getting coordinates for 98 Bhungezi Road Durban row 2889
+2020-11-09 20:26:50,501 - failed getting coordinates for 95 OR Tambo Durban row 2928
+2020-11-09 20:27:06,578 - failed getting coordinates for Windermere Centre, 163 A Lilian Ngoyi Road Durban row 2960
+2020-11-09 20:27:07,090 - failed getting coordinates for Windermere Centre, 163 A Lilian Ngoyi Road Durban row 2961
+2020-11-09 20:27:12,004 - failed getting coordinates for 1 Mahatma Gandhi, 251 Mahatma Gandhi Durban row 2971
+2020-11-09 20:27:17,023 - failed getting coordinates for Ntuzuma Durban row 2981
+2020-11-09 20:27:32,997 - failed getting coordinates for 25 Pommern Lane, 30 Riverhorse Gardens Durban row 3013
+2020-11-09 20:27:52,044 - failed getting coordinates for 78 Goble Durban row 3051
+2020-11-09 20:27:52,555 - failed getting coordinates for 22 Keyridge, 365 Peter Mokaba Road Durban row 3052
+2020-11-09 20:27:59,520 - failed getting coordinates for 84 Somtseu Raod Durban row 3066
+2020-11-09 20:28:15,084 - failed getting coordinates for 518 Annet Drive Durban row 3097
+2020-11-09 20:28:34,131 - failed getting coordinates for 145 Grosvener Road Durban row 3134
+2020-11-09 20:28:37,662 - failed getting coordinates for 8 Winchester Drive Durban row 3141
+2020-11-09 20:28:39,148 - failed getting coordinates for Mountbatten, 314 Musgrave Durban row 3144
+2020-11-09 20:28:48,673 - failed getting coordinates for 15 Gillispie St Durban row 3163
+2020-11-09 20:28:50,617 - failed getting coordinates for 16 Lillian Nygoyi Road Durban row 3167
+2020-11-09 20:29:24,102 - failed getting coordinates for Ntuzuma Durban row 3234
+2020-11-09 20:29:30,589 - failed getting coordinates for 125 Brindle Place Durban row 3247
+2020-11-09 20:29:32,704 - failed getting coordinates for 125 Brindle Place Durban row 3251
+2020-11-09 20:29:33,087 - failed getting coordinates for 16 Lillian Nygoyi Road Durban row 3252
+2020-11-09 20:29:34,598 - failed getting coordinates for 409 - 423 Dr Pixley Kaseme (west) Street Durban row 3255
+2020-11-09 20:29:48,165 - failed getting coordinates for Ntuzuma Durban row 3282
+2020-11-09 20:29:56,626 - failed getting coordinates for 9 Les Belles, 128 Bellevue Road Durban row 3299
+2020-11-09 20:30:00,116 - failed getting coordinates for Strawberry Fileds, 144 Wattle Grove Durban row 3306
+2020-11-09 20:30:02,695 - failed getting coordinates for 9 Les Belles, 128 Bellevue Road Durban row 3311
+2020-11-09 20:30:14,080 - failed getting coordinates for Windermere Centre, 163 Lilian Ngoyi Road Durban row 3334
+2020-11-09 20:30:24,612 - failed getting coordinates for 462 Che Guevara Durban row 3355
+2020-11-09 20:30:28,582 - failed getting coordinates for Lamontville Durban row 3363
+2020-11-09 20:30:42,109 - failed getting coordinates for 8 Matlock Grove, Sydenham Durban row 3390
+2020-11-09 20:30:45,614 - failed getting coordinates for 5 Hampden Court, 5 Hampden Road Durban row 3397
+2020-11-09 20:31:00,126 - failed getting coordinates for 7 Mary Thipe Street Durban row 3426
+2020-11-09 20:31:03,093 - failed getting coordinates for 60 Old Fort Road Durban row 3432
+2020-11-09 20:31:06,195 - failed getting coordinates for 42 Idlewild 92 Smiso Nkwanyana Road Durban row 3438
+2020-11-09 20:31:16,641 - failed getting coordinates for 5a Lilac Lodge 158 Arundel Road Durban row 3459
+2020-11-09 20:31:17,155 - failed getting coordinates for Grosvenor Court , 41 Snell Parade Road Durban row 3460
+2020-11-09 20:31:31,588 - failed getting coordinates for 332 Che Guevara Durban row 3489
+2020-11-09 20:31:36,199 - failed getting coordinates for 391 Anton Lembede (smith) Street, 4 x Units Ss Metlife Building Durban row 3498
+2020-11-09 20:31:39,601 - failed getting coordinates for 61 Strelitzia 81 Lena Ahrens Road Durban row 3505
+2020-11-09 20:31:42,138 - failed getting coordinates for Harbour View Heights, 5 Timeball Boulevard Durban row 3510
+2020-11-09 20:31:56,167 - failed getting coordinates for Merion Court, 19 Prince Street Durban row 3538
+2020-11-09 20:31:59,141 - failed getting coordinates for 45/46 Cressington, 37 Joseph Nduli Street Durban row 3544
+2020-11-09 20:32:07,062 - failed getting coordinates for 54 Brandwell, 60 Cromwell Road Durban row 3560
+2020-11-09 20:32:13,152 - failed getting coordinates for Ntuzuma Durban row 3572
+2020-11-09 20:32:19,617 - failed getting coordinates for 533 Che Guavara Road Durban row 3585
+2020-11-09 20:32:20,646 - failed getting coordinates for 22 San Angelo 86 Valley View Avenue Durban row 3587
+2020-11-09 20:32:23,595 - failed getting coordinates for Grosvenor Court , 41 Snell Parade Durban row 3593
+2020-11-09 20:32:32,600 - failed getting coordinates for 186 Margaret Mngadi Road Durban row 3611
+2020-11-09 20:32:33,601 - failed getting coordinates for 186 Margaret Mngadi Road Durban row 3613
+2020-11-09 20:32:36,106 - failed getting coordinates for 186 Margaret Mngadi Road Durban row 3618
+2020-11-09 20:32:56,175 - failed getting coordinates for John Ross House, 20 Margaret Mncadi Avenue Durban row 3658
+2020-11-09 20:32:57,080 - failed getting coordinates for Castlehill Durban row 3660
+2020-11-09 20:33:02,576 - failed getting coordinates for Castlehill Durban row 3671
+2020-11-09 20:33:10,633 - failed getting coordinates for Emachobeni Durban row 3687
+2020-11-09 20:33:12,162 - failed getting coordinates for Emachobeni Durban row 3690
+2020-11-09 20:33:28,557 - failed getting coordinates for 33 Warrangal Road Durban row 3723
+2020-11-09 20:33:50,130 - failed getting coordinates for 263 O.r. Tambo Durban row 3766
+2020-11-09 20:35:10,628 - failed getting coordinates for Corovoca Durban row 3927
+2020-11-09 20:35:19,126 - failed getting coordinates for 495 Peter Mokaba Riage Durban row 3944
+2020-11-09 20:35:27,114 - failed getting coordinates for 4 The Gates 335 Currie Road Durban row 3960
+2020-11-09 20:36:07,092 - failed getting coordinates for 551 Mahatma Gandi Road Durban row 4040
+2020-11-09 20:36:16,674 - failed getting coordinates for 18 Musgrave Road, Musgrave, Berea,4001 Durban row 4059
+2020-11-09 20:37:10,695 - failed getting coordinates for Merion Court, 19 Prince Street Durban row 4167
+2020-11-09 20:38:42,130 - failed getting coordinates for Ntuzuma Durban row 4350
+2020-11-09 20:39:10,611 - failed getting coordinates for 1 Orland Court 6 Denham Place Durban row 4407
+2020-11-09 20:39:16,253 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Reservoir+Hills+Durban&format=json&limit=1
+2020-11-09 20:39:22,328 - failed getting coordinates for Glebe Durban row 4425
+2020-11-09 20:39:22,697 - failed getting coordinates for 213 Problem Mhkize Road Durban row 4426
+2020-11-09 20:39:44,242 - failed getting coordinates for Castlehill Durban row 4469
+2020-11-09 20:40:21,313 - failed getting coordinates for Davenport Square, 89 Helen Joseph Road Durban row 4543
+2020-11-09 20:40:22,846 - failed getting coordinates for Davenport Square, 89 Helen Joseph Road Durban row 4546
+2020-11-09 20:40:28,786 - failed getting coordinates for Glebe Durban row 4558
+2020-11-09 20:41:00,326 - failed getting coordinates for Inanda Congo Durban row 4621
+2020-11-09 20:41:47,262 - failed getting coordinates for Melody Mansions, 59 Clark Durban row 4715
+2020-11-09 20:42:05,196 - failed getting coordinates for 54 Kirstengrove 12 Sandown Road Durban row 4751
+2020-11-09 20:42:58,292 - failed getting coordinates for Ntuzuma Durban row 4857
