@@ -1,5 +1,5 @@
 def get_address(inp_df):
-#     #raw.to_csv("test.csv")
+
     from geopy.geocoders import Nominatim
     import pandas
 #source: https://towardsdatascience.com/geocode-with-python-161ec1e62b89
@@ -28,42 +28,3 @@ for index, row in raw_df.iterrows():
     except:
             logging.info("failed getting coordinates for " + str(raw_df["address2"].iloc[index]) + " row " + str(index))            
    
-        
-
-# MY VERSION
-
-# import pandas, os
-# df1 = pandas.read_csv("Address.csv")
-
-# from geopy.geocoders import Nominatim
-# Nominatim(user_agent="myGeocoder")
-# nom = Nominatim()
-
-# n = nom.geocode("London eye")
-# print(n.latitude)
-
-# df1["Address"]=df1["Address"].apply()
-
-
-
-# # df1["Latitude"]=df1["Coordinates"].apply(lambda x: x,latitude if x != None else None)
-# # df1["Longitude"]=df1["Coordinates"].apply(lambda x: x,longitude if x != None else None)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
