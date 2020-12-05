@@ -1,7 +1,7 @@
 # MY VERSION
 
 import pandas
-df = pandas.read_csv("Address.csv")
+df = pandas.read_csv("Address")
 
 from geopy.geocoders import Nominatim
 Nominatim(user_agent="myGeocoder")
