@@ -28,3 +28,5 @@ def get_address(inp_df):
         except:
                 logging.info("failed getting coordinates for " + str(raw_df["address2"].iloc[index]) + " row " + str(index))            
        
+        raw_df.to_excel(r'C:\Users\Tashan Tika\Desktop\All Rec\coordinates.xlsx')
+        get_address(inp_df= raw_df)
