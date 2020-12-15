@@ -12,7 +12,7 @@ print(n.latitude)
 
 df["Address"]=df["Address"].apply()
 
-
+print(" test commit" )
 
 df["Latitude"]=df["Coordinates"]
 df["Longitude"]=df["Coordinates"]
