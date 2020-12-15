@@ -1,17 +1,12 @@
-from selenium import webdriver 
-import pandas as pd
 
-inp_url = "https://www.property24.com/for-sale/durban/kwazulu-natal/169"
-chrome_path = ('C:/Program Files/Google/Chrome/Driver/chromedriver.exe')
 
-driver = webdriver.Chrome(chrome_path)
 
-driver.get(inp_url)
 
 
 
 # this should be a function - scrape page
 def scrape(inp_driver):
+    import pandas as pd    
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.support import expected_conditions as EC
     from selenium.webdriver.common.by import By
@@ -61,7 +56,16 @@ def scrape(inp_driver):
                 master_rec = pd.concat([master_rec, loop_rec], axis = 0, ignore_index=True)
                 return master_rec
 
-
+def extract_prop24():
+    from selenium import webdriver 
+    import pandas as pd
+    inp_url = "https://www.property24.com/for-sale/durban/kwazulu-natal/169"
+    chrome_path = ('C:/Program Files/Google/Chrome/Driver/chromedriver.exe')
+    
+    driver = webdriver.Chrome(chrome_path)
+    
+    driver.get(inp_url)
+    
     page_counter = 1
     
     #find last page

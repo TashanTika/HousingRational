@@ -1,17 +1,11 @@
-from selenium import webdriver 
-import pandas as pd
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 15 17:11:01 2020
+@author: Tashan Tika
+"""
 
-inp_url = "https://www.property24.com/for-sale/durban/kwazulu-natal/169"
-chrome_path = ('C:/Program Files/Google/Chrome/Driver/chromedriver.exe')
-
-driver = webdriver.Chrome(chrome_path)
-
-driver.get(inp_url)
-
-
-
-# this should be a function - scrape page
 def scrape(inp_driver):
+    import pandas as pd
     main_class = inp_driver.find_elements_by_class_name('p24_content')
     counter = 0
     for index, info in enumerate(main_class):  
@@ -75,28 +69,33 @@ def scrape(inp_driver):
     return master_rec
 
 
-
-
-
-
-for page_counter in range(250):  
-    print("--------------scraping page:" + str(page_counter +1) + "--------------")
+def extract_p24():
+    from selenium import webdriver 
+    import pandas as pd
     
-    href = "https://www.property24.com/for-sale/durban/kwazulu-natal/169/p{0}".format(page_counter+1)    
-    driver.get(href)
-    page_records = scrape(inp_driver = driver)
+    inp_url = "https://www.property24.com/for-sale/durban/kwazulu-natal/169"
+    chrome_path = ('C:/Program Files/Google/Chrome/Driver/chromedriver.exe')
     
-    #add to all_records
-    if page_counter == 0:  
-        all_records = page_records.copy()
-    else: 
-        all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
-    print("--------------finished scrape page:" + str(page_counter + 1) + "--------------")
-            
-
-
-            #To import to CSV file in desktop     
-all_records.to_excel (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.xlsx')
+    driver = webdriver.Chrome(chrome_path)
+    driver.get(inp_url)
+    
+    for page_counter in range(250):  
+        print("--------------scraping page:" + str(page_counter +1) + "--------------")
+        
+        href = "https://www.property24.com/for-sale/durban/kwazulu-natal/169/p{0}".format(page_counter+1)    
+        driver.get(href)
+        page_records = scrape(inp_driver = driver)
+        
+        #add to all_records
+        if page_counter == 0:  
+            all_records = page_records.copy()
+        else: 
+            all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
+        print("--------------finished scrape page:" + str(page_counter + 1) + "--------------")
+                
+        
+    #To export to CSV file in desktop     
+    all_records.to_excel (r'C:\Users\Tashan Tika\Desktop\All Rec\All Records.xlsx')
 
 
                
