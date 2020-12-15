@@ -30,7 +30,7 @@ def get_address(inp_df):
 #read data
 
         
-# root_dir = Path(__file__).resolve().parent
+#  root_dir = Path(__file__).resolve().parent
 # raw_file = os.path.join(root_dir, 'Address.csv')
     raw_df = pandas.read_csv("Address.csv")  
     raw_df["Address"] = raw_df["Address"] + " Durban"
