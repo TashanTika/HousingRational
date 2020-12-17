@@ -37,27 +37,43 @@ import pandas as pd
 import config_p24
 
 address = pd.read_excel(config_p24.all_records_export_path) 
-address2 = address.loc[(address["Address"] != "No Address")]
-address3 = address2.loc[~(address2["Address"].isna())]
 
+#clean address: 1 - put location for no address
+address.loc[(address["Address"] == "No Address"),"Address"] = address.loc[(address["Address"] == "No Address"),"Location"]
+
+#clean address: 2 - remove nan address
+address = address.loc[~(address["Address"].isna())]
+address.reset_index(drop = True, inplace = True)
+
+address2 = address.iloc[:100,:].copy()
 
 #Iterate through the rows to get address
 from geopy.geocoders import Nominatim
 locator = Nominatim(user_agent="myGeocoder")
 location = locator.geocode("Address")
-for index, row in address3.iterrows():
-        try:
-            location = locator.geocode(address3["Address"].iloc[index])
-            address3["lat"][index] = location.latitude[0]
-            address3["lon"][index] = location.longitude[0]
-            
+address2["lat"] = ""
+address2["lon"] = ""
+for index, row in address2.iterrows():
+    print("get location for {}, index {}".format(address["Address"].iloc[index],str(index)))
+    location = locator.geocode(address2["Address"].iloc[index])
+    # establish if location is none type location == NoneType --> True
+    if location == None:
+        address2["lon"][index] = float("NaN")
+        address2["lat"][index] = float("NaN")
+    else:
+        address2["lat"][index] = location.latitude
+        address2["lon"][index] = location.longitude
+        
+address2 = address2.loc[~(address2["lon"].isna())]      
+        
+    
+    # if location !- none type then tak lon lat from location
 
 
+    # else put in nan for lat lon
 
-
-
-sample_address2 = address3["Address"].iloc[0] + ", Durban, South Africa"
-location2 = locator.geocode(sample_address2)
+#sample_address2 = address3["Address"].iloc[0] + ", Durban, South Africa" 
+#location2 = locator.geocode(sample_address2)
  
 #geopy to find coordinates 
 #save file        
