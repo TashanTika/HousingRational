@@ -44,7 +44,17 @@ address3 = address2.loc[~(address2["Address"].isna())]
 #Iterate through the rows to get address
 from geopy.geocoders import Nominatim
 locator = Nominatim(user_agent="myGeocoder")
-location = locator.geocode("Champ de Mars, Paris, France")
+location = locator.geocode("Address")
+for index, row in address3.iterrows():
+        try:
+            location = locator.geocode(address3["Address"].iloc[index])
+            address3["lat"][index] = location.latitude[0]
+            address3["lon"][index] = location.longitude[0]
+            
+
+
+
+
 
 sample_address2 = address3["Address"].iloc[0] + ", Durban, South Africa"
 location2 = locator.geocode(sample_address2)
