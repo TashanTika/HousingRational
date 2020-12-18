@@ -1,19 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 17 23:24:42 2020
-
-@author: Tashan Tika
-"""
-
-
-mapbox_token = "pk.eyJ1IjoibmcxOTg0IiwiYSI6ImNraDlqMHgxZTByY3Ayd256bzlvcXp3OHAifQ.o2MXE6NacffhElGwSRjQIA"
-
 #Read CSV File
 import pandas as pd 
 import config_p24
-sta_df = pd.read_excel(config_p24.coordinates) 
-
+mapbox_token = (config_p24.mapbox_token)
+sta_df = pd.read_excel(config_p24.coordinates)
+table = pd.read_excel(config_p24.all_records_export_path)
 # TO DO refine marker color based on price and add more info in text box (Title, address, size etc.) like here https://docs.mapbox.com/mapbox-gl-js/example/popup-on-hover/
+ 
 
 # this data trace shows the listings
 from plotly.offline import plot
@@ -24,10 +16,10 @@ scatt = go.Scattermapbox(
                         lon = list(sta_df["lon"]),                        
                         mode='markers',
                         hoverinfo='text',
-                        marker=dict(symbol ='marker', size=5, color='blue'),
+                        marker=dict(symbol ='marker', size=5, color='white'),
                         textposition='top right',
                         textfont=dict(size=16, color='black'),
-                        text= list(sta_df["Address"])
+                        text = list(sta_df["Address"] + " Location: " + table["Location"] + " Price: " + table["Price"])
                         )
 
 # TO DO add trace with crime stats per region chlorochart
@@ -42,7 +34,6 @@ layout = go.Layout(hovermode = "closest",
                                )
                     )
 
-            
-fig=go.Figure(data = [scatt], layout = layout)
+fig = go.Figure(data = [scatt], layout = layout)
 plot(fig)
 

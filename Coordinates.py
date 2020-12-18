@@ -11,12 +11,13 @@ address.loc[(address["Address"] == "No Address"),"Address"] = address.loc[(addre
 address = address.loc[~(address["Address"].isna())]
 address.reset_index(drop = True, inplace = True)
 
-address2 = address.copy()
+address2 = address["Address"][:1000].copy()
+
 
 #Iterate through the rows to get address
 from geopy.geocoders import Nominatim
 locator = Nominatim(user_agent="myGeocoder")
-location = locator.geocode("Address")
+location = locator.geocode("Address") 
 address2["lat"] = ""
 address2["lon"] = ""
 for index, row in address2.iterrows():
