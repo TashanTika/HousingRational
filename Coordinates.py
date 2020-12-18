@@ -11,7 +11,7 @@ address.loc[(address["Address"] == "No Address"),"Address"] = address.loc[(addre
 address = address.loc[~(address["Address"].isna())]
 address.reset_index(drop = True, inplace = True)
 
-address2 = address["Address"][:1000].copy()
+address2 = address.iloc[:1000].copy()
 
 
 #Iterate through the rows to get address
@@ -22,7 +22,7 @@ address2["lat"] = ""
 address2["lon"] = ""
 for index, row in address2.iterrows():
     print("get location for {}, index {}".format(address["Address"].iloc[index],str(index)))
-    location = locator.geocode(address2["Address"].iloc[index])
+    location = locator.geocode(address2["Address"].iloc[index] + ", Durban, South Africa")
     # establish if location is none type location == NoneType --> True
     if location == None:
         address2["lon"][index] = float("NaN")
