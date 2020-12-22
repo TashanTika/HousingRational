@@ -10,9 +10,9 @@ root_dir = Path(__file__).resolve().parent #root directory
 
 inp_url = "https://www.property24.com/for-sale/durban/kwazulu-natal/169"
 chrome_path = os.path.join(root_dir, 'driver/chromedriver.exe')
-all_records_export_path = os.path.join(root_dir, "p24_records/All Records.xlsx")
+all_records_export_path = os.path.join(root_dir, "p24_records/All Records.xlsx") #Done
 raw_file = os.path.join(root_dir, "p24_records/Address.csv")
-coordinates = os.path.join(root_dir, "p24_records/coordinates.xlsx")
+coordinates = os.path.join(root_dir, "p24_records/coordinates.xlsx") #Done
 mapbox_token = os.path.join("pk.eyJ1IjoibmcxOTg0IiwiYSI6ImNraDlqMHgxZTByY3Ayd256bzlvcXp3OHAifQ.o2MXE6NacffhElGwSRjQIA")
-dash_ready = os.path.join(root_dir, "p24_records/dash_ready.xlsx")
+dash_ready = os.path.join(root_dir, "p24_records/dash_ready.xlsx") #Done
 

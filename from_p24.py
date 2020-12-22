@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec 15 17:11:01 2020
+Created on Tue Dec 22 19:43:01 2020
+
 @author: Tashan Tika
 """
 
+#extract
 def scrape(inp_driver):
     import pandas as pd
     main_class = inp_driver.find_elements_by_class_name('p24_content')
@@ -68,23 +70,26 @@ def scrape(inp_driver):
                 master_rec = pd.concat([master_rec, loop_rec], axis = 0, ignore_index=True)
     return master_rec
 
-
-def extract_p24():
+def extract_p24(**kwargs):
     from selenium import webdriver 
     import pandas as pd
     import config_p24
     
     inp_url = config_p24.inp_url
     chrome_path = config_p24.chrome_path 
+    inp_last_page = kwargs.get("inp_last_page", None)
     
     driver = webdriver.Chrome(chrome_path)
     driver.get(inp_url)
     
     #find last page
-    pager = driver.find_elements_by_class_name("pagination")
-    pager = pager[0].find_elements_by_tag_name("li")
-    last_page = int(pager[-1].text)
-        
+    if inp_last_page == None:
+        pager = driver.find_elements_by_class_name("pagination")
+        pager = pager[0].find_elements_by_tag_name("li")
+        last_page = int(pager[-1].text)
+    else:
+        last_page = inp_last_page
+            
     for page_counter in range(last_page):  
         print("--------------scraping page:" + str(page_counter +1) + "--------------")
         
@@ -99,17 +104,52 @@ def extract_p24():
         else: 
             all_records = pd.concat([all_records, page_records], axis = 0, ignore_index=True)
         print("--------------finished scrape page:" + str(page_counter + 1) + "--------------")
-                        
-    #To export to CSV file in desktop     
-    all_records.to_excel (config_p24.all_records_export_path)
+    return all_records
+
+def transform_p24(inp_df):
+    print("start transform p24")
+    #def transform_p24(inp_df):
+    inp_df["filter empty row"] = inp_df["Price"] + inp_df["Title"]  + inp_df["Location"] 
+    df = inp_df.loc[(inp_df["filter empty row"] != "")]
+    df.loc[(df["Address"] == "No Address"),"Address"] = df.loc[(df["Address"] == "No Address"),"Location"]
+    df.reset_index(drop = True, inplace = True)
+    
+    #Clean Price
+    print("start transform price and size")
+    df["Price"].loc[(df["Price"] == "")] = "NaN"
+    df['Price'] = df['Price'].str.replace(" ", "")
+    df['Price'] = df['Price'].str.replace("R", "")
+    df['Price'] = df['Price'].str.replace("POA", "NaN")
+    df['Price'] = df['Price'].astype(float)
+    
+    # clean size
+    df["Size"] = df["Size"].str.replace("m²", "")
+    df["Size"] = df["Size"].str.replace("ha", "")
+    df["Size"] = df["Size"].str.replace(" ", "")
+    df['Size'] = df['Size'].astype(float)
+    
+    #Price Per Square meter
+    df["Price per m²"] = df["Price"] / df["Size"]
+    
+    # get lat lon
+    print("start transform lat and lon")
+    import get_coordinates as gc
+    df = gc.get_lat_lon(inp_df = df, 
+                         inp_address_column_name = "Address", 
+                         inp_city_country_name = "Durban, South Africa")
+    
+    return df
 
 
-               
-        
-        
-        
-        
-        
-        
-        
-        
+extract_df = extract_p24(inp_last_page = 2)
+transform = transform_p24(inp_df = extract_df)
+print("load p24")
+
+
+# take nans/empty rows
+# add an insert date
+# add an id
+
+
+#load - 
+# load into sql

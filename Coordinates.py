@@ -35,4 +35,6 @@ address2 = address2.loc[~(address2["lon"].isna())]
 
 #Save file 
 address2.to_excel(config_p24.coordinates)
+
+#Links https://towardsdatascience.com/geocode-with-python-161ec1e62b89
       
