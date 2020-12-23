@@ -140,7 +140,6 @@ def transform_p24(inp_df):
     
     return df
 
-
 extract_df = extract_p24(inp_last_page = 2)
 transform = transform_p24(inp_df = extract_df)
 print("load p24")
@@ -153,3 +152,7 @@ print("load p24")
 
 #load - 
 # load into sql
+
+def load_sql():
+    #create a func to load sql 
+    
