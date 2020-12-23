@@ -35,7 +35,7 @@ from sqlalchemy import create_engine
 # cur.close()
 
 
-engine = create_engine('postgresql+psycopg2://postgres:meet_dha@localhost:5432/Housing_Rational')
+engine = create_engine('postgresql+psycopg2://postgres:@localhost:5432/Housing_Rational')
 # /username:password@host:port/database
 
 import pandas as pd

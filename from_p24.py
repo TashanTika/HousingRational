@@ -149,10 +149,20 @@ print("load p24")
 # add an insert date
 # add an id
 
-
-#load - 
 # load into sql
-
-def load_sql():
-    #create a func to load sql 
+def load_sql(transform):
+    from sqlalchemy import create_engine
+    import pandas as pd
+    # /username:password@host:port/database
+    engine = create_engine('postgresql+psycopg2://postgres:meet_dha@localhost:5432/Housing_Rational')
+    #Reading the data as excel or CSV
+    pd.read(df)
+    #Uploading the data to SQL
+    df.to_sql('df', engine, if_exists='append', index=False)
+    #Reading the SQL Table back into python 
+    myQuery = "SELECT * FROM df"
+    read_data_from_sql = pd.read_sql_query(myQuery, engine)
+    
+    return read_data_from_sql
+    
     
