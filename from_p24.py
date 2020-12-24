@@ -154,15 +154,17 @@ def load_sql(transform):
     from sqlalchemy import create_engine
     import pandas as pd
     # /username:password@host:port/database
-    engine = create_engine('postgresql+psycopg2://postgres:meet_dha@localhost:5432/Housing_Rational')
+    engine = create_engine('postgresql+psycopg2://postgres:@localhost:5432/Housing_Rational')
     #Reading the data as excel or CSV
-    pd.read(df)
+    pandas_read = pd.read_DataFrame(transform)
     #Uploading the data to SQL
-    df.to_sql('df', engine, if_exists='append', index=False)
+    transform.to_sql('transform', engine, if_exists='append', index=False)
     #Reading the SQL Table back into python 
-    myQuery = "SELECT * FROM df"
+    myQuery = "SELECT * FROM transform"
     read_data_from_sql = pd.read_sql_query(myQuery, engine)
     
     return read_data_from_sql
+
+    
     
     
